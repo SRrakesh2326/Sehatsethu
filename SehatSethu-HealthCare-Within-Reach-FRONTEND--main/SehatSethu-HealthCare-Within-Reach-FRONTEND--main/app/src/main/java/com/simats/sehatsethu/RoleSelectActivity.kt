@@ -49,17 +49,14 @@ class RoleSelectActivity : BaseActivity() {
         setCardTexts(patientCard, R.string.role_patient, R.string.role_patient_desc)
         setCardTexts(doctorCard, R.string.role_doctor, R.string.role_doctor_desc)
         setCardTexts(pharmacistCard, R.string.role_pharmacist, R.string.role_pharmacist_desc)
-
-        // Admin cannot self-register — credentials are added directly in the database.
-        adminCard.visibility = android.view.View.GONE
+        setCardTexts(adminCard, R.string.role_admin, R.string.role_admin_desc)
 
         selectedRole = Role.fromId(AppPrefs.getRole(this)) ?: Role.PATIENT
-        if (selectedRole == Role.ADMIN) selectedRole = Role.PATIENT // reset if somehow admin was pre-selected
 
         patientCard.setOnClickListener { select(Role.PATIENT) }
         doctorCard.setOnClickListener { select(Role.DOCTOR) }
         pharmacistCard.setOnClickListener { select(Role.PHARMACIST) }
-        // adminCard has no click listener — it is hidden
+        adminCard.setOnClickListener { select(Role.ADMIN) }
 
         renderSelection()
 
@@ -69,11 +66,6 @@ class RoleSelectActivity : BaseActivity() {
         continueBtn.setOnClickListener {
             val role = selectedRole ?: run {
                 Toast.makeText(this, getString(R.string.select_role_toast), Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-            // Block admin from being selected through any path
-            if (role == Role.ADMIN) {
-                Toast.makeText(this, "Admin registration is not allowed.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 

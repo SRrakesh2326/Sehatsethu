@@ -44,6 +44,12 @@ class CreateAccountActivity : BaseActivity() {
         role = RoleResolver.resolve(this, savedInstanceState)
         RoleResolver.persist(this, role)
 
+        if (role == Role.ADMIN) {
+            Toast.makeText(this, "Admin registration is not available. Please login with your administrator credentials.", Toast.LENGTH_SHORT).show()
+            finish()
+            return
+        }
+
         tvRolePill = findViewById(R.id.tv_role_pill)
         etFullname = findViewById(R.id.et_fullname)
         etEmail = findViewById(R.id.et_email)

@@ -64,9 +64,17 @@ class LoginActivity : BaseActivity() {
 
         btnSignIn.setOnClickListener { doLogin() }
 
-        tvSignup.setOnClickListener {
-            val i = RoleResolver.putRole(Intent(this, CreateAccountActivity::class.java), role)
-            goNext(i, finishThis = false)
+        val dividerSignup = findViewById<View>(R.id.divider_signup)
+        if (role == Role.ADMIN) {
+            tvSignup.visibility = View.GONE
+            dividerSignup?.visibility = View.GONE
+        } else {
+            tvSignup.visibility = View.VISIBLE
+            dividerSignup?.visibility = View.VISIBLE
+            tvSignup.setOnClickListener {
+                val i = RoleResolver.putRole(Intent(this, CreateAccountActivity::class.java), role)
+                goNext(i, finishThis = false)
+            }
         }
 
         tvForgot.setOnClickListener {

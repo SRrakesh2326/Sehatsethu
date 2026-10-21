@@ -68,6 +68,16 @@ object ApiClient {
         return res
     }
 
+    @Volatile
+    private var currentBaseUrl = ApiConfig.BASE_URL
+
+    private val CANDIDATE_URLS = listOf(
+        "http://172.22.237.162/sehatsethu_api/api/",
+        "http://172.25.85.104/sehatsethu_api/api/",
+        "http://127.0.0.1/sehatsethu_api/api/",
+        "http://10.0.2.2/sehatsethu_api/api/"
+    )
+
     private fun postJsonInternal(
         path: String,
         body: JSONObject,
@@ -75,7 +85,33 @@ object ApiClient {
         retryOnEof: Boolean,
         headers: Map<String, String>
     ): ApiResult {
-        val fullUrl = BASE_URL + path
+        val res = executeHttp(currentBaseUrl, path, body, timeoutMs, retryOnEof, headers)
+        if (res.ok || res.httpCode != 0) {
+            return res
+        }
+
+        // Connection failed (httpCode == 0, e.g. network switch) -> try other candidates
+        for (candidate in CANDIDATE_URLS) {
+            if (candidate == currentBaseUrl) continue
+            val fallback = executeHttp(candidate, path, body, timeoutMs = 3500, retryOnEof = false, headers = headers)
+            if (fallback.ok || fallback.httpCode != 0) {
+                currentBaseUrl = candidate
+                return fallback
+            }
+        }
+
+        return res
+    }
+
+    private fun executeHttp(
+        baseUrl: String,
+        path: String,
+        body: JSONObject,
+        timeoutMs: Int,
+        retryOnEof: Boolean,
+        headers: Map<String, String>
+    ): ApiResult {
+        val fullUrl = baseUrl + path
 
         // fixes XAMPP intermittent EOF
         System.setProperty("http.keepAlive", "false")
@@ -141,7 +177,7 @@ object ApiClient {
             )
         } catch (e: ProtocolException) {
             if (retryOnEof) {
-                return postJsonInternal(path, body, timeoutMs, retryOnEof = false, headers = headers)
+                return executeHttp(baseUrl, path, body, timeoutMs, retryOnEof = false, headers = headers)
             }
             return ApiResult(false, 0, null, "ProtocolException: ${e.message}", fullUrl)
         } catch (e: Exception) {

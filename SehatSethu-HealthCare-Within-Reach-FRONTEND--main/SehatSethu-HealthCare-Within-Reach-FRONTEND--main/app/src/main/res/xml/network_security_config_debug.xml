@@ -8,6 +8,7 @@
         <domain includeSubdomains="true">127.0.0.1</domain>
         <domain includeSubdomains="true">10.37.15.100</domain>
         <domain includeSubdomains="true">172.25.85.104</domain>
+        <domain includeSubdomains="true">172.22.237.162</domain>
     </domain-config>
 
     <!-- Trust user-installed CAs (ONLY for debug / local testing) -->

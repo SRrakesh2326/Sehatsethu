@@ -94,10 +94,17 @@ class VerifyOtpActivity : BaseActivity() {
 
         val debugOtp = intent.getStringExtra("extra_debug_otp")?.trim().orEmpty()
         if (debugOtp.length == 6) {
+            // Auto-fill the OTP boxes
             debugOtp.forEachIndexed { i, c ->
                 if (i in otpEdits.indices) otpEdits[i].setText(c.toString())
             }
-            toastBL("Verification code: $debugOtp")
+            // Show prominent dialog since email delivery may be unavailable in dev/college network
+            android.app.AlertDialog.Builder(this)
+                .setTitle("🔐 Verification Code")
+                .setMessage("Your OTP code is:\n\n$debugOtp\n\n(The code has been auto-filled. Tap Verify to continue.)")
+                .setPositiveButton("OK", null)
+                .setCancelable(true)
+                .show()
         } else {
             focusFirstOtpAndShowKeyboard()
         }

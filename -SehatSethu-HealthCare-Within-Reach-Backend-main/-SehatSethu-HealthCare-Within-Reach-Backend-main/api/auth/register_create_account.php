@@ -20,6 +20,11 @@ if ($emailErr = validate_user_email($email)) json_response(422, ["ok"=>false,"er
 if (!is_valid_role($role)) json_response(422, ["ok"=>false,"error"=>"Invalid role."]);
 if ($passErr = validate_user_password($password)) json_response(422, ["ok"=>false,"error"=>$passErr]);
 
+// Admin accounts are created directly in the database; self-registration is not allowed.
+if ($role === "ADMIN") {
+  json_response(403, ["ok"=>false,"error"=>"Admin registration is not permitted. Please contact the system administrator."]);
+}
+
 // Get connection (will emit JSON 503 on failure if helpers available)
 $pdo = db();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E2E8F0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="16dp">
+
+        <!-- Avatar -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/boxAvatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#DFF7EA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_doctor"
+                app:tint="#059669"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/boxAvatar"
+            app:layout_constraintTop_toTopOf="@id/boxAvatar"
+            app:layout_constraintEnd_toStartOf="@id/ivVerified"
+            tools:text="Dr. Rajesh Kumar"/>
+
+        <ImageView
+            android:id="@+id/ivVerified"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/ic_verified"
+            app:tint="#059669"
+            app:layout_constraintTop_toTopOf="@id/tvName"
+            app:layout_constraintBottom_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Spec + experience -->
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/boxAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="General Physician  •  15 years"/>
+
+        <!-- Rating + consultations -->
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:src="@android:drawable/btn_star_big_off"
+            app:tint="#F59E0B"
+            app:layout_constraintStart_toEndOf="@id/boxAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvSub"/>
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#F59E0B"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ivStar"
+            app:layout_constraintTop_toBottomOf="@id/tvSub"
+            tools:text="4.8"/>
+
+        <TextView
+            android:id="@+id/tvDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:text="•"
+            android:textColor="#CBD5E1"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/tvRating"
+            app:layout_constraintTop_toBottomOf="@id/tvSub"/>
+
+        <TextView
+            android:id="@+id/tvConsults"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/sample_consultations"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/tvDot"
+            app:layout_constraintTop_toBottomOf="@id/tvSub"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2500 + consultations"/>
+
+        <!-- Languages -->
+        <ImageView
+            android:id="@+id/ivLang"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:src="@android:drawable/ic_menu_mylocation"
+            app:tint="#64748B"
+            app:layout_constraintStart_toEndOf="@id/boxAvatar"
+            app:layout_constraintTop_toBottomOf="@id/ivStar"/>
+
+        <TextView
+            android:id="@+id/tvLang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/ivLang"
+            app:layout_constraintTop_toBottomOf="@id/ivStar"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Hindi, English"/>
+
+        <View
+            android:id="@+id/div1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#EEF2F7"
+            app:layout_constraintTop_toBottomOf="@id/tvLang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Fee left -->
+        <TextView
+            android:id="@+id/tvFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="₹200"
+            android:textColor="#059669"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/div1"
+            tools:text="₹200"/>
+
+        <TextView
+            android:id="@+id/tvPer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/per_consultation"
+            android:textColor="#94A3B8"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFee"/>
+
+        <!-- Availability chip right (align with ₹ row like screenshot) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/boxAvail"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#DFF7EA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvFee"
+            app:layout_constraintBottom_toBottomOf="@id/tvFee">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+                <View
+                    android:id="@+id/dotAvail"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_dot_green"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvAvail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/available_now"
+                    android:textColor="#059669"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/dotAvail"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:text="Available Now"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action chips (small pills like screenshot) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVideoMini"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/video_call"
+            android:textAllCaps="false"
+            android:textColor="#2563EB"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="16dp"
+            app:icon="@android:drawable/ic_menu_camera"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="16dp"
+            app:iconTint="#2563EB"
+            app:backgroundTint="#EFF6FF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPer"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAudioMini"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/audio_call"
+            android:textAllCaps="false"
+            android:textColor="#059669"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="16dp"
+            app:icon="@android:drawable/sym_action_call"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="16dp"
+            app:iconTint="#059669"
+            app:backgroundTint="#E9FFF7"
+            app:layout_constraintStart_toEndOf="@id/btnVideoMini"
+            app:layout_constraintTop_toBottomOf="@id/tvPer"/>
+
+        <View
+            android:id="@+id/spacerBottom"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/btnVideoMini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

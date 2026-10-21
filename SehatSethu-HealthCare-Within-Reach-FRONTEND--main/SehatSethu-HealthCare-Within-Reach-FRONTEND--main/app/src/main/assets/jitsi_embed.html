@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <title>SehatSethu Call</title>
+    <style>
+        html, body { height: 100%; margin: 0; background: #0B1526; }
+        #meet { position: fixed; inset: 0; }
+    </style>
+</head>
+<body>
+<div id="meet"></div>
+
+<script>
+    function qs(name) {
+      try { return new URL(location.href).searchParams.get(name) || ""; }
+      catch (e) { return ""; }
+    }
+
+    const room = (qs("room") || "").trim();
+    const name = decodeURIComponent(qs("name") || "User").trim();
+    const server = (decodeURIComponent(qs("server") || "") || "https://meet.jit.si")
+      .trim()
+      .replace(/\/+$/, "");
+
+    function safeHangup() {
+      try { window.Android && Android.onHangup && Android.onHangup(); } catch(e) {}
+    }
+
+    function logToAndroid(msg) {
+      try { window.Android && Android.onLog && Android.onLog(String(msg)); } catch(e) {}
+    }
+
+    if (!room) {
+      logToAndroid("No room passed");
+      safeHangup();
+    }
+
+    function domainFromServer(s) {
+      return s.replace(/^https?:\/\//i, "").replace(/\/+$/, "");
+    }
+
+    function loadScript(src, cb) {
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.onload = cb;
+      s.onerror = function() {
+        logToAndroid("Failed loading external_api.js: " + src);
+        safeHangup();
+      };
+      document.head.appendChild(s);
+    }
+
+    let api = null;
+
+    function init() {
+      try {
+        const DOMAIN = domainFromServer(server);
+        logToAndroid("JITSI init server=" + server + " domain=" + DOMAIN + " room=" + room);
+
+        api = new JitsiMeetExternalAPI(DOMAIN, {
+          roomName: room,
+          parentNode: document.querySelector("#meet"),
+          userInfo: { displayName: name },
+
+          configOverwrite: {
+            prejoinPageEnabled: false,
+            enableWelcomePage: false,
+            disableDeepLinking: true,
+            startWithAudioMuted: false,
+            startWithVideoMuted: false,
+            disableInviteFunctions: true,
+            enableUserRolesBasedOnToken: false,
+            lobby: { enabled: false }
+          },
+
+          interfaceConfigOverwrite: {
+            TOOLBAR_BUTTONS: ["microphone","camera","hangup"],
+            SHOW_JITSI_WATERMARK: false,
+            SHOW_WATERMARK_FOR_GUESTS: false,
+            SHOW_POWERED_BY: false,
+            DISABLE_JOIN_LEAVE_NOTIFICATIONS: true
+          }
+        });
+
+        api.addListener("videoConferenceJoined", function () {
+          logToAndroid("Joined room OK: " + room);
+        });
+
+        //  ALWAYS close activity when leaving
+        api.addListener("videoConferenceLeft", function () {
+          logToAndroid("videoConferenceLeft");
+          safeHangup();
+        });
+
+        api.addListener("readyToClose", function () {
+          logToAndroid("readyToClose");
+          safeHangup();
+        });
+
+        api.addListener("toolbarButtonClicked", function (e) {
+          if (e && e.key === "hangup") {
+            logToAndroid("Hangup clicked");
+            safeHangup();
+          }
+        });
+
+      } catch (e) {
+        logToAndroid("Init error: " + (e && e.message ? e.message : e));
+        safeHangup();
+      }
+    }
+
+    window.hangupAndClose = function () {
+      try { api && api.executeCommand("hangup"); } catch (e) {}
+      safeHangup();
+    };
+
+    loadScript(server + "/external_api.js", init);
+</script>
+</body>
+</html>

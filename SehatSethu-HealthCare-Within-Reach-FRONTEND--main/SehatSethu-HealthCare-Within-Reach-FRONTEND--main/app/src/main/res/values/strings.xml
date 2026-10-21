@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =========================
+         EXISTING (DO NOT REMOVE)
+         ========================= -->
+
+    <!-- App -->
+    <string name="app_name">SehatSethu</string>
+    <string name="payment_title">Payment</string>
+    <string name="secure_payment_note">Secure payment • Encrypted</string>
+    <string name="amount_payable">Amount payable</string>
+    <string name="appointment_summary">Appointment summary</string>
+    <string name="choose_payment_method">Choose payment method</string>
+    <string name="pay_now">Pay now</string>
+    <string name="pay_upi">UPI</string>
+    <string name="pay_card">Credit / Debit card</string>
+    <string name="pay_netbanking">Net banking</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="upi_hint">name@bank</string>
+    <string name="card_details">Card details</string>
+    <string name="card_number">Card number</string>
+    <string name="card_name">Name on card</string>
+    <string name="expiry_mm_yy">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="bank_name">Bank name</string>
+    <string name="bank_hint">Type your bank</string>
+    <string name="payment_processing">Processing payment…</string>
+    <string name="payment_success">Payment successful</string>
+    <string name="payment_cancelled">Payment cancelled</string>
+
+    <string name="enter_valid_upi">Enter a valid UPI ID</string>
+    <string name="enter_valid_card">Enter a valid card number</string>
+    <string name="enter_card_name">Enter name on card</string>
+    <string name="enter_valid_expiry">Enter valid expiry (MM/YY)</string>
+    <string name="enter_valid_cvv">Enter a valid CVV</string>
+    <string name="enter_bank_name">Enter bank name</string>
+
+    <string name="pay_button_amount">Pay %1$s</string>
+    <string name="pay_amount_inline">Pay %1$s</string>
+    <string name="consultation_fee_value">Consultation fee: %1$s</string>
+
+    <string name="confirm_booking_message_with_payment">You will be asked to pay before booking is confirmed.</string>
+    <string name="fee_not_available">Consultation fee not available. Please go back and try again.</string>
+    <string name="pay_at_hospital_note">No advance payment needed. Please pay the consultation fee at the hospital reception counter during your visit. Bring this confirmation with you.</string>
+    <string name="appointment_confirmed_pay_at_hospital">Appointment confirmed! Please pay at the hospital counter.</string>
+
+    <string name="prescriptions_offline_subtitle_fmt">%1$d saved • Last updated %2$s</string>
+    <string name="prescriptions_offline_subtitle_nodate_fmt">%1$d saved</string>
+    <string name="prescriptions_session_expired_subtitle_fmt">%1$d saved • Session expired</string>
+    <string name="session_expired_login_again">Session expired. Please login again.</string>
+    <string name="offline_no_cache">You’re offline and no saved data is available.</string>
+
+    <!-- Languages -->
+    <string name="tamil">Tamil</string>
+    <string name="tamil_native">தமிழ்</string>
+    <string name="tamil_english">Tamil</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="pharmacist_registration">Pharmacist Registration</string>
+    <string name="pharmacy_details">Pharmacy Details</string>
+
+    <string name="your_full_name">Your Full Name</string>
+    <string name="pharmacy_name">Pharmacy Name</string>
+    <string name="drug_license_number">Drug License Number</string>
+    <string name="village_town">Village / Town</string>
+    <string name="full_address">Full Address</string>
+
+
+
+    <string name="hint_enter_your_name">Enter your name</string>
+    <string name="hint_pharmacy_name">e.g., Sharma Medical Store</string>
+    <string name="hint_drug_license">Enter your pharmacy license number</string>
+    <string name="hint_village">Enter your village name</string>
+    <string name="hint_address">Shop address for patients to find you</string>
+
+    <string name="hint_doctor_full_name">Dr. Full Name</string>
+    <string name="hint_specialization">e.g., General Physician, Cardiologist</string>
+    <string name="hint_registration_no">Enter your MCI/State registration number</string>
+    <string name="hint_practice_place">Where do you practice?</string>
+    <string name="hint_experience">e.g., 5</string>
+
+    <string name="selected">Selected</string>
+    <string name="language">Language</string>
+    <string name="patient_registration">Patient Registration</string>
+    <string name="tell_us_about_yourself">Tell us about yourself</string>
+    <string name="patient_reg_subtitle">This helps doctors provide better care</string>
+
+
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+
+    <string name="age">Age</string>
+    <string name="district">District</string>
+
+    <string name="complete_registration">Complete Registration</string>
+
+    <string name="hint_enter_your_age">Enter your age</string>
+    <string name="hint_enter_your_village_name">Enter your village name</string>
+    <string name="hint_enter_your_district">Enter your district</string>
+
+    <string name="err_max_docs_reached">You can upload only %1$d documents.</string>
+    <string name="min_docs_completed">Minimum documents completed.</string>
+
+    <string name="otp_verified_create_now">Email verified. Create your account now.</string>
+    <string name="otp_invalid_try_again">Invalid OTP. Please try again.</string>
+    <string name="punjabi">Punjabi</string>
+    <string name="punjabi_native">ਪੰਜਾਬੀ</string>
+
+    <string name="telugu">Telugu</string>
+    <string name="telugu_native">తెలుగు</string>
+
+
+
+    <string name="err_send_otp_first">Please tap Send OTP first</string>
+    <string name="err_verify_otp_first">Please verify OTP first</string>
+    <string name="err_enter_6_digit_otp">Please enter the 6-digit OTP</string>
+    <string name="err_email_changed_resend">Email changed. Please resend OTP.</string>
+    <string name="err_token_missing_resend">Verified, but token missing. Please resend OTP.</string>
+    <string name="err_create_account_failed">Could not create account</string>
+
+    <string name="account_created_next_step">Account created. Complete your registration.</string>
+    <string name="profile_saved">Profile saved successfully</string>
+    <string name="registration_submitted">Registration submitted. Waiting for admin verification.</string>
+
+    <string name="err_fill_all_fields">Please fill all required fields</string>
+    <string name="err_age_invalid">Enter a valid age</string>
+    <string name="err_experience_invalid">Enter valid experience</string>
+    <string name="err_submit_failed">Could not submit. Try again.</string>
+    <string name="err_check_status_failed">Could not check status</string>
+
+    <string name="still_under_review">Still under review</string>
+    <string name="verified_you_can_continue">Verified! You can continue.</string>
+    <string name="verification_rejected">Verification rejected. Please contact support.</string>
+
+    <!-- Pharmacist home -->
+    <string name="store">Store</string>
+    <string name="store_name">Sharma Medical Store</string>
+    <string name="verified_pharmacy">Verified Pharmacy</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="total_stock">Total Stock</string>
+    <string name="alerts">Alerts</string>
+    <string name="medicines">Medicines</string>
+    <string name="need_attention">Need attention</string>
+
+    <string name="sync">Sync</string>
+    <string name="sync_text">Stock synced • Last update: 5 min ago</string>
+    <string name="tap_to_sync">Tap to sync</string>
+
+    <string name="low_stock_alert">Low Stock Alert</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="low_stock">Low Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="out_of_stock_small">Out of stock</string>
+
+    <string name="recent_requests">Recent Requests</string>
+    <string name="view_all_5">View All ( 5 )</string>
+
+    <string name="add_stock">Add Stock</string>
+    <string name="update_inventory">Update inventory</string>
+    <string name="search">Search</string>
+    <string name="find_medicine">Find medicine</string>
+
+    <string name="home">Home</string>
+    <string name="stock">Stock</string>
+    <string name="requests">Requests</string>
+    <string name="profile">Profile</string>
+
+    <string name="medicine">Medicine</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+
+    <!-- Doctor registration -->
+    <string name="doctor_registration">Doctor Registration</string>
+    <string name="professional_details">Professional Details</string>
+    <string name="step_1_of_2">Step 1 of 2 - Basic Information</string>
+
+    <string name="full_name">Full Name (as per license) *</string>
+    <string name="full_name_hint">Dr. Full Name</string>
+
+    <string name="specialization">Specialization *</string>
+    <string name="spec_hint">e.g., General Physician, Cardiologist</string>
+
+    <string name="medical_registration">Medical Registration Number *</string>
+    <string name="reg_hint">Enter your MCI/State registration number</string>
+
+    <string name="hospital">Hospital / Clinic Name</string>
+    <string name="hospital_hint">Where do you practice?</string>
+
+    <string name="experience">Experience</string>
+    <string name="exp_hint">e.g., 5</string>
+
+    <string name="verify_continue">Verify &amp; Continue</string>
+    <string name="doctor">Doctor</string>
+
+    <string name="search_medicine">Search medicine…</string>
+
+    <!-- Verification pending (Pharmacist) -->
+    <string name="verification_pending">Verification Pending</string>
+    <string name="verification_desc">Your pharmacist documents are being reviewed. This usually takes 24–48 hours.</string>
+    <string name="submitted">Submitted</string>
+    <string name="under_review">Under Review</string>
+    <string name="verified">Verified</string>
+    <string name="what_happens_next">What happens next?</string>
+    <string name="check_status">Check Status</string>
+    <string name="pending">Pending</string>
+
+    <!-- Verification pending (Doctor) -->
+    <string name="verification_desc_doc">Your doctor documents are being reviewed. This usually takes 24–48 hours.</string>
+
+    <string name="what_next">What happens next?</string>
+    <string name="info_1">✓ Our team reviews your documents</string>
+    <string name="info_2">✓ We verify your registration number</string>
+    <string name="info_3">✓  get a notification when done</string>
+
+
+    <!-- =========================
+         NEW (FOR YOUR SCREENS)
+         ========================= -->
+
+    <!-- Common buttons -->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="continue_btn">Continue</string>
+    <string name="continue_arrow">Continue  &gt;</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Healthcare Within Reach</string>
+    <string name="splash_bottom">Connecting Rural India to Healthcare</string>
+
+    <!-- Language Select -->
+    <string name="choose_language_title">Choose Your Language</string>
+    <string name="choose_language_subtitle">अपनी भाषा चुनें •</string>
+
+    <!--  Missing keys your Kotlin file referenced -->
+    <string name="lang_title">Choose Your Language</string>
+    <string name="lang_subtitle">अपनी भाषा चुनें •</string>
+    <string name="lang_continue">Continue  &gt;</string>
+    <string name="select_language_toast">Please select a language</string>
+    <string name="select_role_toast">Please select a role</string>
+
+    <!-- Hindi native (for language card line 1) -->
+    <string name="hindi_native">हिन्दी</string>
+
+    <!-- Onboarding (3 pages) -->
+    <string name="onb1_title">Consult Doctors Without\nTravel</string>
+    <string name="onb1_desc">Video or audio consultations with verified doctors from your village. No need to travel far.</string>
+
+    <string name="onb2_title">Offline Records + Call Now</string>
+    <string name="onb2_desc">Access your health records even without internet. Use Call-Now when network is weak.</string>
+
+    <string name="onb3_title">Verified Doctors &amp;\nPharmacies</string>
+    <string name="onb3_desc">All doctors and pharmacists are verified with government IDs. Look for the verified badge for trust.</string>
+
+    <string name="verified_doctor_chip">Verified\nDoctor</string>
+    <string name="verified_pharmacy_chip">Verified\nPharmacy</string>
+
+    <!-- Role Select -->
+    <string name="choose_role_title">Choose Your Role</string>
+    <string name="choose_role_subtitle">Select how you want to use SehatSethu</string>
+
+    <string name="role_patient">Patient</string>
+    <string name="role_patient_desc">Book consultations &amp; access health records</string>
+
+    <string name="role_doctor">Doctor</string>
+    <string name="role_doctor_desc">Provide consultations &amp; manage patients</string>
+
+    <string name="role_pharmacist">Pharmacist</string>
+    <string name="role_pharmacist_desc">Manage medicine stock &amp; fulfill requests</string>
+
+    <string name="role_admin">Admin</string>
+    <string name="role_admin_desc">Verify doctors &amp; pharmacists</string>
+
+
+    <string name="login_top_title">Sign In</string>
+    <string name="login_heading">Welcome Back</string>
+    <string name="login_subheading">Sign in to continue to SehatSethu</string>
+    <string name="login_email_label">Email Address  *</string>
+    <string name="login_email_hint">your.email@example.com</string>
+    <string name="login_password_label">Password  *</string>
+    <string name="login_password_hint">Enter your password</string>
+    <string name="login_forgot">Forgot Password?</string>
+    <string name="login_btn">Sign In</string>
+    <string name="login_signup_link">Don/t have an account?  Sign Up</string>
+
+
+    <string name="signup_top_title">Create Account</string>
+    <string name="signup_role_pill_format">Signing up as   %1$s</string>
+    <string name="signup_heading">Welcome to SehatSethu</string>
+    <string name="signup_subheading">Create your account to get started</string>
+    <string name="signup_fullname_label">Full Name  *</string>
+    <string name="signup_fullname_hint">Enter your full name</string>
+    <string name="signup_email_label">Email Address  *</string>
+    <string name="signup_email_hint">your.email@example.com</string>
+    <string name="signup_password_label">Password  *</string>
+    <string name="signup_password_hint">Create a strong password</string>
+    <string name="signup_confirm_password_label">Confirm Password  *</string>
+    <string name="signup_confirm_password_hint">Re-enter your password</string>
+    <string name="signup_btn">Create Account</string>
+    <string name="signup_signin_link">Already have an account?  Sign In</string>
+    <string name="signup_terms">By creating an account, you agree to our Terms of Service and Privacy Policy</string>
+    <string name="signup_role_pill_placeholder">Signing up as</string>
+    <string name="toast_signing_in_as">Signing in as %1$s</string>
+
+    <string name="ok">OK</string>
+    <string name="loading">Loading…</string>
+    <string name="loading_signing_in">Signing in…</string>
+    <string name="loading_creating_account">Creating account…</string>
+    <string name="loading_sending">Sending…</string>
+
+    <string name="err_invalid_email">Please enter a valid email</string>
+
+    <string name="forgot_top_title">Forgot Password</string>
+    <string name="forgot_heading">Reset Password</string>
+    <string name="forgot_email_label">Email Address  *</string>
+    <string name="forgot_send_btn">Send Verification Code</string>
+    <string name="forgot_back_to_signin">Back to Sign In</string>
+
+
+    <string name="otp_top_title">Verify OTP</string>
+    <string name="otp_heading">Enter Verification Code</string>
+    <string name="otp_subtitle_format">We sent a 6-digit code to\n%1$s</string>
+    <string name="otp_subtitle_generic">We sent a 6-digit code to your email</string>
+    <string name="otp_resend">Resend code</string>
+
+    <string name="err_otp_incomplete">Please enter the full 6-digit code</string>
+    <string name="info_otp_not_supported_yet">OTP flow is not enabled on the server yet.</string>
+
+
+    <string name="err_all_fields_required">All fields are required</string>
+    <string name="err_email_required">Email is required</string>
+    <string name="err_email_password_required">Email and password are required</string>
+    <string name="err_password_mismatch">Passwords do not match</string>
+    <string name="err_password_min">Password must be at least 6 characters</string>
+    <string name="err_signup_failed">Registration failed</string>
+    <string name="err_login_failed">Login failed</string>
+
+
+
+
+    <string name="my_profile">My Profile</string>
+    <string name="profile_avatar">Profile avatar</string>
+
+    <string name="default_user_name">Admin User</string>
+    <string name="default_user_phone">+91 98765 43210</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="share_app">Share App</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="current_language">English</string>
+
+    <string name="on">On</string>
+
+    <string name="privacy_security">Privacy &amp; Security</string>
+
+    <string name="app_version_footer">Version 1.0.0 • SehatSethu</string>
+
+
+
+    <string name="verified_doctor">Verified doctor</string>
+
+    <string name="status_on">On</string>
+    <string name="coming_soon">Coming soon.</string>
+
+
+    <!-- Samples (can later be replaced with real user data) -->
+    <string name="sample_doctor_name">Dr. Rajesh Kumar</string>
+    <string name="sample_phone">+91 98765 43210</string>
+
+
+    <string name="welcome_back_comma">Welcome back,</string>
+    <string name="emergency_call">Emergency call</string>
+    <string name="emergency_call_now">Emergency? Call Now</string>
+    <string name="no_internet_required">No internet required</string>
+
+
+    <string name="what_do_you_need">What do you need?</string>
+
+    <string name="book_consultation">Book\nConsultation</string>
+    <string name="video_or_audio_call">Video or audio call</string>
+
+    <string name="ai_symptom_checker">AI Symptom\nChecker</string>
+    <string name="check_your_symptoms">Check your symptoms</string>
+
+    <string name="medicine_availability">Medicine\nAvailability</string>
+    <string name="find_nearby_pharmacies">Find nearby pharmacies</string>
+
+    <string name="health_records">Health Records</string>
+    <string name="view_prescriptions_and_reports">View prescriptions &amp; reports</string>
+
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="view_all">View All</string>
+
+
+
+
+    <string name="verify_title">Verify your email</string>
+    <string name="verify_message">We sent a verification link to:\n\n%1$s\n\nPlease verify your email first, then sign in.</string>
+    <string name="go_to_signin">Go to Sign In</string>
+
+    <string name="forgot_title">Forgot password</string>
+    <string name="forgot_desc">Enter your email and we’ll send you a reset link.</string>
+    <string name="forgot_sent_title">Email sent</string>
+    <string name="forgot_sent_default">If this email exists, we sent a reset link. Please check your inbox.</string>
+    <string name="forgot_failed">Failed to send reset email.</string>
+
+    <string name="email_hint">your.email@example.com</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+
+
+
+
+
+
+
+    <string name="otp_send">Send OTP</string>
+    <string name="otp_sent">OTP sent</string>
+    <string name="otp_resent">OTP resent</string>
+    <string name="otp_invalid">Enter valid 6-digit OTP</string>
+    <string name="otp_enter_title">Verification Code</string>
+    <string name="otp_sent_to">We sent a 6-digit code to %1$s</string>
+    <string name="otp_verify">Verify</string>
+    <string name="otp_resend_in">Resend code in %1$ds</string>
+    <string name="otp_resend_now">Resend code</string>
+    <string name="otp_resend_failed">Could not resend OTP</string>
+    <string name="otp_prompt_verify">Please verify OTP</string>
+
+    <string name="verify_done_message">Your email is verified. Please sign in.</string>
+
+
+
+
+    <string name="reset_top_title">Reset Password</string>
+    <string name="reset_heading">Create a new password</string>
+    <string name="reset_subheading">Choose a strong password to secure your account.</string>
+
+    <string name="reset_new_password_label">New Password</string>
+    <string name="reset_new_password_hint">Enter new password</string>
+
+    <string name="reset_confirm_password_label">Confirm Password</string>
+    <string name="reset_confirm_password_hint">Re-enter new password</string>
+
+    <string name="reset_rules">Must be at least 6 characters.</string>
+
+    <string name="reset_btn">Update Password</string>
+    <string name="reset_back_to_signin">Back to Sign In</string>
+    <string name="otp_send_first">Please send OTP first.</string>
+    <string name="otp_email_changed">Email changed. Please resend OTP for this email.</string>
+    <string name="otp_send_failed">Email changed. Please resend OTP for this email.</string>
+<string name="back">back</string>
+
+
+
+
+    <string name="forgot_subheading">Enter your email address and we/ll send you a verification code to reset your password.</string>
+    <string name="forgot_email_hint">your.email@example.com</string>
+    <string name="reset_success">Password updated successfully. Please sign in with your new password.</string>
+    <string name="reset_failed_generic">Could not update password. Please try again.</string>
+
+    <!-- Verify OTP -->
+    <string name="verify_otp_top_title">Verify OTP</string>
+    <string name="verify_otp_heading">Enter Verification Code</string>
+    <string name="verify_otp_subtitle_placeholder">We sent a 6-digit code to your email.</string>
+    <string name="verify_otp_btn">Verify Code</string>
+
+    <!-- Resend (optional helper text used as initial placeholder in XML) -->
+    <string name="otp_resend_in_57">Resend code in 57s</string>
+
+    <string name="logout">Logout</string>
+    <string name="logout_confirm_title">Logout</string>
+    <string name="logout_confirm_msg">Are you sure you want to logout?</string>
+
+    <string name="bookings">Bookings</string>
+    <string name="records">Records</string>
+
+
+
+
+    <string name="profile_details">Profile details</string>
+    <string name="verification_status">Verification status</string>
+    <string name="theme">Theme</string>
+    <string name="about">About</string>
+
+    <string name="profile_subtitle_admin">Account details, preferences and security.</string>
+    <string name="profile_subtitle_doctor">Profile, verification status, and preferences.</string>
+    <string name="profile_subtitle_patient">Account info, language, theme and logout.</string>
+    <string name="profile_subtitle_pharmacist">Profile, verification status, settings and logout.</string>
+    <!-- Optional common -->
+    <string name="settings">Settings</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="users">status</string>
+    <string name="reports">Reports</string>
+    <string name="patients">Patients</string>
+    <string name="consult">Consult</string>
+    <string name="schedule">Schedule</string>
+
+    <string name="change_language_title">Change language</string>
+    <string name="change_language_subtitle">Select your preferred language</string>
+
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="verification_panel">Verification Panel</string>
+
+
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="total">Total</string>
+
+
+    <string name="doctors">Doctors</string>
+    <string name="pharmacists">Pharmacists</string>
+
+    <string name="no_users_to_show">No users to show</string>
+
+
+    <string name="default_doctor_name">Dr. Doctor</string>
+    <string name="default_doctor_role">General Physician</string>
+    <string name="default_patient_name">No upcoming patient</string>
+    <string name="default_patient_meta">--</string>
+    <string name="default_patient_issue">--</string>
+
+
+
+
+    <string name="default_user_email">user@email.com</string>
+
+    <string name="profile_updated">Profile updated</string>
+    <string name="save">Save</string>
+
+    <string name="phone">Phone</string>
+
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">Hindi</string>
+    <string name="lang_tamil">Tamil</string>
+
+    <string name="privacy_info_text">Your data is stored securely. Only verified admins can access verification tools. Do not share OTPs or passwords.</string>
+
+    <string name="support_email">support@sehatsethu.app</string>
+    <string name="support_email_subject">SehatSethu Support</string>
+
+    <string name="no_email_app">No email app found</string>
+    <string name="unable_to_share">Unable to share right now</string>
+
+    <string name="share_app_text">Try SehatSethu.\n\nApp Id: %1$s</string>
+
+
+
+
+    <string name="reset_success_title">Password Reset Successful!</string>
+    <string name="reset_success_desc">Your password has been successfully reset.\nYou can now sign in with your new password.</string>
+    <string name="reset_success_btn">Go to Sign In</string>
+    <string name="reset_success_icon_cd">Success</string>
+
+    <string name="otp_sent_generic">OTP sent. Enter it below.</string>
+    <string name="err_verify_email_first">Please verify your email OTP first.</string>
+    <string name="err_fullname_required">Please enter your full name.</string>
+    <string name="signup_success">Account created successfully. Please sign in.</string>
+    <string name="signup_failed">Could not create account. Please try again.</string>
+    <string name="err_email_already_registered">This email is already registered. Please sign in.</string>
+    <string name="sample_patient_name">Ramesh Kumar</string>
+    <string name="active_user">Active user</string>
+
+    <string name="err_email_invalid">Please enter a valid email address.</string>
+    <string name="upload_images_title">Upload Images</string>
+    <string name="upload_images_desc">Share photos of symptoms, previous prescriptions, or test reports with your doctor</string>
+    <string name="examples">Examples:</string>
+    <string name="example_skin_condition">Skin condition</string>
+    <string name="example_previous_prescription">Previous prescription</string>
+    <string name="example_test_reports">Test reports</string>
+    <string name="no_images_uploaded">No images uploaded</string>
+    <string name="tap_buttons_to_add">Tap the buttons below to add photos</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="skip_for_now">Skip for Now</string>
+    <string name="verification_approved_subtitle_pharmacist">Congratulations! You are now a verified pharmacist on SehatSethu.</string>
+    <string name="verification_approved_subtitle_doctor">Congratulations! You are now a verified doctor on SehatSethu.</string>
+    <!-- ENGLISH (values/strings.xml) -->
+    <string name="err_role_mismatch_generic">This email is registered under a different role. Please go back and select the correct role.</string>
+    <string name="err_role_mismatch_expected">This email is registered as %1$s. Please switch role and try again.</string>
+    <string name="err_email_not_verified">Please verify your email OTP first.</string>
+    <string name="only_left_n">Only %1$d left</string>
+    <string name="err_gender_required">Please select your gender.</string>
+    <string name="err_village_required">Please enter your village/town.</string>
+    <string name="err_district_required">Please enter your district.</string>
+    <string name="request">Request</string>
+    <string name="selected_files_count">%1$d file(s) selected</string>
+    <string name="uploading_hint">Uploading to Medical History…</string>
+    <string name="saved_medical_history">Saved in Medical History</string>
+    <string name="availability_settings">Availability Settings</string>
+    <string name="set_your_working_hours">Set Your Working Hours</string>
+    <string name="patients_can_book_during_these_times">Patients can book appointments during these times</string>
+    <string name="enable_all_weekdays">Enable All Weekdays</string>
+    <string name="disable_all">Disable All</string>
+    <string name="availability_note">Note: Patients will see available slots based on your schedule. You can update this anytime.</string>
+    <string name="save_availability">Save Availability</string>
+    <string name="to">to</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+
+    <string name="calendar">Calendar</string>
+    <string name="consultation_type">Consultation Type</string>
+
+    <string name="select_time_slot">Select Time Slot</string>
+    <string name="select_date">Select Date</string>
+    <string name="confirm_booking">Confirm Booking</string>
+
+    <string name="audio_consultation">Audio Consultation</string>
+    <string name="video_consultation">Video Consultation</string>
+
+    <string name="month_year_default">January 2025</string>
+
+    <string name="select_speciality">Select Speciality</string>
+        <string name="what_type_of_doctor_do_you_need">What type of doctor do you need?</string>
+        <string name="select_a_specialty_to_find_available_doctors">Select a specialty to find available doctors</string>
+        <string name="find_doctors">Find Doctors</string>
+
+        <string name="verified_doctors_available">%1$d verified doctors available</string>
+        <string name="n_reviews">%1$d reviews</string>
+        <string name="n_minutes">%1$d minutes</string>
+
+        <string name="no_upcoming_appointments">No upcoming appointments.</string>
+
+        <string name="audio_call">Audio Call</string>
+        <string name="video_call">Video Call</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="success">Success</string>
+    <string name="booking_confirmed_title">Booking Confirmed!</string>
+    <string name="booking_confirmed_subtitle">Your consultation has been scheduled</string>
+    <string name="booking_id">Booking ID</string>
+    <string name="sample_doctor_specialty">General Physician</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="consultation_fee">Consultation Fee</string>
+    <string name="sample_fee_amount">₹200</string>
+    <string name="booking_tip">Tip: Join the call 5 minutes before your scheduled time. Keep your health records ready for the doctor.</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="doctor_list_title">Doctors</string>
+    <string name="search_doctors_hint">Search doctors...</string>
+      <string name="verified_doctors_available_sample">3 verified doctors available</string>
+    <string name="per_consultation">per consultation</string>
+    <string name="available_now">Available Now</string>
+    <string name="sample_consultations">2500 + consultations</string>
+    <string name="speciality_general">General Physician</string>
+    <string name="speciality_heart">Cardiology</string>
+    <string name="speciality_brain">Neurology</string>
+    <string name="speciality_bones">Orthopedics</string>
+    <string name="speciality_eyes">Ophthalmology</string>
+    <string name="speciality_child">Pediatrics</string>
+    <string name="speciality_skin">Dermatology</string>
+    <string name="speciality_lungs">Pulmonology</string>
+    <string name="speciality_diabetes">Diabetology</string>
+    <string name="speciality_fever">Fever Clinic</string>
+    <string name="speciality_medicine">General Medicine</string>
+    <string name="err_end_time_after_start">End time must be after start time.</string>
+    <string name="no_slots_available">No slots available</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hint_enter_phone">Enter your phone number</string>
+    <string name="err_phone_required">Phone number is required</string>
+    <string name="err_phone_invalid">Enter a valid phone number</string>
+    <string name="edit_profile_details">Edit profile</string>
+    <string name="edit_profile_subtitle">Update your name and mobile number.</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="update">Update</string>
+
+        <string name="filter_title">Sort doctors</string>
+        <string name="filter_recommended">Recommended</string>
+        <string name="filter_rating_high">Rating: High to Low</string>
+        <string name="filter_fee_low">Fee: Low to High</string>
+        <string name="filter_experience_high">Experience: High to Low</string>
+        <string name="filter_name_az">Name: A to Z</string>
+        <string name="no_verified_doctors_for_speciality">No verified doctors found for this speciality</string>
+    <string name="empty_doctors_title">No doctors available yet</string>
+    <string name="empty_doctors_desc">Verified doctors for this speciality will appear here once they are approved.</string>
+    <string name="no_results_title">No results found</string>
+    <string name="no_results_desc">We couldn’t find any doctors matching “%1$s”. Try a different keyword.</string>
+    <string name="clear_search">Clear search</string>
+    <string name="go_back">Go back</string>
+     <string name="mark_all_read">Mark all read</string>
+    <string name="no_notifications">No notifications yet</string>
+
+
+    <string name="search_medicine_name_hint">Search medicine name...</string>
+     <string name="manage_stock_subtitle">Update medicine quantities and keep availability accurate.</string>
+
+    <string name="total_items">Total items</string>
+    <string name="low_stock_items">Low stock items</string>
+    <string name="total_items_fmt">Total: %1$d</string>
+    <string name="low_stock_items_fmt">Low: %1$d</string>
+
+    <string name="stock_actions">Stock actions</string>
+    <string name="stock_actions_desc">Add medicines first, then update quantities anytime.</string>
+
+    <string name="add_medicine">Add Medicine</string>
+    <string name="medicine_name">Medicine name</string>
+    <string name="strength_optional">Strength (optional) e.g., 500mg</string>
+    <string name="quantity">Quantity</string>
+    <string name="reorder_level">Reorder level</string>
+    <string name="call_pharmacy">Call Pharmacy</string>
+     <string name="available">Available</string>
+     <string name="address">Address</string>
+    <string name="hours">Hours</string>
+    <string name="contact">Contact</string>
+    <string name="open_now">● Open Now</string>
+    <string name="closed_now">● Closed Now</string>
+    <string name="reviews_count">%1$d reviews</string>
+    <string name="distance_km">%.1f km away</string>
+    <string name="in_stock_qty">In Stock (%1$d)</string>
+    <string name="low_stock_qty">Low Stock (%1$d)</string>
+    <!-- English -->
+    <string name="add_medicine_tip">Start typing, then select the medicine from the list.</string>
+    <string name="save_add_another">Save &amp; Add another</string>
+    <string name="save_close">Save &amp; Close</string>
+    <!-- English -->
+    <string name="select_medicine_from_dropdown">Please select a medicine from the dropdown list.</string>
+    <string name="medicine_saved_add_another">Medicine saved. Add another one.</string>
+    <string name="medicine_saved">Medicine saved successfully.</string>
+    <!-- English -->
+    <string name="swipe_to_refresh_hint">Swipe down to refresh</string>
+    <string name="refreshed">Updated</string>
+    <string name="booked">Booked</string>
+    <string name="already_booked_with_doctor">You already have an upcoming appointment with this doctor.</string>
+
+    <string name="failed_to_load_appointment_details">Failed to load appointment details</string>
+    <string name="confirm_booking_title">Confirm booking</string>
+    <string name="confirm_booking_message">Are you sure you want to book this appointment?</string>
+    <string name="confirm_booking_cta_cancel">Cancel</string>
+    <string name="confirm_booking_cta_yes">Yes, book</string>
+
+
+    <string name="no_medicines_yet">No medicines added yet</string>
+    <string name="no_medicines_yet_desc">Add your first medicine item to start updating stock.</string>
+    <string name="update_stock_desc">Search medicines and adjust quantities using quick controls.</string>
+    <string name="open_update_stock">Open Update Stock</string>
+
+    <string name="set_quantity">Set Quantity</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="invalid_quantity">Please enter a valid quantity.</string>
+
+    <string name="stock_low_fmt">Low Stock (%1$d)</string>
+    <string name="stock_out_fmt">Out of Stock (%1$d)</string>
+    <string name="stock_in_fmt">In Stock (%1$d)</string>
+    <string name="showing_pharmacies_near">Showing pharmacies near</string>
+    <string name="sample_location_ludhiana_village">Ludhiana Village</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="popular_medicines">Popular Medicines</string>
+
+    <string name="med_paracetamol">Paracetamol</string>
+    <string name="med_cetirizine">Cetirizine</string>
+    <string name="med_vitamin_c">Vitamin C</string>
+    <string name="med_cough_syrup">Cough Syrup</string>
+    <string name="med_azithromycin">Azithromycin</string>
+    <string name="med_omeprazole">Omeprazole</string>
+
+
+    <string name="speciality_emergency">Emergency</string>
+
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+
+
+    <string name="err_pick_specialization_from_list">Please select specialization from the list.</string>
+    <string name="err_upload_medical_license_required">Please upload Medical License to continue.</string>
+    <string name="err_enter_full_name">Please enter your full name.</string>
+    <string name="err_enter_specialization">Please enter your specialization.</string>
+    <string name="err_enter_reg_no">Please enter your registration number.</string>
+    <string name="err_enter_hospital">Please enter your hospital / clinic name.</string>
+    <string name="err_enter_experience">Please enter your experience (years).</string>
+    <string name="err_enter_valid_experience">Please enter a valid experience value.</string>
+
+
+
+
+    <string name="available_slots">Available Slots</string>
+    <string name="education">Education</string>
+    <string name="works_at">Works at</string>
+    <string name="languages">Languages</string>
+
+    <string name="fee">Fee</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <string name="years">years of</string>
+    <string name="fetching_location">Fetching location…</string>
+    <string name="location_unavailable">Location unavailable</string>
+    <string name="enable_location_permission">Enable location permission to show nearby pharmacies</string>
+    <string name="near_you">Near you</string>
+    <string name="distance_km_short">%.1f km</string>
+    <string name="distance_unknown">—</string>
+    <string name="docs_count_pill">Documents: %1$d (min %2$d)</string>
+    <string name="docs_min_error">Please upload at least %1$d document(s).</string>
+    <string name="network_error">Network error</string>
+    <string name="bookings_title">Bookings</string>
+    <string name="bookings_subtitle">Track your upcoming and past appointments.</string>
+
+    <string name="tab_upcoming">Upcoming</string>
+    <string name="tab_past">Past</string>
+    <string name="tab_all">All</string>
+
+    <string name="bookings_empty_title">No appointments</string>
+    <string name="bookings_empty_upcoming_title">No upcoming appointments</string>
+    <string name="bookings_empty_past_title">No past appointments</string>
+    <string name="bookings_empty_all_title">No appointments yet</string>
+    <string name="bookings_empty_hint">Your appointments will appear here after you book.</string>
+
+     <string name="unread">Unread</string>
+    <string name="all_caught_up">All caught up</string>
+      <string name="no_unread_notifications">You are all caught up! No unread notifications.</string>
+      <string name="view_details">View Details</string>
+    <string name="view_prescription">View Prescription</string>
+    <string name="what_symptoms_do_you_have">What symptoms do you have?</string>
+    <string name="symptom_select_subtitle">Select or describe your symptoms for AI analysis</string>
+    <string name="common_symptoms">Common Symptoms</string>
+    <string name="or_describe_in_your_words">Or describe in your words</string>
+    <string name="symptom_hint_example">e.g., I have had fever for 2 days with body pain</string>
+    <string name="analyze_symptoms">Analyze Symptoms</string>
+    <string name="ai_note">Note: This AI tool provides general guidance only. It is not a substitute for professional medical advice. Always consult a doctor for proper diagnosis.</string>
+    <string name="note">Note</string>
+    <string name="mic">Mic</string>
+    <string name="mic_permission_needed">Microphone permission is needed for voice input.</string>
+    <string name="voice_not_available">Voice input is not available on this device.</string>
+
+    <string name="symptom_fever">Fever</string>
+    <string name="symptom_cough">Cough</string>
+    <string name="symptom_headache">Headache</string>
+    <string name="symptom_stomach_pain">Stomach Pain</string>
+    <string name="symptom_cold">Cold</string>
+    <string name="symptom_tiredness">Tiredness</string>
+    <string name="symptom_body_pain">Body Pain</string>
+    <string name="symptom_sore_throat">Sore Throat</string>
+
+    <string name="ai_guidance_title">AI Guidance</string>
+    <string name="ai_insight_empty">Please select at least one symptom or describe your symptoms.</string>
+    <string name="book_consultation_action">Book Consultation</string>
+
+    <string name="ai_selected_symptoms">Selected symptoms: %1$s</string>
+    <string name="ai_you_described">You described: %1$s</string>
+    <string name="ai_possible_causes_title">Possible causes (general):</string>
+    <string name="ai_self_care_title">Self-care (general):</string>
+    <string name="ai_seek_help_title">Seek urgent help if you have:</string>
+    <string name="ai_disclaimer_short">This is general guidance, not a diagnosis.</string>
+
+    <string name="ai_possible_respiratory">Common cold / viral respiratory infection (varies by person)</string>
+    <string name="ai_possible_digestive">Digestive upset / gastritis (can have many causes)</string>
+    <string name="ai_possible_fever_headache">Fever with headache (monitor closely; consider consultation)</string>
+    <string name="ai_possible_fatigue">Fatigue / low energy (rest, hydration; consult if persistent)</string>
+    <string name="ai_possible_general">Symptoms can have multiple causes; a doctor can guide best.</string>
+
+    <string name="ai_selfcare_rest">Rest and avoid overexertion</string>
+    <string name="ai_selfcare_fluids">Drink fluids and eat light meals</string>
+    <string name="ai_selfcare_monitor">Monitor temperature and symptoms over time</string>
+
+    <string name="ai_redflag_breathing">Difficulty breathing or severe shortness of breath</string>
+    <string name="ai_redflag_chest_pain">Chest pain, fainting, or confusion</string>
+    <string name="ai_redflag_dehydration">Severe vomiting, blood, or signs of dehydration</string>
+    <string name="ai_redflag_high_fever">High fever lasting more than 3 days</string>
+    <string name="price_amount">Price</string>
+    <string name="price_inr_hint">Price (₹)</string>
+    <string name="invalid_price">Invalid price</string>
+    <string name="analysis_results">Analysis Results</string>
+    <string name="possible_conditions">Possible Conditions</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="suggested_action">Suggested Action</string>
+    <string name="save_to_health_records">Save to Health Records</string>
+    <string name="analysis_disclaimer_footer">This analysis is AI-generated and should not replace professional medical advice. Always consult a qualified healthcare provider for diagnosis and treatment.</string>
+    <string name="match_percent">%1$d%% match</string>
+
+    <string name="medium_urgency">Medium Urgency</string>
+    <string name="urgency_24_48">We recommend consulting a doctor within 24-48 hours</string>
+
+    <string name="rec_rest_hydrated">Rest and stay hydrated</string>
+    <string name="rec_otc_if_needed">Take over-the-counter fever medicine if needed</string>
+    <string name="rec_monitor_2_3">Monitor symptoms for 2-3 days</string>
+    <string name="rec_consult_if_worse">Consult a doctor if symptoms worsen</string>
+    <string name="starting_video_call">Starting video call…</string>
+    <string name="calling_doctor">Calling doctor…</string>
+    <string name="opening_dialer">Opening dialer…</string>
+    <string name="doctor_phone_missing">Doctor phone number not available.</string>
+    <string name="ai_action_based_on_symptoms">Based on your symptoms, we recommend consulting a %1$s.</string>
+    <string name="speciality_general_physician">General Physician</string>
+    <string name="speciality_gastro">Gastroenterologist</string>
+    <string name="speciality_ent">ENT Specialist</string>
+    <string name="speciality_neuro">Neurologist</string>
+    <string name="ai_saved_locally">Saved locally.</string>
+    <string name="ai_no_saved_result">No saved result found.</string>
+
+    <string name="cond_viral_urti">Viral respiratory infection (cold/flu-like)</string>
+    <string name="cond_note_viral_urti">Often improves with rest and fluids. Watch for worsening.</string>
+    <string name="cond_common_cold">Common cold</string>
+    <string name="cond_note_common_cold">Usually mild. Hydrate and rest.</string>
+    <string name="cond_gastric">Stomach upset / gastritis</string>
+    <string name="cond_note_gastric">Avoid oily/spicy foods; hydrate. Seek care if severe.</string>
+    <string name="cond_tension_headache">Tension-type headache</string>
+    <string name="cond_note_tension_headache">Rest, hydration, and reducing screen strain may help.</string>
+    <string name="cond_fatigue">General fatigue</string>
+    <string name="cond_note_fatigue">Rest and hydrate. Consider consultation if persistent.</string>
+    <string name="cond_general">General symptom pattern</string>
+    <string name="cond_note_general">Monitor symptoms and consult a doctor if needed.</string>
+
+    <string name="low_urgency">Low Urgency</string>
+    <string name="urgency_self_care">Self-care is usually enough. Consult if not improving.</string>
+    <string name="high_urgency">High Urgency</string>
+    <string name="urgency_now">Seek medical help as soon as possible.</string>
+    <!-- EN -->
+    <string name="call_quality_good">Good</string>
+    <string name="showing_all">Showing: All</string>
+    <string name="showing_unread">Showing: Unread</string>
+    <string name="notification">Notification</string>
+
+    <string name="patient">Patient</string>
+
+    <string name="close">Close</string>
+    <string name="view">View</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="pending_requests_count">%1$d pending requests</string>
+    <string name="quantity_value">Qty: %1$d</string>
+    <string name="marked_available">Marked as available</string>
+    <string name="in_stock_badge">In Stock</string>
+    <string name="low_stock_badge">Low Stock</string>
+    <string name="out_of_stock_badge">Out of Stock</string>
+    <string name="no_phone">No phone</string>
+    <string name="request_and_call">Request &amp; Call</string>
+    <string name="select_medicine">Select Medicine</string>
+    <string name="view_all_n">View All (%1$d)</string>
+    <string name="looking_for_fmt">Looking for: %1$s</string>
+
+    <string name="todays_appointments">Today\'s Appointments</string>
+
+    <string name="next_patient">NEXT PATIENT</string>
+    <string name="start_consultation">Start Consultation</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+
+    <string name="doctor_patients_fmt">%1$d patients</string>
+    <string name="doctor_completed_fmt">%1$d completed</string>
+    <string name="doctor_amount_fmt">₹ %1$d</string>
+    <string name="doctor_rating_fmt">⭐ %1$s rating</string>
+
+    <string name="mark_read">Mark read</string>
+
+    <string name="unread_chip_fmt">Unread (%1$d)</string>
+    <string name="unread_count_fmt">%1$d unread</string>
+    <string name="minutes_ago_fmt">%1$d min ago</string>
+    <string name="hours_ago_fmt">%1$d hour ago</string>
+    <string name="yesterday">Yesterday</string>
+
+    <string name="starting_in_min_fmt">Starting in %1$d min</string>
+    <string name="starting_now">Starting now</string>
+    <string name="starting_unknown">Starting soon</string>
+
+    <string name="unknown_gender">Unknown</string>
+    <string name="patient_meta_fmt">%1$d yrs, %2$s</string>
+    <string name="patient_meta_no_age_fmt">%1$s</string>
+
+      <string name="your_appointments">Your appointments (upcoming &amp; past)</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="no_appointments">No appointments found</string>
+
+
+    <string name="status_booked">Booked</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_rejected">Rejected</string>
+
+    <string name="booking_code_fmt">Code: %1$s</string>
+
+    <!-- preview-only samples (not shown in runtime if you want to remove later) -->
+    <string name="bookings_meta_sample">GENERAL_PHYSICIAN • AUDIO</string>
+    <string name="bookings_when_sample">Mon, 30 Dec • 10:30 AM</string>
+    <string name="consultations">Consultations</string>
+    <string name="total_count_fmt">%1$d total</string>
+
+    <string name="completed">Completed</string>
+    <string name="search_patients">Search patients...</string>
+    <string name="no_consultations">No consultations found</string>
+    <string name="done">Done</string>
+    <string name="view_patient_records">View patient records</string>
+    <string name="manage_availability">Manage availability</string>
+    <string name="medicine_search_title">Medicine Search</string>
+    <string name="medicine_count_fmt">%1$d medicines</string>
+    <string name="search_medicines_hint">Search medicines (name or strength)</string>
+
+       <string name="in_stock">In stock</string>
+    <string name="strength_not_specified">Strength not specified</string>
+
+    <string name="no_inventory_title">No inventory yet</string>
+    <string name="no_inventory_sub">Add medicines in Update Stock to see them here.</string>
+
+    <string name="no_results_sub">Try a different keyword or change the filter.</string>
+
+    <string name="updated_ago_fmt">Updated %1$s</string>
+    <string name="updated_unknown">Updated —</string>
+    <string name="price_updated_fmt">Price: ₹ %1$s • %2$s</string>
+
+    <string name="no_low_stock_title">No low stock alerts</string>
+    <string name="no_low_stock_sub">All items are sufficiently stocked right now.</string>
+    <string name="no_recent_requests_title">No recent requests</string>
+    <string name="no_recent_requests_sub">When a patient requests a medicine, it will appear here.</string>
+    <string name="request_fulfilled_toast">Request marked as fulfilled</string>
+    <string name="request_fulfilled">Request Fulfilled</string>
+    <string name="request_fulfilled_body_fmt">Medicine request #%1$s has been marked as fulfilled</string>
+    <string name="no_medicine_requests">No medicine requests</string>
+    <string name="no_medicine_requests_sub">You are all caught up. New requests will appear here.</string>
+    <string name="my_prescriptions">My Prescriptions</string>
+    <string name="prescription">Prescription</string>
+    <string name="create_prescription">Create Prescription</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="add">Add</string>
+    <string name="missing_patient_id">Missing patient id</string>
+    <string name="prescription_saved">Prescription saved</string>
+    <string name="failed_to_save_prescription">Failed to save prescription</string>
+    <string name="permissions_required_title">Permissions required</string>
+    <string name="permissions_required_message">To use all features (camera, microphone, location, phone, media, notifications), please allow permissions. You can enable them in Settings.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="retry">Retry</string>
+    <string name="doctor_no_appointments_today">No appointments scheduled for today.</string>
+    <string name="enable_mic_camera_to_join">Enable microphone and camera access to join the call.</string>
+    <string name="patient_record_title">Patient Record</string>
+    <string name="total_visits_label">Total Visits</string>
+    <string name="last_visit_label">Last Visit</string>
+    <string name="medical_history_title">Medical History</string>
+    <string name="recent_prescriptions_title">Recent Prescriptions</string>
+    <string name="vitals_history_title">Vitals History</string>
+    <string name="record_vitals_title">Record Vitals</string>
+    <string name="add_health_measurements">Add Your Health Measurements</string>
+    <string name="add_health_measurements_sub">Enter your vital signs to track your health over time</string>
+
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="systolic_top_number">Systolic (top number)</string>
+    <string name="diastolic_bottom_number">Diastolic (bottom)</string>
+    <string name="mmhg_hint">mmHg (e.g., 120/80)</string>
+
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="mgdl_hint">mg/dL (e.g., 95)</string>
+    <string name="fasting">Fasting</string>
+    <string name="after_meal">After Meal</string>
+    <string name="random">Random</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="temp_hint_f">°F (e.g., 98.6)</string>
+
+    <string name="weight">Weight</string>
+    <string name="weight_hint_kg">kg (e.g., 70)</string>
+
+    <string name="additional_notes_optional">Additional Notes (Optional)</string>
+    <string name="notes_hint">Any symptoms or observations…</string>
+
+    <string name="save_vitals">Save Vitals</string>
+
+    <string name="vitals_enter_any_value">Enter at least one value to save.</string>
+    <string name="vitals_bp_both_required">Enter both systolic and diastolic.</string>
+    <string name="vitals_saved_offline">Saved.</string>
+    <string name="vitals_saved_online">Saved.</string>
+    <string name="vitals_will_sync_later">Saved locally. Will sync when online.</string>
+    <string name="patient_record">Patient Record</string>
+    <string name="total_visits">Total Visits</string>
+    <string name="last_visit">Last Visit</string>
+    <string name="medical_history">Medical History</string>
+    <string name="recent_prescriptions">Recent Prescriptions</string>
+    <string name="vitals_history">Vitals History</string>
+    <string name="no_prescriptions_yet">No prescriptions yet</string>
+    <string name="no_vitals_yet">No vitals recorded yet</string>
+    <string name="vitals_bp">BP</string>
+    <string name="chronic_conditions">Chronic Conditions</string>
+    <string name="allergies">Allergies</string>
+    <string name="none">None</string>
+    <string name="consultation_summary">Consultation Summary</string>
+    <string name="consultation_completed">Consultation Completed</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="finished">Finished</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="missed">Missed</string>
+
+    <string name="consultation_is_live">Consultation is live</string>
+    <string name="consultation_finished">Consultation completed</string>
+    <string name="appointment_was_cancelled">This appointment was cancelled</string>
+    <string name="appointment_was_missed">You missed this consultation</string>
+    <string name="consultation_unavailable">Consultation is not available</string>
+
+    <string name="prescribed_on_fmt">Prescribed on  %1$s</string>
+
+    <string name="duration_label">Duration</string>
+    <string name="duration_fmt">Duration:  %1$s</string>
+    <string name="no_prescription_found">No prescription found</string>
+    <string name="no_medicines">No medicines</string>
+    <string name="export_failed">Export failed</string>
+    <string name="share_failed">Share failed</string>
+    <string name="download_saved">Saved</string>
+
+    <string name="doctors_notes">Doctors Notes</string>
+    <string name="prescribed_medicines">Prescribed Medicines</string>
+    <string name="view_full_prescription">View Full Prescription</string>
+    <string name="follow_up_recommended">Follow-up Recommended</string>
+    <string name="follow_up_default">If symptoms persist after 5 days</string>
+    <string name="download">Download</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="share">Share</string>
+
+    <string name="duration_minutes_fmt">%d minutes</string>
+    <string name="duration_minutes_unknown">Duration unknown</string>
+    <string name="consultation_summary_unavailable">Not available</string>
+
+    <string name="vitals_sugar">Sugar</string>
+    <string name="vitals_temp">Temp</string>
+    <string name="vitals_weight">Weight</string>
+    <string name="vitals_no_values">No vitals values</string>
+    <string name="sugar_fasting">Fasting</string>
+    <string name="sugar_after_meal">After Meal</string>
+    <string name="sugar_random">Random</string>
+
+
+
+    <string name="show_more">Show more</string>
+    <string name="show_less">Show less</string>
+    <string name="no_prescriptions">No prescriptions available</string>
+
+    <string name="invalid_patient">Invalid patient</string>
+    <string name="failed_to_load">Failed to load</string>
+    <string name="no_active_appointment">No active appointment to start consultation</string>
+    <string name="location_unknown">Location not available</string>
+    <string name="years_short">yrs</string>
+    <string name="date_unknown">Date not available</string>
+
+    <plurals name="items_count_fmt">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <string name="search_or_type_medicine">Search or type medicine name</string>
+    <string name="dosage">Dosage</string>
+    <string name="frequency">Frequency</string>
+    <string name="duration">Duration</string>
+    <string name="special_instructions_optional">Special Instructions (optional)</string>
+    <string name="eg_take_after_meals">e.g., Take after meals</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="any_additional_instructions">Any additional instructions for the patient…</string>
+    <string name="followup_recommendation">Follow-up Recommendation</string>
+    <string name="eg_after_5_days">e.g., After 5 days if symptoms persist</string>
+    <string name="send_prescription">Send Prescription</string>
+
+    <string name="enter_diagnosis">Enter diagnosis</string>
+    <string name="enter_medicine_name">Enter medicine name</string>
+    <string name="select_dosage_frequency_duration">Select dosage, frequency and duration</string>
+    <string name="add_at_least_one_medicine">Add at least one medicine</string>
+    <string name="prescription_sent">Prescription sent</string>
+
+
+    <string name="patient_meta_placeholder">Age, Gender • Location</string>
+
+    <string name="dosage_1_tablet">1 tablet</string>
+    <string name="dosage_2_tablet">2 tablets</string>
+    <string name="dosage_5_ml">5 ml</string>
+    <string name="dosage_10_ml">10 ml</string>
+
+    <string name="freq_once_daily">Once daily</string>
+    <string name="freq_twice_daily">Twice daily</string>
+    <string name="freq_thrice_daily">Thrice daily</string>
+
+    <string name="duration_3_days">3 days</string>
+    <string name="duration_5_days">5 days</string>
+    <string name="duration_7_days">7 days</string>
+    <string name="duration_10_days">10 days</string>
+    <string name="general_physician">General Physician</string>
+
+    <string name="search_prescriptions">Search prescriptions...</string>
+    <string name="no_prescriptions_found">No prescriptions found</string>
+
+    <string name="prescriptions_count_fmt">%1$d prescriptions</string>
+    <string name="prescriptions_count_fmt_0">0 prescriptions</string>
+
+    <string name="medicines_count_fmt">%1$d medicines</string>
+    <string name="my_patients">My Patients</string>
+    <string name="syncing">Syncing…</string>
+    <string name="just_now">Just now</string>
+    <string name="seconds_ago">%1$d sec ago</string>
+    <string name="last_updated_ago_fmt">Last updated %1$s</string>
+    <string name="minute_ago">1 min ago</string>
+    <string name="minutes_ago">%1$d min ago</string>
+    <string name="hour_ago">1 hour ago</string>
+    <string name="hours_ago">%1$d hours ago</string>
+    <string name="day_ago">1 day ago</string>
+    <string name="days_ago">%1$d days ago</string>
+    <string name="all">All</string>
+    <string name="active">Active</string>
+    <string name="recovered">Recovered</string>
+
+    <string name="total_patients_fmt">%1$d total patients</string>
+    <string name="total_patients_fmt_3">3 total patients</string>
+
+    <string name="status_active_pill">● Active</string>
+    <string name="status_recovered_pill">✓ Recovered</string>
+
+    <string name="last_visit_today">Last visit: Today</string>
+    <string name="last_visit_week_ago">Last visit: 1 week ago</string>
+    <string name="last_visit_weeks_ago">Last visit: %1$d weeks ago</string>
+    <string name="last_visit_days_ago">Last visit: %1$d days ago</string>
+    <string name="last_visit_unknown">Last visit: —</string>
+
+    <string name="no_patients_found">No patients found</string>
+
+
+    <string name="starting_soon">Starting Soon!</string>
+    <string name="consultation_begins_in">Your consultation begins in</string>
+    <string name="five_minutes">5 minutes</string>
+    <string name="start_consultation_now">Start Consultation Now</string>
+
+    <string name="appointment_id">Appointment ID</string>
+    <string name="date_time">Date &amp; Time</string>
+     <string name="your_symptoms">Your Symptoms</string>
+
+    <string name="before_your_consultation">Before Your Consultation</string>
+
+    <string name="tip_keep_records">• Keep your health records ready</string>
+    <string name="tip_quiet_place">• Find a quiet place for the call</string>
+    <string name="tip_pen_paper">• Have a pen and paper for notes</string>
+
+
+    <string name="sample_place">District Hospital, Ludhiana</string>
+    <string name="sample_date_time">Today, January 15, 2025</string>
+    <string name="sample_time_meta">4:00 PM   (15 minutes)</string>
+    <string name="sample_symptoms">Fever, body pain for 2 days</string>
+
+        <!-- Extra strings used in HomeFragment layout -->
+        <string name="our_services">Our Services</string>
+        <string name="emergency_help">Emergency Help</string>
+        <string name="emergency_help_sub">Call 108 for immediate assistance</string>
+        <string name="call_now">Call Now</string>
+
+
+        <string name="medicine_delivery">Medicine Delivery</string>
+        <string name="medical_records">Medical Records</string>
+
+
+
+
+    <!-- values/strings.xml (EN) -->
+    <string name="verification_approved_title">Verification Approved!</string>
+    <string name="verification_approved_subtitle">Congratulations! You are now a verified pharmacist on SehatSethu.</string>
+   <string name="continue_to_dashboard">Continue to Dashboard</string>
+
+
+    <string name="otp_sent_toast">OTP sent to %1$s. Please enter it below.</string>
+    <string name="otp_resent_toast">OTP resent to %1$s.</string>
+
+    <string name="email_already_registered_signin">This email is already registered. Please sign in to continue.</string>
+
+    <string name="default_pharmacy_name">Sharma Pharmacy</string>
+
+    <string name="verified_pharmacist">Verified pharmacist</string>
+    <string name="otp_verify_first">Please verify OTP first.</string>
+    <string name="err_email_changed_resend_otp">Email changed. Please request OTP again.</string>
+     <string name="account_created_signin">Account created! Please sign in.</string>
+
+    <string name="err_user_not_found">No user found with this email.</string>
+    <string name="err_invalid_credentials">Incorrect email or password.</string>
+    <string name="err_login_missing_token">Login response missing token.\n(%1$s)</string>
+    <string name="doctor_registration_title">Doctor Application</string>
+    <string name="doctor_registration_subtitle">Submit your details for verification</string>
+    <string name="applied_today">Applied: Today</string>
+
+    <string name="application_details">Application Details</string>
+    <string name="doctor_reg_hint">Fill all details and upload required documents. Admin will verify and approve.</string>
+
+    <string name="hint_phone">Phone</string>
+
+    <string name="uploaded_documents">Uploaded Documents</string>
+    <string name="upload_docs_hint">Upload clear photos/PDF. All documents must match the application.</string>
+
+    <string name="upload">Upload</string>
+    <string name="doc_not_uploaded">Not uploaded</string>
+
+    <string name="doc_medical_license">Medical License</string>
+    <string name="doc_aadhaar">Aadhaar Card</string>
+    <string name="doc_mbbs">MBBS Certificate</string>
+
+    <string name="verification_checklist">Verification Checklist</string>
+    <string name="check_regno">Registration number verified with council</string>
+    <string name="check_identity">Identity documents match application</string>
+    <string name="check_degree">Degree certificate is authentic</string>
+
+    <string name="doc_selected_format">Selected: %1$s</string>
+    <string name="err_doc_invalid_type">Only PDF / JPG / PNG allowed.</string>
+    <string name="err_doc_too_large">File too large. Max 5 MB.</string>
+    <string name="err_pick_doc">Could not read the file. Please pick again.</string>
+    <string name="please_login_again">Please login again</string>
+    <string name="no_pending_verifications">No pending verifications</string>
+    <string name="no_pending_verifications_hint">Doctors/Pharmacists will appear here after they submit their details.</string>
+    <string name="try_refresh_hint">Pull to refresh or check again later.</string>
+    <string name="admin_users_title">Admin • Users</string>
+    <string name="no_users_found">No users found</string>
+    <string name="no_users_found_hint">Doctors and pharmacists will appear here after they submit their details.</string>
+    <string name="users_count">%1$d users</string>
+    <string name="unverified">Unverified</string>
+
+
+
+    <string name="upload_file">Upload file</string>
+    <string name="take_photo">Take photo</string>
+
+
+
+    <string name="remove">Remove</string>
+    <string name="failed">Failed</string>
+    <string name="already_added">Already added</string>
+    <string name="docs_help_types_size">Accepted: PDF/JPG/PNG • Max 10 MB each</string>
+    <string name="documents_0_min_3">Documents: %1$d (min 1)</string>
+
+    <string name="please_upload_min_3_docs">Please upload at least 1 supporting documents.</string>
+    <string name="no_documents_added_yet">No documents added yet.</string>
+    <string name="add_document">Add document</string>
+    <string name="upload_documents">Upload documents</string>
+    <string name="tap_to_choose_or_take_photo">Tap to choose a file or take a photo</string>
+    <!-- if you want a title (optional) -->
+    <string name="supporting_documents_min_3">Supporting documents (min 1)</string>
+    <string name="please_wait">Please Wait!</string>
+    <string name="couldnt_load_data">Couldn’t load data</string>
+    <string name="please_try_again">Please try again.</string>
+    <string name="pharmacist">Pharmacist</string>
+    <string name="docs_count">%1$d docs</string>
+    <string name="time_just_now">Just now</string>
+    <string name="time_minutes_ago">%1$d minutes ago</string>
+    <string name="time_hours_ago">%1$d hours ago</string>
+    <string name="time_days_ago">%1$d days ago</string>
+    <string name="no_results">No results</string>
+    <string name="license_number">License Number</string>
+    <string name="hospital_or_store">Hospital / Store</string>
+    <string name="please_upload_min_docs">Please upload at least %1$d document(s).</string>
+    <string name="documents_count_format">Documents: %1$d (min %2$d)</string>
+    <string name="doc_degree_certificate">Degree Certificate</string>
+    <string name="document_1">Document 1</string>
+    <string name="document_2">Document 2</string>
+    <string name="document_3">Document 3</string>
+    <string name="reason_optional">Reason (optional)</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="emergency_title">Emergency?</string>
+    <string name="emergency_subtitle">For medical emergencies, call our 24/7 helpline</string>
+    <string name="emergency_helpline">Emergency\nHelpline</string>
+    <string name="emergency_number_block">(  1800-\nXXX-\nXXXX  )</string>
+
+    <string name="contact_support">Contact Support</string>
+    <string name="call_support">Call Support</string>
+    <string name="helpline_available_247">24/7 helpline available</string>
+    <string name="chat_with_us">Chat with Us</string>
+    <string name="get_instant_help">Get instant help</string>
+    <string name="email_support">Email Support</string>
+
+
+    <string name="help_resources">Help Resources</string>
+    <string name="user_guide">User Guide</string>
+    <string name="learn_how_to_use_app">Learn how to use the app</string>
+    <string name="video_tutorials">Video Tutorials</string>
+    <string name="watch_step_by_step_guides">Watch step-by-step guides</string>
+    <string name="faqs">FAQs</string>
+    <string name="common_questions_answered">Common questions answered</string>
+
+    <string name="common_issues">Common Issues</string>
+    <string name="issue_book_consultation">How do I book a consultation?</string>
+    <string name="issue_upload_documents">How to upload documents?</string>
+
+    <string name="issue_offline">You are offline</string>
+    <string name="lang_telugu">Telugu</string>
+    <string name="lang_punjabi">Punjabi</string>
+    <string name="invalid_phone">Please enter a valid phone number</string>
+
+    <string name="issue_medicine_availability">How to check medicine availability?</string>
+
+
+
+    <string name="call">Call</string>
+    <string name="chat">Chat</string>
+    <string name="email">Email</string>
+
+    <string name="emergency_phone_number_dial">18001234567</string>
+    <string name="support_phone_number_dial">18001234567</string>
+
+    <string name="support_whatsapp_number">918000000000</string>
+
+    <string name="user_guide_url"> </string>
+    <string name="video_tutorials_url"> </string>
+    <string name="faqs_url"> </string>
+
+    <string name="number_not_set">Number not set</string>
+    <string name="unable_to_open">Unable to open</string>
+    <string name="tap_to_view_full_document">Tap to view full document</string>
+    <string name="answer_book_consultation">Go to Appointments → Choose doctor → Select time slot → Confirm.</string>
+    <string name="answer_upload_documents">Open Profile → Upload Documents → Add required files and submit.</string>
+    <string name="answer_offline">You can browse saved info offline. Actions will sync when internet returns.</string>
+    <string name="answer_medicine_availability">Search medicine in Pharmacy section to check stock availability.</string>
+<string name="open">open</string>
+    <string name="check_reg_verified">Registration number verified with council</string>
+    <string name="check_identity_match">Identity documents match application</string>
+    <string name="check_degree_authentic">Degree certificate is authentic</string>
+    <string name="no_users_title">No users found</string>
+    <string name="no_users_subtitle">Try changing the filter or pull to refresh.</string>
+
+    <string name="no_applications_title">No applications to review</string>
+    <string name="no_applications_subtitle">When someone submits their profile, it will appear here.</string>
+    <string name="review_application">Review Application</string>
+    <string name="applied_on">Applied:   %1$s</string>
+
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+
+    <string name="saved">Saved</string>
+
+    <string name="confirm_approve">Approve this application?</string>
+    <string name="confirm_reject">Reject this application?</string>
+
+    <string name="document_not_available">Document not available</string>
+    <string name="not_available">Not available</string>
+</resources>

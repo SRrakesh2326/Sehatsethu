@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Illustration Circle -->
+    <FrameLayout
+        android:id="@+id/illustration_container"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/bg_circle_yellow">
+
+        <!-- White card -->
+        <FrameLayout
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_rounded">
+
+            <!-- Shield icon -->
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_verified_shield"
+                app:tint="#F59E0B"/>
+
+            <!-- Cloud verify -->
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_blue_square"
+                android:padding="10dp"
+                android:src="@drawable/ic_verified_badge"
+                app:tint="#FFFFFF"/>
+
+            <!-- Stethoscope -->
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_green_square"
+                android:padding="10dp"
+                android:src="@drawable/ic_stethoscope"
+                app:tint="#FFFFFF"/>
+
+            <!-- Pill -->
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_purple_square"
+                android:padding="10dp"
+                android:src="@drawable/ic_pill"
+                app:tint="#FFFFFF"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/illustration_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Verified Doctors &amp;\nPharmacies"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="All doctors and pharmacists are verified with government IDs. Look for the verified badge for trust."
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:textSize="16sp"
+        android:textColor="#64748B"/>
+
+    <!-- Verified chips -->
+    <LinearLayout
+        android:id="@+id/chips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <!-- Verified Doctor -->
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_verified_doctor">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_verified_badge"
+                app:tint="#10B981" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Verified\nDoctor"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#065F46" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="1dp" />
+
+        <!-- Verified Pharmacy -->
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="56dp"
+            android:paddingHorizontal="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_verified_pharmacy">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_verified_badge"
+                app:tint="#9333EA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Verified\nPharmacy"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#6B21A8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Dots -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_dot_inactive"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_dot_inactive"/>
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="8dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_dot_active"/>
+    </LinearLayout>
+
+    <!-- Bottom buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Back"
+            android:textSize="16sp"
+            android:textColor="#0F172A"
+            android:background="@drawable/bg_back_btn"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="1dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="2"
+            android:text="Get Started"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_continue_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>

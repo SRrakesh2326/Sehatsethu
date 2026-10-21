@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ss_surface">#FFFFFF</color>
+    <color name="ss_surface_alt">#F8FAFC</color>
+    <color name="emerald_600_fallback">#10B981</color>
+    <color name="slate_500_fallback">#64748B</color>
+    <color name="tab_selected_text">#FFFFFF</color>
+    <color name="tab_unselected_text">#475569</color>
+
+    <color name="ss_text_primary">#0F172A</color>
+    <color name="ss_text_secondary">#475569</color>
+    <color name="ss_hint">#94A3B8</color>
+    <color name="seha_brand">#059669</color>
+    <color name="seha_text_primary">#0F172A</color>
+    <color name="seha_text_hint">#64748B</color>
+    <color name="seha_text_hint_light">#94A3B8</color>
+    <color name="seha_border">#E2E8F0</color>
+    <color name="seha_border_focus">#059669</color>
+    <color name="seha_error">#DC2626</color>
+    <color name="seha_box_bg">#FFFFFF</color>
+    <color name="ss_field_bg">#FFFFFF</color>
+    <color name="ss_field_stroke">#CBD5E1</color>
+
+    <color name="ss_brand">#059669</color>
+    <color name="ss_brand_dark">#047857</color>
+
+    <color name="ss_error">#DC2626</color>
+    <color name="ss_divider">#E2E8F0</color>
+</resources>

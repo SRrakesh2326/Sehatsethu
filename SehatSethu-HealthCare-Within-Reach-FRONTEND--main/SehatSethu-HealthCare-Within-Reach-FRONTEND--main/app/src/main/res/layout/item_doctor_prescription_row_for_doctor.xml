@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <View
+            android:id="@+id/vIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_icon_purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/prescription"
+            app:srcCompat="@drawable/ic_document"
+            app:layout_constraintStart_toStartOf="@id/vIcon"
+            app:layout_constraintEnd_toEndOf="@id/vIcon"
+            app:layout_constraintTop_toTopOf="@id/vIcon"
+            app:layout_constraintBottom_toBottomOf="@id/vIcon"/>
+
+        <TextView
+            android:id="@+id/tvRxTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Diabetes follow-up"
+            android:textColor="#0F172A"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/vIcon"
+            app:layout_constraintTop_toTopOf="@id/vIcon"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"/>
+
+        <TextView
+            android:id="@+id/tvRxMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3 medicines • Jan 10, 2025"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@id/vIcon"
+            app:layout_constraintTop_toBottomOf="@id/tvRxTitle"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"/>
+
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:contentDescription="@string/open"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_chevron_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/vIcon"
+            app:layout_constraintBottom_toBottomOf="@id/vIcon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

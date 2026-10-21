@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvVitalTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jan 10, 2025 • 10:30"
+        android:textColor="#0F172A"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvVitalValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BP: 120/80 mmHg • Sugar: 95 mg/dL (Fasting) • Temp: 98.6°F • Weight: 70 kg"
+        android:textColor="#334155"
+        android:textSize="13sp"
+        android:layout_marginTop="6dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/tvVitalTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvVitalMeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notes…"
+        android:textColor="#64748B"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/tvVitalValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

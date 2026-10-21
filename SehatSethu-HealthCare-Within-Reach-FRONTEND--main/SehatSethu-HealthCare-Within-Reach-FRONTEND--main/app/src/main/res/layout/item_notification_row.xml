@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="14dp"
+    android:layout_marginBottom="5dp"
+
+    android:background="@drawable/bg_notif_row_card">
+
+    <!-- Left icon circle -->
+    <FrameLayout
+        android:id="@+id/iconWrap"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_notif_icon_circle"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/notifications"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_bell"
+            app:tint="#2563EB"/>
+    </FrameLayout>
+
+    <!-- Dismiss X (kept safely inside card) -->
+    <ImageView
+        android:id="@+id/ivDismiss"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:padding="3dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/dismiss"
+        app:srcCompat="@drawable/ic_close"
+        app:tint="#94A3B8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvNTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#0F172A"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:letterSpacing="0.01"
+        app:layout_constraintStart_toEndOf="@id/iconWrap"
+        app:layout_constraintTop_toTopOf="@id/iconWrap"
+        app:layout_constraintEnd_toStartOf="@id/ivDismiss"/>
+
+    <!-- Body -->
+    <TextView
+        android:id="@+id/tvNBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#64748B"
+        android:textSize="13sp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintStart_toEndOf="@id/iconWrap"
+        app:layout_constraintTop_toBottomOf="@id/tvNTitle"
+        app:layout_constraintEnd_toStartOf="@id/ivDismiss"/>
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/tvNTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#94A3B8"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toEndOf="@id/iconWrap"
+        app:layout_constraintTop_toBottomOf="@id/tvNBody"/>
+
+    <!-- Action (green) -->
+    <TextView
+        android:id="@+id/tvAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/view"
+        android:textColor="#059669"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:includeFontPadding="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvNTime"/>
+
+    <!-- Notification symbol (replaces dot) -->
+    <View
+        android:id="@+id/vUnreadDot"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+     android:visibility="invisible"
+        android:backgroundTint="#10B981"
+        app:layout_constraintStart_toEndOf="@id/tvNTitle"
+        app:layout_constraintTop_toTopOf="@id/tvNTitle"/>
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divRow"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:visibility="invisible"
+        android:background="#EEF2F7"
+        app:layout_constraintTop_toBottomOf="@id/tvNTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

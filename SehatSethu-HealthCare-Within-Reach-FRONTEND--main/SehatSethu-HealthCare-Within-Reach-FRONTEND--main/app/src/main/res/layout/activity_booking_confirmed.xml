@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Green Header -->
+    <View
+        android:id="@+id/header_bg"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:background="#059669"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Fixed Bottom Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoHome"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
+
+        android:text="@string/go_to_home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="18dp"
+
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+
+        app:backgroundTint="#059669"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnGoHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Success icon circle -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/boxSuccess"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="56dp"
+                app:cardCornerRadius="43dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="23dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#E9FFF7">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/success"
+                            android:src="@android:drawable/checkbox_on_background"
+                            app:tint="#059669"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/booking_confirmed_title"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/boxSuccess"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvSub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/booking_confirmed_subtitle"
+                android:textColor="#DDF7EE"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Main Booking Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardBooking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="18dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#EEF2F7"
+                app:layout_constraintTop_toBottomOf="@id/tvSub"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Booking ID block -->
+                    <TextView
+                        android:id="@+id/tvBookingIdLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/booking_id"
+                        android:textColor="#64748B"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvBookingId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="6dp"
+                        android:text=""
+                        tools:text="BK122757"
+                        android:textColor="#0F172A"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvBookingIdLabel"/>
+
+                    <View
+                        android:id="@+id/divTop"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="14dp"
+                        android:background="#EEF2F7"
+                        app:layout_constraintTop_toBottomOf="@id/tvBookingId"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!-- Doctor row -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/boxAvatar"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#DFF7EA"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divTop">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/doctor"
+                            android:src="@drawable/ic_doctor"
+                            app:tint="#059669"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tvDocName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/sample_doctor_name"
+                        tools:text="Dr. Rajesh Kumar"
+                        android:textColor="#0F172A"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/boxAvatar"
+                        app:layout_constraintTop_toBottomOf="@id/divTop"
+                        app:layout_constraintEnd_toStartOf="@id/ivVerified"/>
+
+                    <TextView
+                        android:id="@+id/tvDocSpec"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/sample_doctor_specialty"
+                        tools:text="General Physician"
+                        android:textColor="#64748B"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@id/boxAvatar"
+                        app:layout_constraintTop_toBottomOf="@id/tvDocName"
+                        app:layout_constraintEnd_toStartOf="@id/ivVerified"/>
+
+                    <ImageView
+                        android:id="@+id/ivVerified"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/verified"
+                        android:src="@drawable/ic_verified"
+                        app:tint="#059669"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tvDocName"/>
+
+                    <View
+                        android:id="@+id/divMid"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#EEF2F7"
+                        app:layout_constraintTop_toBottomOf="@id/boxAvatar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!-- Date row -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/boxDateIcon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#DBEAFE"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divMid">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/date"
+                            android:src="@android:drawable/ic_menu_my_calendar"
+                            app:tint="#2563EB"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tvDateLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/date"
+                        android:textColor="#64748B"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@id/boxDateIcon"
+                        app:layout_constraintTop_toTopOf="@id/boxDateIcon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        tools:text="January 15, 2025"
+                        android:textColor="#0F172A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/boxDateIcon"
+                        app:layout_constraintTop_toBottomOf="@id/tvDateLabel"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!-- Time row -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/boxTimeIcon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="14dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#EDE9FE"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/boxDateIcon">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/time"
+                            android:src="@android:drawable/ic_lock_idle_alarm"
+                            app:tint="#7C3AED"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tvTimeLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/time"
+                        android:textColor="#64748B"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@id/boxTimeIcon"
+                        app:layout_constraintTop_toTopOf="@id/boxTimeIcon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        tools:text="2:30 PM"
+                        android:textColor="#0F172A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/boxTimeIcon"
+                        app:layout_constraintTop_toBottomOf="@id/tvTimeLabel"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!-- Type row -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/boxTypeIcon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="14dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#DCFCE7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/boxTimeIcon">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/consultation_type"
+                            android:src="@android:drawable/sym_action_call"
+                            app:tint="#16A34A"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tvTypeLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/consultation_type"
+                        android:textColor="#64748B"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@id/boxTypeIcon"
+                        app:layout_constraintTop_toTopOf="@id/boxTypeIcon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        tools:text="Audio Call"
+                        android:textColor="#0F172A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/boxTypeIcon"
+                        app:layout_constraintTop_toBottomOf="@id/tvTypeLabel"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!-- Fee footer -->
+                    <View
+                        android:id="@+id/divFee"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#E6F7EF"
+                        app:layout_constraintTop_toBottomOf="@id/boxTypeIcon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/feeBg"
+                        android:layout_width="0dp"
+                        android:layout_height="54dp"
+                        android:background="#E9FFF7"
+                        app:layout_constraintTop_toBottomOf="@id/divFee"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvFeeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/consultation_fee"
+                        android:textColor="#334155"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/feeBg"
+                        app:layout_constraintBottom_toBottomOf="@id/feeBg"/>
+
+                    <TextView
+                        android:id="@+id/tvFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/sample_fee_amount"
+                        tools:text="₹200"
+                        android:textColor="#059669"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/feeBg"
+                        app:layout_constraintBottom_toBottomOf="@id/feeBg"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tip Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#BBD7FF"
+                app:cardBackgroundColor="#EAF3FF"
+                app:layout_constraintTop_toBottomOf="@id/cardBooking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tvTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/booking_tip"
+                    android:textColor="#1D4ED8"
+                    android:textSize="14sp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

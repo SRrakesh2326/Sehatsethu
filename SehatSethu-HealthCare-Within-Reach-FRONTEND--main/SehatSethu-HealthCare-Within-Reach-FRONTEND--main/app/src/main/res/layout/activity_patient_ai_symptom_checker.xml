@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Top bar -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_back"
+        app:tint="#0F172A"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTopTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ai_symptom_checker"
+        android:textColor="#0F172A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        android:layout_marginEnd="50dp"
+        tools:text="AI Symptom Checker"/>
+
+    <View
+        android:id="@+id/divTop"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#EEF2F7"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Scroll content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="106dp"
+        app:layout_constraintTop_toBottomOf="@id/divTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Brain icon box -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardIcon"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="34dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#EAF2FF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivBrain"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/ai_symptom_checker"
+                    android:src="@drawable/ic_brain_line"
+                    app:tint="#2563EB"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvQ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/what_symptoms_do_you_have"
+                android:textColor="#0F172A"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/cardIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                tools:text="What symptoms do you have?"/>
+
+            <TextView
+                android:id="@+id/tvSub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/symptom_select_subtitle"
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/tvQ"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="34dp"
+                android:layout_marginEnd="34dp"
+                tools:text="Select or describe your symptoms for AI analysis"/>
+
+            <TextView
+                android:id="@+id/tvCommon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/common_symptoms"
+                android:textColor="#0F172A"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tvSub"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                tools:text="Common Symptoms"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSymptoms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:overScrollMode="never"
+                app:layout_constraintTop_toBottomOf="@id/tvCommon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:listitem="@layout/item_symptom_chip"/>
+
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/or_describe_in_your_words"
+                android:textColor="#0F172A"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/rvSymptoms"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                tools:text="Or describe in your words"/>
+
+            <!-- Describe box -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDescribe"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E5EAF0"
+                app:cardBackgroundColor="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/tvOr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="14dp">
+
+                    <EditText
+                        android:id="@+id/etDescribe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|start"
+                        android:hint="@string/symptom_hint_example"
+                        android:inputType="textMultiLine"
+                        android:minLines="4"
+                        android:maxLines="8"
+                        android:paddingEnd="54dp"
+                        android:textColor="#0F172A"
+                        android:textColorHint="#CBD5E1"
+                        android:textSize="14sp"
+                        tools:text=""/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btnMic"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="bottom|end"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#F1F5F9"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="#E5EAF0">
+
+                        <ImageView
+                            android:id="@+id/ivMic"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/mic"
+                            android:src="@drawable/ic_mic"
+                            app:tint="#334155"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Note box -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFF7ED"
+                app:strokeWidth="1dp"
+                app:strokeColor="#FCD34D"
+                app:layout_constraintTop_toBottomOf="@id/cardDescribe"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <ImageView
+                        android:id="@+id/ivWarn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/note"
+                        android:src="@drawable/ic_warning"
+                        app:tint="#F59E0B"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvNote"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/ai_note"
+                        android:textColor="#92400E"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@id/ivWarn"
+                        app:layout_constraintTop_toTopOf="@id/ivWarn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:text="Note: This AI tool provides general guidance only..."/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAnalyze"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/analyze_symptoms"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:backgroundTint="#059669"
+        app:icon="@drawable/ic_chevron_right"
+        app:iconTint="#FFFFFF"
+        app:iconPadding="10dp"
+        app:iconGravity="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

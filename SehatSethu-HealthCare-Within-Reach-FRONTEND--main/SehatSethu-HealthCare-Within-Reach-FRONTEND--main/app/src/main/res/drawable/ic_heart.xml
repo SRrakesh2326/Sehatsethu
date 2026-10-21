@@ -1,0 +1,43 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="50dp"
+    android:viewportWidth="56"
+    android:viewportHeight="50">
+
+    <!-- Heart outline -->
+    <path
+        android:strokeColor="#FF059669"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="
+            M46.33 30.33
+            c3.98-3.89 8-8.56 8-14.66
+            0-3.9-1.54-7.62-4.3-10.37
+            C47.3 2.55 43.57 1 39.68 1
+            c-4.7 0-8 1.33-12 5.33
+            c-4-4-7.31-5.33-12-5.33
+            -3.9 0-7.62 1.55-10.37 4.3
+            C2.55 8.05 1 11.78 1 15.67
+            c0 6.13 4 10.8 8 14.66
+            L27.67 49
+            L46.33 30.33 Z" />
+
+    <!-- ECG wave (CENTERED) -->
+    <path
+        android:strokeColor="#FF059669"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="
+            M8 25
+            H18
+            l2 -4
+            l4 10
+            l4 -14
+            l4 8
+            H48" />
+
+</vector>

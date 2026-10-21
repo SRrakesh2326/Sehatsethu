@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SehatSethu" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Your colors -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+
+        <item name="android:statusBarColor">@color/white</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Optional: keep nav bar consistent too -->
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="ChipStyle">
+        <item name="android:background">@drawable/bg_chip</item>
+
+        <item name="android:textColor">#475569</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="SehaInputLayout.Outlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/seha_box_bg</item>
+        <item name="boxStrokeColor">@color/til_stroke_color</item>
+        <item name="hintTextColor">@color/til_hint_color</item>
+
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+
+        <!-- Optional: makes the label look premium -->
+        <item name="hintTextAppearance">@style/SehaHintAppearance</item>
+
+        <!-- Optional helper/error text readability -->
+        <item name="helperTextTextAppearance">@style/SehaHelperAppearance</item>
+        <item name="errorTextAppearance">@style/SehaErrorAppearance</item>
+    </style>
+
+    <style name="SehaHintAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/seha_text_hint</item>
+    </style>
+
+    <style name="SehaHelperAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/seha_text_hint</item>
+    </style>
+
+    <style name="SehaErrorAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/seha_error</item>
+    </style>
+
+    <style name="SehaEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/seha_text_primary</item>
+        <item name="android:textColorHint">@color/seha_text_hint_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="SehatSethu.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/ss_field_bg</item>
+        <item name="boxStrokeColor">@color/ss_field_stroke</item>
+        <item name="hintTextColor">@color/ss_hint</item>
+        <item name="android:textColorHint">@color/ss_hint</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+    </style>
+
+    <style name="SehatSethu.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/ss_text_primary</item>
+        <item name="android:textColorHint">@color/ss_hint</item>
+    </style>
+
+
+    <style name="Theme.SehatSethu.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#059669</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_heart</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="android:statusBarColor">#059669</item>
+        <item name="postSplashScreenTheme">@style/Theme.SehatSethu</item>
+    </style>
+
+
+
+
+</resources>

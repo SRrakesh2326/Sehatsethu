@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="false"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/bg_card_outline_soft">
+
+        <!-- Avatar box -->
+        <FrameLayout
+            android:id="@+id/avatarBox"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_avatar_mint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_doctor_face" />
+        </FrameLayout>
+
+        <!-- Chevron -->
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_chevron_right"
+            app:tint="#94A3B8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Role pill -->
+        <TextView
+            android:id="@+id/tvRolePill"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_role_pill_green"
+            android:gravity="center"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="Doctor"
+            android:textColor="#047857"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"
+            app:layout_constraintTop_toTopOf="@id/avatarBox" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="10dp"
+            android:text="Dr. Amit Verma"
+            android:textColor="#0F172A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/avatarBox"
+            app:layout_constraintTop_toTopOf="@id/avatarBox"
+            app:layout_constraintEnd_toStartOf="@id/tvRolePill" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="General Physician"
+            android:textColor="#64748B"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/avatarBox"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Docs group pinned to RIGHT (icon + text stay together always) -->
+        <LinearLayout
+            android:id="@+id/docsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/ivDocIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/ic_doc"
+                app:tint="#64748B" />
+
+            <TextView
+                android:id="@+id/tvDocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 docs"
+                android:layout_marginEnd="46dp"
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- time ago: LEFT aligned, fills remaining space, won't push docsGroup -->
+        <TextView
+            android:id="@+id/tvTimeAgo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+
+            android:text="2 hours ago"
+            android:textColor="#94A3B8"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/avatarBox"
+            app:layout_constraintEnd_toStartOf="@id/docsGroup"
+            app:layout_constraintTop_toTopOf="@id/docsGroup"
+            app:layout_constraintBottom_toBottomOf="@id/docsGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

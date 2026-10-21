@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Top bar -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/back"
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="#1F2A37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvToolbarTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/change_language_title"
+        android:textColor="#1F2A37"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEF2F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <!-- Bottom button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_continue"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bg_button_primary"
+        android:text="@string/continue_arrow"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/vDivider"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="18dp">
+
+            <!-- Globe tile -->
+            <View
+                android:id="@+id/vGlobeBg"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="28dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_globe_container"/>
+
+            <ImageView
+                android:id="@+id/ivGlobe"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-46dp"
+                android:contentDescription="@string/language"
+                app:srcCompat="@drawable/ic_language"
+                app:tint="#11A37F"/>
+
+            <!--  Used by Kotlin -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="@string/change_language_title"
+                android:textColor="#1F2A37"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!--  Used by Kotlin -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="@string/change_language_subtitle"
+                android:textColor="#8A97A8"
+                android:textSize="13sp"/>
+
+            <!-- English -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_english"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_language_selected"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivFlagEnglish"
+                    android:layout_width="23dp"
+                    android:layout_height="17dp"
+                    android:layout_marginStart="18dp"
+                    android:contentDescription="@string/english"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_flag_uk" />
+
+                <TextView
+                    android:id="@+id/tvEnglishTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/english"
+                    android:textColor="#1F2A37"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagEnglish"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvEnglishSubtitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed"/>
+
+                <TextView
+                    android:id="@+id/tvEnglishSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/english"
+                    android:textColor="#8A97A8"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagEnglish"
+                    app:layout_constraintTop_toBottomOf="@id/tvEnglishTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/check_icon_english"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:padding="6dp"
+                    android:contentDescription="@string/selected"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_check"
+                    app:tint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Hindi -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_hindi"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_language_normal"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivFlagHindi"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="18dp"
+                    android:contentDescription="@string/hindi"
+                    app:srcCompat="@drawable/ic_flag_india"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvHindiTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/hindi_native"
+                    android:textColor="#1F2A37"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagHindi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvHindiSubtitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed"/>
+
+                <TextView
+                    android:id="@+id/tvHindiSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/hindi"
+                    android:textColor="#8A97A8"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagHindi"
+                    app:layout_constraintTop_toBottomOf="@id/tvHindiTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/check_icon_hindi"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:padding="6dp"
+                    android:contentDescription="@string/selected"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_check"
+                    app:tint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Tamil -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_language_normal"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivFlagTamil"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="18dp"
+                    android:contentDescription="@string/tamil"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_flag_india" />
+
+                <TextView
+                    android:id="@+id/tvTamilTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/tamil_native"
+                    android:textColor="#1F2A37"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/tvTamilSubtitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagTamil"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tvTamilSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/tamil"
+                    android:textColor="#8A97A8"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagTamil"
+                    app:layout_constraintTop_toBottomOf="@id/tvTamilTitle" />
+
+                <ImageView
+                    android:id="@+id/check_icon_tamil"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:contentDescription="@string/selected"
+                    android:padding="6dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_check"
+                    app:tint="#FFFFFF" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Punjabi -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_punjabi"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_language_normal"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivFlagPunjabi"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="18dp"
+                    android:contentDescription="@string/punjabi"
+                    app:srcCompat="@drawable/ic_flag_india"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPunjabiTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/tamil_native"
+                    android:textColor="#1F2A37"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/tvPunjabiSubtitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagPunjabi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/tvPunjabiSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/punjabi"
+                    android:textColor="#8A97A8"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagPunjabi"
+                    app:layout_constraintTop_toBottomOf="@id/tvPunjabiTitle" />
+
+                <ImageView
+                    android:id="@+id/check_icon_punjabi"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:padding="6dp"
+                    android:contentDescription="@string/selected"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_check"
+                    app:tint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Telugu -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_telugu"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_language_normal"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivFlagTelugu"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="18dp"
+                    android:contentDescription="@string/telugu"
+                    app:srcCompat="@drawable/ic_flag_india"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTeluguTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telugu_native"
+                    android:textColor="#1F2A37"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="60dp"/>
+                <TextView
+                    android:id="@+id/tvTeluguSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="64dp"
+                    android:text="@string/telugu"
+                    android:layout_marginTop="-10dp"
+                    android:textColor="#8A97A8"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFlagTelugu"
+                    app:layout_constraintTop_toBottomOf="@id/tvTeluguTitle" />
+                <ImageView
+                    android:id="@+id/check_icon_telugu"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_check_circle"
+                    android:padding="6dp"
+                    android:contentDescription="@string/selected"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_check"
+                    app:tint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

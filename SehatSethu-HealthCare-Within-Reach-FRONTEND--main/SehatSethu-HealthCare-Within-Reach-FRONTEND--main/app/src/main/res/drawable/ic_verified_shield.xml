@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+
+    <!-- Shield -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3"
+        android:strokeLineJoin="round"
+        android:pathData="
+            M28 6
+            l16 6
+            v14
+            c0 10 -7 18 -16 22
+            c-9 -4 -16 -12 -16 -22
+            v-14
+            z"/>
+
+    <!-- Check -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="
+            M20 28
+            l6 6
+            l10 -12"/>
+</vector>

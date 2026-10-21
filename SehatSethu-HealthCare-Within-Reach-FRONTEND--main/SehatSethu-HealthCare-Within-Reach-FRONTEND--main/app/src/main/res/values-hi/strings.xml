@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prescriptions_offline_subtitle_fmt">%1$d सहेजे गए • अंतिम अपडेट %2$s</string>
+    <string name="prescriptions_offline_subtitle_nodate_fmt">%1$d सहेजे गए</string>
+    <string name="prescriptions_session_expired_subtitle_fmt">%1$d सहेजे गए • सत्र समाप्त</string>
+    <string name="session_expired_login_again">सत्र समाप्त हो गया। कृपया फिर से लॉगिन करें।</string>
+    <string name="offline_no_cache">आप ऑफ़लाइन हैं और कोई सहेजा हुआ डेटा उपलब्ध नहीं है।</string>
+    <string name="payment_title">भुगतान</string>
+    <string name="secure_payment_note">सुरक्षित भुगतान • एन्क्रिप्टेड</string>
+    <string name="amount_payable">देय राशि</string>
+    <string name="appointment_summary">अपॉइंटमेंट सारांश</string>
+    <string name="choose_payment_method">भुगतान का तरीका चुनें</string>
+    <string name="pay_now">अभी भुगतान करें</string>
+    <string name="pay_upi">UPI</string>
+    <string name="pay_card">क्रेडिट / डेबिट कार्ड</string>
+    <string name="pay_netbanking">नेट बैंकिंग</string>
+    <string name="upi_id">UPI आईडी</string>
+    <string name="upi_hint">name@bank</string>
+    <string name="card_details">कार्ड विवरण</string>
+    <string name="card_number">कार्ड नंबर</string>
+    <string name="card_name">कार्ड पर नाम</string>
+    <string name="expiry_mm_yy">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="bank_name">बैंक का नाम</string>
+    <string name="bank_hint">अपना बैंक लिखें</string>
+    <string name="payment_processing">भुगतान प्रोसेस हो रहा है…</string>
+    <string name="payment_success">भुगतान सफल</string>
+    <string name="payment_cancelled">भुगतान रद्द किया गया</string>
+
+    <string name="enter_valid_upi">मान्य UPI आईडी दर्ज करें</string>
+    <string name="enter_valid_card">मान्य कार्ड नंबर दर्ज करें</string>
+    <string name="enter_card_name">कार्ड पर नाम दर्ज करें</string>
+    <string name="enter_valid_expiry">मान्य एक्सपायरी दर्ज करें (MM/YY)</string>
+    <string name="enter_valid_cvv">मान्य CVV दर्ज करें</string>
+    <string name="enter_bank_name">बैंक का नाम दर्ज करें</string>
+
+    <string name="pay_button_amount">%1$s का भुगतान करें</string>
+    <string name="pay_amount_inline">%1$s भुगतान</string>
+    <string name="consultation_fee_value">परामर्श शुल्क: %1$s</string>
+
+    <string name="confirm_booking_message_with_payment">बुकिंग कन्फर्म होने से पहले भुगतान करना होगा।</string>
+    <string name="fee_not_available">परामर्श शुल्क उपलब्ध नहीं है। कृपया वापस जाकर फिर से प्रयास करें।</string>
+
+    <!-- App -->
+    <string name="app_name">SehatSethu</string>
+    <string name="back">वापस</string>
+
+    <!-- Languages -->
+    <string name="tamil">तमिल</string>
+    <string name="tamil_native">தமிழ்</string>
+    <string name="tamil_english">Tamil</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="hindi">हिन्दी</string>
+
+    <string name="selected">चयनित</string>
+    <string name="language">भाषा</string>
+    <!-- values-hi/strings.xml -->
+    <string name="pharmacist_registration">फार्मासिस्ट पंजीकरण</string>
+    <string name="pharmacy_details">फार्मेसी विवरण</string>
+
+    <string name="your_full_name">आपका पूरा नाम</string>
+    <string name="pharmacy_name">फार्मेसी का नाम</string>
+    <string name="drug_license_number">दवा लाइसेंस नंबर</string>
+    <string name="village_town">गांव / कस्बा</string>
+    <string name="full_address">पूरा पता</string>
+
+    <string name="patient_registration">रोगी पंजीकरण</string>
+    <string name="tell_us_about_yourself">अपने बारे में बताएं</string>
+    <string name="patient_reg_subtitle">यह डॉक्टरों को बेहतर देखभाल प्रदान करने में मदद करता है</string>
+
+
+    <string name="gender">लिंग</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="other">अन्य</string>
+
+    <string name="age">आयु</string>
+
+    <string name="district">जिला</string>
+
+    <string name="complete_registration">पंजीकरण पूरा करें</string>
+
+
+    <string name="hint_enter_your_age">अपनी आयु दर्ज करें</string>
+    <string name="hint_enter_your_village_name">अपने गांव का नाम दर्ज करें</string>
+    <string name="hint_enter_your_district">अपना जिला दर्ज करें</string>
+
+
+    <string name="otp_verified_create_now">ईमेल सत्यापित हो गया। अब अकाउंट बनाएं।</string>
+    <string name="otp_invalid_try_again">गलत OTP। फिर से प्रयास करें।</string>
+
+
+
+    <string name="err_send_otp_first">पहले “OTP भेजें” दबाएं</string>
+    <string name="err_verify_otp_first">पहले OTP सत्यापित करें</string>
+    <string name="err_enter_6_digit_otp">6 अंकों का OTP दर्ज करें</string>
+    <string name="err_email_changed_resend">ईमेल बदल गया। OTP फिर से भेजें।</string>
+    <string name="err_token_missing_resend">टोकन नहीं मिला। OTP फिर से भेजें।</string>
+    <string name="err_create_account_failed">अकाउंट नहीं बन पाया</string>
+
+    <string name="account_created_next_step">अकाउंट बन गया। पंजीकरण पूरा करें।</string>
+    <string name="profile_saved">प्रोफ़ाइल सफलतापूर्वक सेव हुई</string>
+    <string name="registration_submitted">पंजीकरण भेज दिया गया। एडमिन सत्यापन का इंतज़ार करें।</string>
+
+    <string name="err_fill_all_fields">कृपया सभी आवश्यक फ़ील्ड भरें</string>
+    <string name="err_age_invalid">मान्य उम्र दर्ज करें</string>
+    <string name="err_experience_invalid">मान्य अनुभव दर्ज करें</string>
+    <string name="err_submit_failed">सबमिट नहीं हुआ। फिर से प्रयास करें।</string>
+    <string name="err_check_status_failed">स्टेटस चेक नहीं हो पाया</string>
+
+    <string name="still_under_review">अभी समीक्षा में है</string>
+    <string name="verified_you_can_continue">सत्यापित! आप आगे बढ़ सकते हैं।</string>
+    <string name="verification_rejected">सत्यापन अस्वीकृत। कृपया सहायता से संपर्क करें।</string>
+
+
+    <string name="hint_enter_your_name">अपना नाम दर्ज करें</string>
+    <string name="hint_pharmacy_name">जैसे, शर्मा मेडिकल स्टोर</string>
+    <string name="hint_drug_license">अपना फार्मेसी लाइसेंस नंबर दर्ज करें</string>
+    <string name="hint_village">अपने गांव का नाम दर्ज करें</string>
+    <string name="hint_address">मरीजों के लिए दुकान का पता</string>
+
+    <string name="hint_doctor_full_name">डॉ. पूरा नाम</string>
+    <string name="hint_specialization">जैसे, सामान्य चिकित्सक, हृदय रोग विशेषज्ञ</string>
+    <string name="hint_registration_no">अपना एमसीआई/राज्य पंजीकरण नंबर दर्ज करें</string>
+    <string name="hint_practice_place">आप कहाँ प्रैक्टिस करते हैं?</string>
+    <string name="hint_experience">जैसे, 5</string>
+
+    <!-- Pharmacist home -->
+    <string name="store">दुकान</string>
+    <string name="store_name">शर्मा मेडिकल स्टोर</string>
+    <string name="verified_pharmacy">सत्यापित फार्मेसी</string>
+    <string name="notifications">सूचनाएँ</string>
+
+    <string name="total_stock">कुल स्टॉक</string>
+    <string name="alerts">अलर्ट</string>
+    <string name="medicines">दवाइयाँ</string>
+    <string name="need_attention">ध्यान चाहिए</string>
+
+    <string name="sync">सिंक</string>
+    <string name="sync_text">स्टॉक सिंक हुआ • अंतिम अपडेट: 5 मिनट पहले</string>
+    <string name="tap_to_sync">सिंक करने के लिए टैप करें</string>
+
+    <string name="low_stock_alert">कम स्टॉक अलर्ट</string>
+    <string name="update_stock">स्टॉक अपडेट करें</string>
+    <string name="low_stock">कम स्टॉक</string>
+    <string name="out_of_stock">स्टॉक खत्म</string>
+    <string name="out_of_stock_small">स्टॉक खत्म</string>
+
+    <string name="recent_requests">हाल के अनुरोध</string>
+    <string name="view_all_5">सभी देखें ( 5 )</string>
+
+    <string name="add_stock">स्टॉक जोड़ें</string>
+    <string name="update_inventory">इन्वेंटरी अपडेट करें</string>
+    <string name="search">खोजें</string>
+    <string name="find_medicine">दवा खोजें</string>
+
+    <string name="home">होम</string>
+    <string name="stock">स्टॉक</string>
+    <string name="requests">अनुरोध</string>
+    <string name="profile">प्रोफ़ाइल</string>
+
+    <string name="medicine">दवा</string>
+    <string name="warning">चेतावनी</string>
+    <string name="error">त्रुटि</string>
+
+    <!-- Doctor registration -->
+    <string name="doctor_registration">डॉक्टर पंजीकरण</string>
+    <string name="professional_details">पेशेवर विवरण</string>
+    <string name="step_1_of_2">2 में से चरण 1 - बुनियादी जानकारी</string>
+
+    <string name="full_name">पूरा नाम (लाइसेंस के अनुसार) *</string>
+    <string name="full_name_hint">डॉ. पूरा नाम</string>
+
+    <string name="specialization">विशेषज्ञता *</string>
+    <string name="spec_hint">जैसे, जनरल फिजिशियन, कार्डियोलॉजिस्ट</string>
+
+    <string name="medical_registration">मेडिकल रजिस्ट्रेशन नंबर *</string>
+    <string name="reg_hint">अपना MCI/State रजिस्ट्रेशन नंबर दर्ज करें</string>
+
+    <string name="hospital">अस्पताल / क्लिनिक का नाम</string>
+    <string name="hospital_hint">आप कहाँ प्रैक्टिस करते हैं?</string>
+
+    <string name="experience">अनुभव (आँकड़ों में)</string>
+    <string name="exp_hint">जैसे, 5</string>
+
+    <string name="verify_continue">सत्यापित करें और जारी रखें</string>
+    <string name="doctor">डॉक्टर</string>
+
+    <string name="search_medicine">दवा खोजें…</string>
+
+    <!-- Verification pending -->
+    <string name="verification_pending">सत्यापन लंबित</string>
+    <string name="verification_desc">आपके फार्मासिस्ट दस्तावेज़ की समीक्षा हो रही है। इसमें आमतौर पर 24–48 घंटे लगते हैं।</string>
+    <string name="submitted">जमा किया गया</string>
+    <string name="under_review">समीक्षा में</string>
+    <string name="verified">सत्यापित</string>
+    <string name="what_happens_next">आगे क्या होगा?</string>
+    <string name="check_status">स्थिति देखें</string>
+    <string name="pending">लंबित</string>
+
+    <string name="verification_desc_doc">आपके डॉक्टर दस्तावेज़ की समीक्षा हो रही है। इसमें आमतौर पर 24–48 घंटे लगते हैं।</string>
+
+    <string name="what_next">आगे क्या होगा?</string>
+    <string name="info_1">✓ हमारी टीम आपके दस्तावेज़ की समीक्षा करेगी</string>
+    <string name="info_2">✓ हम आपका रजिस्ट्रेशन नंबर सत्यापित करेंगे</string>
+    <string name="info_3">✓ पूरा होने पर आपको सूचना मिलेगी</string>
+
+    <!-- NEW -->
+    <string name="skip">छोड़ें</string>
+    <string name="next">आगे</string>
+    <string name="continue_btn">जारी रखें</string>
+    <string name="continue_arrow">जारी रखें  &gt;</string>
+    <string name="get_started">शुरू करें</string>
+
+    <string name="splash_tagline">स्वास्थ्य सेवा आपके पास</string>
+    <string name="splash_bottom">ग्रामीण भारत को स्वास्थ्य सेवा से जोड़ना</string>
+
+    <string name="choose_language_title">अपनी भाषा चुनें</string>
+    <string name="choose_language_subtitle">अपनी भाषा चुनें •</string>
+
+    <string name="lang_title">अपनी भाषा चुनें</string>
+    <string name="lang_subtitle">अपनी भाषा चुनें •</string>
+    <string name="lang_continue">जारी रखें  &gt;</string>
+    <string name="select_language_toast">कृपया भाषा चुनें</string>
+
+    <string name="hindi_native">हिन्दी</string>
+
+    <string name="onb1_title">बिना यात्रा किए\nडॉक्टर से सलाह</string>
+    <string name="onb1_desc">अपने गाँव के सत्यापित डॉक्टरों से वीडियो या ऑडियो परामर्श। दूर जाने की जरूरत नहीं।</string>
+
+    <string name="onb2_title">ऑफलाइन रिकॉर्ड + अभी कॉल</string>
+    <string name="onb2_desc">इंटरनेट के बिना भी अपने स्वास्थ्य रिकॉर्ड देखें। नेटवर्क कमजोर हो तो Call-Now उपयोग करें।</string>
+
+    <string name="onb3_title">सत्यापित डॉक्टर &amp;\nफार्मेसी</string>
+    <string name="onb3_desc">सभी डॉक्टर और फार्मासिस्ट सरकारी ID से सत्यापित हैं। भरोसे के लिए Verified बैज देखें।</string>
+
+    <string name="verified_doctor_chip">सत्यापित\nडॉक्टर</string>
+    <string name="verified_pharmacy_chip">सत्यापित\nफार्मेसी</string>
+
+    <string name="choose_role_title">अपनी भूमिका चुनें</string>
+    <string name="choose_role_subtitle">SehatSethu का उपयोग कैसे करना है चुनें</string>
+
+    <string name="role_patient">मरीज़</string>
+    <string name="role_patient_desc">परामर्श बुक करें और स्वास्थ्य रिकॉर्ड देखें</string>
+
+    <string name="role_doctor">डॉक्टर</string>
+    <string name="role_doctor_desc">परामर्श दें और मरीजों को मैनेज करें</string>
+    <string name="select_role_toast">कृपया एक भूमिका चुनें</string>
+
+    <string name="role_pharmacist">फार्मासिस्ट</string>
+    <string name="role_pharmacist_desc">दवा स्टॉक मैनेज करें और अनुरोध पूरे करें</string>
+
+    <string name="role_admin">एडमिन</string>
+    <string name="role_admin_desc">डॉक्टर और फार्मासिस्ट सत्यापित करें</string>
+
+
+
+    <string name="login_top_title">साइन इन</string>
+    <string name="login_heading">वापसी पर स्वागत है</string>
+    <string name="login_subheading">SehatSethu जारी रखने के लिए साइन इन करें</string>
+    <string name="login_email_label">ईमेल  *</string>
+    <string name="login_email_hint">your.email@example.com</string>
+    <string name="login_password_label">पासवर्ड  *</string>
+    <string name="login_password_hint">अपना पासवर्ड डालें</string>
+    <string name="login_forgot">पासवर्ड भूल गए?</string>
+    <string name="login_btn">साइन इन</string>
+    <string name="login_signup_link">अकाउंट नहीं है?  साइन अप</string>
+    <string name="signup_role_pill_placeholder">भूमिका के साथ साइन अप</string>
+    <string name="signup_top_title">अकाउंट बनाएं</string>
+    <string name="signup_role_pill_format">इस भूमिका से साइन अप:   %1$s</string>
+    <string name="signup_heading">SehatSethu में आपका स्वागत है</string>
+    <string name="signup_subheading">शुरू करने के लिए अपना अकाउंट बनाएं</string>
+    <string name="signup_fullname_label">पूरा नाम  *</string>
+    <string name="signup_fullname_hint">अपना पूरा नाम दर्ज करें</string>
+    <string name="signup_email_label">ईमेल  *</string>
+    <string name="signup_email_hint">your.email@example.com</string>
+    <string name="signup_password_label">पासवर्ड  *</string>
+    <string name="signup_password_hint">मजबूत पासवर्ड बनाएं</string>
+    <string name="signup_confirm_password_label">पासवर्ड पुष्टि  *</string>
+    <string name="signup_confirm_password_hint">पासवर्ड दोबारा डालें</string>
+    <string name="signup_btn">अकाउंट बनाएं</string>
+    <string name="signup_signin_link">पहले से अकाउंट है?  साइन इन</string>
+    <string name="signup_terms">अकाउंट बनाकर, आप हमारी सेवा शर्तें और गोपनीयता नीति से सहमत होते हैं</string>
+
+    <string name="toast_signing_in_as">%1$s के रूप में साइन इन</string>
+
+    <string name="ok">ठीक है</string>
+
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="loading_signing_in">साइन इन हो रहा है…</string>
+    <string name="loading_creating_account">अकाउंट बनाया जा रहा है…</string>
+    <string name="loading_sending">भेजा जा रहा है…</string>
+
+    <string name="err_invalid_email">कृपया सही ईमेल दर्ज करें</string>
+    <string name="err_email_required">ईमेल आवश्यक है</string>
+
+    <string name="forgot_top_title">पासवर्ड भूल गए</string>
+    <string name="forgot_heading">पासवर्ड रीसेट करें</string>
+    <string name="forgot_desc">अपना ईमेल दर्ज करें, हम पासवर्ड रीसेट करने के निर्देश भेजेंगे।</string>
+    <string name="forgot_email_label">ईमेल  *</string>
+    <string name="forgot_send_btn">वेरिफिकेशन कोड भेजें</string>
+    <string name="forgot_back_to_signin">साइन इन पर वापस जाएँ</string>
+
+
+
+    <string name="otp_top_title">OTP सत्यापन</string>
+    <string name="otp_heading">वेरिफिकेशन कोड दर्ज करें</string>
+    <string name="otp_subtitle_format">हमने 6-अंकों का कोड भेजा है\n%1$s</string>
+    <string name="otp_subtitle_generic">हमने 6-अंकों का कोड ईमेल पर भेजा है</string>
+    <string name="otp_resend">कोड फिर से भेजें</string>
+
+    <string name="err_otp_incomplete">कृपया पूरा 6-अंकों का कोड दर्ज करें</string>
+    <string name="info_otp_not_supported_yet">सर्वर पर OTP फ़्लो अभी सक्षम नहीं है।</string>
+
+
+
+
+    <string name="err_all_fields_required">सभी फ़ील्ड आवश्यक हैं</string>
+
+    <string name="err_email_password_required">ईमेल और पासवर्ड आवश्यक हैं</string>
+    <string name="err_password_mismatch">पासवर्ड मेल नहीं खाते</string>
+    <string name="err_password_min">पासवर्ड कम से कम 6 अक्षरों का होना चाहिए</string>
+    <string name="err_signup_failed">रजिस्ट्रेशन असफल</string>
+    <string name="err_login_failed">लॉगिन असफल</string>
+
+    <string name="verify_title">ईमेल सत्यापित करें</string>
+    <string name="verify_message">हमने सत्यापन लिंक इस ईमेल पर भेजा है:\n\n%1$s\n\nकृपया पहले ईमेल सत्यापित करें, फिर साइन इन करें।</string>
+    <string name="go_to_signin">साइन इन पर जाएँ</string>
+
+    <string name="forgot_title">पासवर्ड भूल गए</string>
+
+    <string name="forgot_sent_title">ईमेल भेजा गया</string>
+    <string name="forgot_sent_default">यदि यह ईमेल मौजूद है, तो हमने रीसेट लिंक भेज दिया है।</string>
+    <string name="forgot_failed">रीसेट ईमेल भेजने में विफल।</string>
+
+    <string name="email_hint">your.email@example.com</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="send">भेजें</string>
+
+
+
+
+    <string name="otp_send">ओटीपी भेजें</string>
+    <string name="otp_sent">ओटीपी भेज दिया गया</string>
+    <string name="otp_resent">ओटीपी फिर से भेजा गया</string>
+    <string name="otp_invalid">6 अंकों का सही ओटीपी दर्ज करें</string>
+    <string name="otp_enter_title">सत्यापन कोड</string>
+    <string name="otp_sent_to">%1$s पर 6 अंकों का कोड भेजा गया है</string>
+    <string name="otp_verify">सत्यापित करें</string>
+    <string name="otp_resend_in">%1$d सेकंड में फिर भेजें</string>
+    <string name="otp_resend_now">ओटीपी फिर भेजें</string>
+    <string name="otp_resend_failed">ओटीपी फिर से नहीं भेज पाए</string>
+    <string name="otp_prompt_verify">कृपया ओटीपी सत्यापित करें</string>
+
+    <string name="verify_done_message">आपका ईमेल सत्यापित हो गया। कृपया साइन इन करें।</string>
+
+
+
+
+
+
+
+    <string name="reset_top_title">पासवर्ड रीसेट</string>
+    <string name="reset_heading">नया पासवर्ड बनाएं</string>
+    <string name="reset_subheading">अपने खाते को सुरक्षित रखने के लिए मजबूत पासवर्ड चुनें।</string>
+
+    <string name="reset_new_password_label">नया पासवर्ड</string>
+    <string name="reset_new_password_hint">नया पासवर्ड दर्ज करें</string>
+
+    <string name="reset_confirm_password_label">पासवर्ड की पुष्टि</string>
+    <string name="reset_confirm_password_hint">पासवर्ड फिर से दर्ज करें</string>
+
+    <string name="reset_rules">कम से कम 6 अक्षर होने चाहिए।</string>
+
+    <string name="reset_btn">पासवर्ड अपडेट करें</string>
+    <string name="reset_back_to_signin">साइन इन पर वापस</string>
+    <string name="otp_send_first">पहले OTP भेजें।</string>
+    <string name="otp_email_changed">ईमेल बदल गया है। कृपया इस ईमेल के लिए OTP फिर से भेजें।</string>
+    <string name="otp_send_failed">Email changed. Please resend OTP for this email.</string>
+
+
+
+
+
+
+
+    <string name="reset_success">पासवर्ड सफलतापूर्वक अपडेट हो गया। कृपया नए पासवर्ड से साइन इन करें।</string>
+    <string name="reset_failed_generic">पासवर्ड अपडेट नहीं हो सका। कृपया फिर से कोशिश करें।</string>
+
+    <string name="forgot_subheading">अपना ईमेल पता दर्ज करें, हम पासवर्ड रीसेट करने के लिए एक सत्यापन कोड भेजेंगे।</string>
+    <string name="forgot_email_hint">your.email@example.com</string>
+
+    <!-- Verify OTP -->
+    <string name="verify_otp_top_title">ओटीपी सत्यापित करें</string>
+    <string name="verify_otp_heading">सत्यापन कोड दर्ज करें</string>
+    <string name="verify_otp_subtitle_placeholder">हमने आपके ईमेल पर 6-अंकों का कोड भेजा है।</string>
+    <string name="verify_otp_btn">कोड सत्यापित करें</string>
+
+    <!-- Resend (optional helper text used as initial placeholder in XML) -->
+    <string name="otp_resend_in_57">57 सेकंड में कोड फिर से भेजें</string>
+
+
+
+
+
+    <string name="bookings">बुकिंग</string>
+    <string name="records">रिकॉर्ड</string>
+
+    <!-- Optional common -->
+    <string name="settings">सेटिंग्स</string>
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="users">स्थिति</string>
+    <string name="reports">रिपोर्ट्स</string>
+    <string name="patients">मरीज़</string>
+    <string name="consult">परामर्श</string>
+    <string name="schedule">शेड्यूल</string>
+    <string name="logout">लॉगआउट</string>
+    <string name="logout_confirm_title">लॉगआउट</string>
+    <string name="logout_confirm_msg">क्या आप वाकई लॉगआउट करना चाहते हैं?</string>
+
+    <string name="change_language_title">भाषा बदलें</string>
+    <string name="change_language_subtitle">अपनी पसंदीदा भाषा चुनें</string>
+
+
+
+    <!-- ===================== -->
+    <!-- values-hi/strings.xml -->
+    <!-- ===================== -->
+    <string name="default_user_email">user@email.com</string>
+
+    <string name="profile_updated">प्रोफ़ाइल अपडेट हो गई</string>
+    <string name="save">सेव करें</string>
+
+    <string name="phone">फ़ोन</string>
+
+    <string name="lang_english">अंग्रेज़ी</string>
+    <string name="lang_hindi">हिंदी</string>
+    <string name="lang_tamil">तमिल</string>
+
+    <string name="privacy_info_text">आपका डेटा सुरक्षित रूप से संग्रहीत है। केवल सत्यापित एडमिन ही सत्यापन टूल्स का उपयोग कर सकते हैं। OTP या पासवर्ड साझा न करें।</string>
+
+    <string name="support_email">support@sehatsethu.app</string>
+    <string name="support_email_subject">सेहतसेतु सहायता</string>
+
+    <string name="no_email_app">कोई ईमेल ऐप नहीं मिला</string>
+    <string name="unable_to_share">अभी शेयर नहीं कर सकते</string>
+
+    <string name="share_app_text">सेहतसेतु आज़माएँ।\n\nऐप आईडी: %1$s</string>
+
+    <string name="admin_dashboard">एडमिन डैशबोर्ड</string>
+    <string name="verification_panel">सत्यापन पैनल</string>
+
+
+    <string name="approved">स्वीकृत</string>
+    <string name="rejected">अस्वीकृत</string>
+    <string name="total">कुल</string>
+
+    <string name="view_patient_records">मरीज रिकॉर्ड देखें</string>
+    <string name="manage_availability">उपलब्धता प्रबंधित करें</string>
+    <string name="medicine_search_title">दवा खोज</string>
+    <string name="medicine_count_fmt">%1$d दवाएं</string>
+    <string name="search_medicines_hint">दवा खोजें (नाम या स्ट्रेंथ)</string>
+
+
+    <string name="in_stock">स्टॉक में</string>
+    <string name="strength_not_specified">स्ट्रेंथ उपलब्ध नहीं</string>
+
+    <string name="no_inventory_title">अभी कोई इन्वेंटरी नहीं</string>
+    <string name="no_inventory_sub">यहाँ देखने के लिए Update Stock में दवाएं जोड़ें।</string>
+
+
+    <string name="no_results_sub">दूसरा कीवर्ड आज़माएँ या फ़िल्टर बदलें।</string>
+
+    <string name="updated_ago_fmt">%1$s अपडेट</string>
+    <string name="updated_unknown">अपडेट —</string>
+    <string name="price_updated_fmt">कीमत: ₹ %1$s • %2$s</string>
+    <string name="doctors">डॉक्टर</string>
+    <string name="pharmacists">फार्मासिस्ट</string>
+
+    <string name="no_users_to_show">दिखाने के लिए कोई उपयोगकर्ता नहीं है</string>
+    <string name="default_doctor_name">डॉ. डॉक्टर</string>
+    <string name="default_doctor_role">सामान्य चिकित्सक</string>
+    <string name="default_patient_name">कोई आगामी मरीज नहीं</string>
+    <string name="default_patient_meta">--</string>
+    <string name="default_patient_issue">--</string>
+
+    <string name="profile_details">प्रोफ़ाइल विवरण</string>
+    <string name="verification_status">सत्यापन स्थिति</string>
+
+    <string name="theme">थीम</string>
+    <string name="about">परिचय</string>
+
+    <string name="my_profile">मेरा प्रोफ़ाइल</string>
+    <string name="profile_avatar">प्रोफ़ाइल अवतार</string>
+
+    <string name="default_user_name">एडमिन उपयोगकर्ता</string>
+    <string name="default_user_phone">+91 98765 43210</string>
+
+    <string name="edit_profile">प्रोफ़ाइल संपादित करें</string>
+    <string name="share_app">ऐप साझा करें</string>
+
+    <string name="change_language">भाषा बदलें</string>
+    <string name="current_language">हिंदी</string>
+    <string name="on">चालू</string>
+
+    <string name="status_on">चालू</string>
+    <string name="privacy_security">गोपनीयता &amp; सुरक्षा</string>
+     <string name="app_version_footer">संस्करण 1.0.0 • SehatSethu</string>
+    <string name="verified_doctor">सत्यापित डॉक्टर</string>
+    <string name="coming_soon">जल्द आ रहा है।</string>
+
+
+
+
+    <string name="sample_doctor_name">डॉ. राजेश कुमार</string>
+    <string name="sample_phone">+91 98765 43210</string>
+
+
+
+
+
+
+    <string name="welcome_back_comma">वापस स्वागत है,</string>
+    <string name="emergency_call">आपातकालीन कॉल</string>
+    <string name="emergency_call_now">आपातकाल? अभी कॉल करें</string>
+    <string name="no_internet_required">इंटरनेट की आवश्यकता नहीं</string>
+
+
+    <string name="what_do_you_need">आपको क्या चाहिए?</string>
+
+    <string name="book_consultation">परामर्श\nबुक करें</string>
+    <string name="video_or_audio_call">वीडियो या ऑडियो कॉल</string>
+
+    <string name="ai_symptom_checker">एआई लक्षण\nजाँच</string>
+    <string name="check_your_symptoms">अपने लक्षण जाँचें</string>
+
+    <string name="medicine_availability">दवा\nउपलब्धता</string>
+    <string name="find_nearby_pharmacies">नज़दीकी फार्मेसी खोजें</string>
+
+    <string name="health_records">स्वास्थ्य रिकॉर्ड</string>
+    <string name="view_prescriptions_and_reports">प्रिस्क्रिप्शन &amp; रिपोर्ट देखें</string>
+
+    <string name="upcoming_appointments">आगामी अपॉइंटमेंट</string>
+    <string name="view_all">सभी देखें</string>
+
+
+
+    <string name="profile_subtitle_admin">खाता विवरण, प्राथमिकताएँ और सुरक्षा।</string>
+    <string name="profile_subtitle_doctor">प्रोफ़ाइल, सत्यापन स्थिति और प्राथमिकताएँ।</string>
+    <string name="profile_subtitle_patient">खाता जानकारी, भाषा, थीम और लॉगआउट।</string>
+    <string name="profile_subtitle_pharmacist">प्रोफ़ाइल, सत्यापन स्थिति, सेटिंग्स और लॉगआउट।</string>
+
+
+
+
+
+
+    <string name="err_email_invalid">कृपया वैध ईमेल दर्ज करें।</string>
+
+
+
+    <string name="otp_sent_toast">%1$s पर OTP भेज दिया गया है। कृपया नीचे दर्ज करें।</string>
+    <string name="otp_resent_toast">%1$s पर OTP फिर से भेज दिया गया है।</string>
+
+    <string name="email_already_registered_signin">यह ईमेल पहले से पंजीकृत है। कृपया साइन इन करें।</string>
+
+    <!-- values-hi/strings.xml (Hindi) -->
+    <string name="verification_approved_title">सत्यापन स्वीकृत!</string>
+    <string name="verification_approved_subtitle">बधाई हो! आप अब SehatSethu पर सत्यापित फार्मासिस्ट हैं।</string>
+    <string name="verification_approved_subtitle_pharmacist">बधाई हो! आप अब SehatSethu पर सत्यापित फार्मासिस्ट हैं।</string>
+    <string name="verification_approved_subtitle_doctor">बधाई हो! आप अब SehatSethu पर सत्यापित डॉक्टर हैं।</string>
+    <!-- HINDI (values-hi/strings.xml) -->
+    <string name="err_role_mismatch_generic">यह ईमेल किसी दूसरे रोल में रजिस्टर है। कृपया वापस जाकर सही रोल चुनें।</string>
+    <string name="err_role_mismatch_expected">यह ईमेल %1$s के रूप में रजिस्टर है। कृपया रोल बदलें और फिर से प्रयास करें।</string>
+    <string name="err_email_not_verified">कृपया पहले अपना ईमेल OTP सत्यापित करें।</string>
+    <string name="only_left_n">केवल %1$d ही बचे हैं</string>
+    <string name="err_gender_required">कृपया अपना लिंग चुनें।</string>
+
+    <string name="request">अनुरोध</string>
+    <string name="selected_files_count">%1$d फ़ाइल(ें) चुनी गईं</string>
+    <string name="uploading_hint">मेडिकल हिस्ट्री में अपलोड हो रहा है…</string>
+    <string name="saved_medical_history">मेडिकल हिस्ट्री में सेव हो गया</string>
+    <string name="err_village_required">कृपया अपना गाँव/शहर दर्ज करें।</string>
+    <string name="availability_settings">उपलब्धता सेटिंग्स</string>
+    <string name="set_your_working_hours">अपने कार्य समय सेट करें</string>
+    <string name="patients_can_book_during_these_times">मरीज इन समयों के दौरान अपॉइंटमेंट बुक कर सकते हैं</string>
+    <string name="enable_all_weekdays">सभी कार्यदिवस सक्षम करें</string>
+    <string name="disable_all">सभी अक्षम करें</string>
+    <string name="availability_note">नोट: मरीज आपकी समय-सारणी के आधार पर उपलब्ध स्लॉट देखेंगे। आप इसे कभी भी अपडेट कर सकते हैं।</string>
+    <string name="save_availability">उपलब्धता सेव करें</string>
+    <string name="to">तक</string>
+    <string name="monday">सोमवार</string>
+    <string name="tuesday">मंगलवार</string>
+    <string name="wednesday">बुधवार</string>
+    <string name="thursday">गुरुवार</string>
+    <string name="friday">शुक्रवार</string>
+    <string name="saturday">शनिवार</string>
+    <string name="sunday">रविवार</string>
+    <string name="go_to_home">होम पर जाएं</string>
+    <string name="success">सफल</string>
+    <string name="booking_confirmed_title">बुकिंग कन्फर्म!</string>
+    <string name="booking_confirmed_subtitle">आपकी परामर्श सेवा निर्धारित हो गई है</string>
+    <string name="booking_id">बुकिंग आईडी</string>
+    <string name="sample_doctor_specialty">जनरल फिजिशियन</string>
+    <string name="date">तारीख</string>
+    <string name="time">समय</string>
+    <string name="consultation_fee">परामर्श शुल्क</string>
+    <string name="sample_fee_amount">₹200</string>
+    <string name="booking_tip">टिप: निर्धारित समय से 5 मिनट पहले कॉल जॉइन करें। डॉक्टर के लिए अपने स्वास्थ्य रिकॉर्ड तैयार रखें।</string>
+    <string name="appointment_details">अपॉइंटमेंट विवरण</string>
+    <string name="starting_soon">जल्द शुरू होगा!</string>
+    <string name="consultation_begins_in">आपकी परामर्श शुरू होगा</string>
+    <string name="five_minutes">5 मिनट</string>
+    <string name="start_consultation_now">अब परामर्श शुरू करें</string>
+
+    <string name="appointment_id">अपॉइंटमेंट आईडी</string>
+    <string name="date_time">तारीख और समय</string>
+
+    <string name="your_symptoms">आपके लक्षण</string>
+
+    <string name="before_your_consultation">परामर्श से पहले</string>
+
+    <string name="tip_keep_records">• अपने स्वास्थ्य रिकॉर्ड तैयार रखें</string>
+    <string name="tip_quiet_place">• कॉल के लिए शांत जगह चुनें</string>
+    <string name="tip_pen_paper">• नोट्स के लिए पेन और कागज़ रखें</string>
+
+
+    <string name="sample_place">जिला अस्पताल, लुधियाना</string>
+    <string name="sample_date_time">आज, 15 जनवरी 2025</string>
+    <string name="sample_time_meta">4:00 PM   (15 मिनट)</string>
+    <string name="sample_symptoms">2 दिनों से बुखार, शरीर दर्द</string>
+
+    <string name="calendar">कैलेंडर</string>
+    <string name="consultation_type">परामर्श प्रकार</string>
+
+    <string name="select_time_slot">समय स्लॉट चुनें</string>
+    <string name="select_date">तारीख चुनें</string>
+    <string name="confirm_booking">बुकिंग की पुष्टि करें</string>
+
+    <string name="audio_consultation">ऑडियो परामर्श</string>
+    <string name="video_consultation">वीडियो परामर्श</string>
+
+    <string name="month_year_default">जनवरी 2025</string>
+
+    <string name="select_speciality">विशेषता चुनें</string>
+        <string name="what_type_of_doctor_do_you_need">आपको किस प्रकार के डॉक्टर की ज़रूरत है?</string>
+        <string name="select_a_specialty_to_find_available_doctors">उपलब्ध डॉक्टरों को खोजने के लिए एक विशेषता चुनें</string>
+        <string name="find_doctors">डॉक्टर खोजें</string>
+
+        <string name="verified_doctors_available">%1$d सत्यापित डॉक्टर उपलब्ध हैं</string>
+        <string name="n_reviews">%1$d समीक्षाएँ</string>
+        <string name="n_minutes">%1$d मिनट</string>
+
+        <string name="no_upcoming_appointments">आगामी अपॉइंटमेंट्स नहीं हैं।</string>
+
+        <string name="audio_call">ऑडियो कॉल</string>
+        <string name="video_call">वीडियो कॉल</string>
+
+    <string name="doctor_list_title">डॉक्टर</string>
+    <string name="search_doctors_hint">डॉक्टर खोजें...</string>
+    <string name="speciality_general">जनरल</string>
+    <string name="speciality_heart">हृदय</string>
+    <string name="speciality_brain">मस्तिष्क</string>
+    <string name="speciality_bones">हड्डियाँ</string>
+    <string name="speciality_eyes">आँखें</string>
+    <string name="speciality_child">बच्चे</string>
+    <string name="speciality_skin">त्वचा</string>
+    <string name="speciality_lungs">फेफड़े</string>
+    <string name="speciality_diabetes">डायबिटीज़</string>
+    <string name="speciality_fever">बुखार</string>
+    <string name="speciality_medicine">दवा</string>
+    <string name="speciality_emergency">आपातकाल</string>
+    <string name="err_pick_specialization_from_list">कृपया सूची से विशेषज्ञता चुनें।</string>
+    <string name="err_upload_medical_license_required">जारी रखने के लिए मेडिकल लाइसेंस अपलोड करें।</string>
+    <string name="err_enter_full_name">कृपया अपना पूरा नाम दर्ज करें।</string>
+    <string name="err_enter_specialization">कृपया अपनी विशेषज्ञता दर्ज करें।</string>
+    <string name="err_enter_reg_no">कृपया अपना रजिस्ट्रेशन नंबर दर्ज करें।</string>
+    <string name="err_enter_hospital">कृपया अपना अस्पताल / क्लिनिक नाम दर्ज करें।</string>
+    <string name="err_enter_experience">कृपया अपना अनुभव (वर्ष) दर्ज करें।</string>
+    <string name="err_enter_valid_experience">कृपया अनुभव का सही मान दर्ज करें।</string>
+    <string name="err_end_time_after_start">समाप्ति समय, प्रारंभ समय के बाद होना चाहिए।</string>
+    <string name="no_slots_available">कोई स्लॉट उपलब्ध नहीं है</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="hint_enter_phone">अपना फोन नंबर दर्ज करें</string>
+    <string name="err_phone_required">फोन नंबर आवश्यक है</string>
+    <string name="err_phone_invalid">कृपया सही फोन नंबर दर्ज करें</string>
+    <string name="edit_profile_details">प्रोफ़ाइल संपादित करें</string>
+    <string name="edit_profile_subtitle">अपना नाम और मोबाइल नंबर अपडेट करें।</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="update">अपडेट करें</string>
+    <string name="filter_title">डॉक्टर क्रमबद्ध करें</string>
+    <string name="filter_recommended">अनुशंसित</string>
+    <string name="filter_rating_high">रेटिंग: अधिक से कम</string>
+    <string name="filter_fee_low">फीस: कम से अधिक</string>
+    <string name="filter_experience_high">अनुभव: अधिक से कम</string>
+    <string name="filter_name_az">नाम: A से Z</string>
+    <string name="no_verified_doctors_for_speciality">इस विशेषज्ञता के लिए कोई सत्यापित डॉक्टर नहीं मिला</string>
+    <string name="empty_doctors_title">अभी कोई डॉक्टर उपलब्ध नहीं है</string>
+    <string name="empty_doctors_desc">इस विशेषज्ञता के सत्यापित डॉक्टर अनुमोदन के बाद यहां दिखेंगे।</string>
+    <string name="no_results_title">कोई परिणाम नहीं मिला</string>
+    <string name="no_results_desc">“%1$s” से मिलते कोई डॉक्टर नहीं मिले। कोई और शब्द आज़माएँ।</string>
+    <string name="clear_search">खोज साफ़ करें</string>
+    <string name="go_back">वापस जाएँ</string>
+    <string name="manage_stock_subtitle">दवा की मात्रा अपडेट करें और उपलब्धता सही रखें।</string>
+
+    <string name="total_items">कुल आइटम</string>
+    <string name="low_stock_items">कम स्टॉक आइटम</string>
+    <string name="total_items_fmt">कुल: %1$d</string>
+    <string name="low_stock_items_fmt">कम: %1$d</string>
+    <string name="call_pharmacy">फार्मेसी को कॉल करें</string>
+
+    <string name="available">उपलब्ध</string>
+    <string name="address">पता</string>
+    <string name="hours">समय</string>
+    <string name="contact">संपर्क</string>
+    <string name="open_now">● अभी खुला है</string>
+    <string name="closed_now">● अभी बंद है</string>
+    <string name="reviews_count">%1$d रिव्यू</string>
+    <string name="distance_km">%.1f किमी दूर</string>
+    <string name="in_stock_qty">स्टॉक में (%1$d)</string>
+    <string name="low_stock_qty">कम स्टॉक (%1$d)</string>
+    <string name="failed_to_load_appointment_details">अपॉइंटमेंट विवरण लोड नहीं हो पाया</string>
+    <!-- Hindi -->
+    <string name="add_medicine_tip">टाइप करना शुरू करें, फिर सूची से दवा चुनें।</string>
+    <string name="save_add_another">सेव करें और अगली जोड़ें</string>
+    <string name="save_close">सेव करें और बंद करें</string>
+    <!-- Hindi -->
+    <string name="select_medicine_from_dropdown">कृपया ड्रॉपडाउन सूची से दवा चुनें।</string>
+    <string name="medicine_saved_add_another">दवा सेव हो गई। एक और जोड़ें।</string>
+    <string name="medicine_saved">दवा सफलतापूर्वक सेव हो गई।</string>
+    <!-- Hindi -->
+    <string name="swipe_to_refresh_hint">रीफ्रेश करने के लिए नीचे स्वाइप करें</string>
+    <string name="refreshed">अपडेट हो गया</string>
+    <string name="booked">बुक्ड</string>
+    <string name="already_booked_with_doctor">आपकी इस डॉक्टर के साथ पहले से एक आगामी अपॉइंटमेंट है।</string>
+    <string name="fetching_location">लोकेशन पता किया जा रहा है…</string>
+    <string name="location_unavailable">लोकेशन उपलब्ध नहीं है</string>
+    <string name="enable_location_permission">नज़दीकी फ़ार्मेसी दिखाने के लिए लोकेशन अनुमति दें</string>
+    <string name="near_you">आपके पास</string>
+    <string name="distance_km_short">%.1f किमी</string>
+    <string name="distance_unknown">—</string>
+    <string name="docs_count_pill">दस्तावेज़: %1$d (न्यूनतम %2$d)</string>
+    <string name="docs_min_error">कृपया कम से कम %1$d दस्तावेज़ अपलोड करें।</string>
+    <string name="network_error">नेटवर्क त्रुटि</string>
+    <string name="bookings_title">बुकिंग्स</string>
+    <string name="bookings_subtitle">अपनी आने वाली और पिछली अपॉइंटमेंट्स देखें।</string>
+
+    <string name="tab_upcoming">आगामी</string>
+    <string name="tab_past">पिछली</string>
+    <string name="tab_all">सभी</string>
+
+    <string name="bookings_empty_title">कोई अपॉइंटमेंट नहीं</string>
+    <string name="bookings_empty_upcoming_title">कोई आगामी अपॉइंटमेंट नहीं</string>
+    <string name="bookings_empty_past_title">कोई पिछली अपॉइंटमेंट नहीं</string>
+    <string name="bookings_empty_all_title">अभी तक कोई अपॉइंटमेंट नहीं</string>
+    <string name="bookings_empty_hint">बुक करने के बाद आपकी अपॉइंटमेंट यहाँ दिखेगी।</string>
+
+    <string name="what_symptoms_do_you_have">आपको कौन-कौन से लक्षण हैं?</string>
+    <string name="symptom_select_subtitle">AI विश्लेषण के लिए लक्षण चुनें या लिखें</string>
+    <string name="common_symptoms">सामान्य लक्षण</string>
+    <string name="or_describe_in_your_words">या अपने शब्दों में बताएं</string>
+    <string name="symptom_hint_example">उदा., मुझे 2 दिनों से बुखार और शरीर दर्द है</string>
+    <string name="analyze_symptoms">लक्षण विश्लेषण</string>
+    <string name="ai_note">नोट: यह AI टूल केवल सामान्य मार्गदर्शन देता है। यह पेशेवर चिकित्सा सलाह का विकल्प नहीं है। सही निदान के लिए डॉक्टर से सलाह लें।</string>
+    <string name="note">नोट</string>
+    <string name="mic">माइक</string>
+    <string name="mic_permission_needed">वॉइस इनपुट के लिए माइक्रोफोन अनुमति आवश्यक है।</string>
+    <string name="voice_not_available">इस डिवाइस पर वॉइस इनपुट उपलब्ध नहीं है।</string>
+
+    <string name="symptom_fever">बुखार</string>
+    <string name="symptom_cough">खांसी</string>
+    <string name="symptom_headache">सिरदर्द</string>
+    <string name="symptom_stomach_pain">पेट दर्द</string>
+    <string name="symptom_cold">जुकाम</string>
+    <string name="symptom_tiredness">थकान</string>
+    <string name="symptom_body_pain">शरीर दर्द</string>
+    <string name="symptom_sore_throat">गले में दर्द</string>
+
+    <string name="ai_guidance_title">AI मार्गदर्शन</string>
+    <string name="ai_insight_empty">कृपया कम से कम एक लक्षण चुनें या अपने लक्षण लिखें।</string>
+    <string name="book_consultation_action">परामर्श बुक करें</string>
+
+    <string name="ai_selected_symptoms">चुने गए लक्षण: %1$s</string>
+    <string name="ai_you_described">आपने बताया: %1$s</string>
+    <string name="ai_possible_causes_title">संभावित कारण (सामान्य):</string>
+    <string name="ai_self_care_title">स्व-देखभाल (सामान्य):</string>
+    <string name="ai_seek_help_title">तुरंत मदद लें यदि:</string>
+    <string name="ai_disclaimer_short">यह निदान नहीं, केवल सामान्य मार्गदर्शन है।</string>
+
+    <string name="ai_possible_respiratory">सामान्य सर्दी/वायरल श्वसन संक्रमण (व्यक्ति अनुसार अलग)</string>
+    <string name="ai_possible_digestive">पाचन समस्या/गैस्ट्राइटिस (कई कारण हो सकते हैं)</string>
+    <string name="ai_possible_fever_headache">बुखार के साथ सिरदर्द (निगरानी रखें; परामर्श करें)</string>
+    <string name="ai_possible_fatigue">थकान/ऊर्जा कम (आराम, पानी; बने रहने पर डॉक्टर से मिलें)</string>
+    <string name="ai_possible_general">लक्षणों के कई कारण हो सकते हैं; डॉक्टर बेहतर सलाह देंगे।</string>
+
+    <string name="ai_selfcare_rest">आराम करें और ज्यादा मेहनत से बचें</string>
+    <string name="ai_selfcare_fluids">तरल लें और हल्का भोजन करें</string>
+    <string name="ai_selfcare_monitor">समय के साथ तापमान और लक्षणों पर नजर रखें</string>
+
+    <string name="ai_redflag_breathing">सांस लेने में तकलीफ या बहुत ज्यादा सांस फूलना</string>
+    <string name="ai_redflag_chest_pain">सीने में दर्द, बेहोशी, या भ्रम</string>
+    <string name="ai_redflag_dehydration">बार-बार उल्टी, खून, या डिहाइड्रेशन के संकेत</string>
+    <string name="ai_redflag_high_fever">3 दिनों से अधिक तेज बुखार</string>
+    <string name="price_amount">कीमत</string>
+    <string name="price_inr_hint">कीमत (₹)</string>
+    <string name="invalid_price">अमान्य कीमत</string>
+    <string name="analysis_results">विश्लेषण परिणाम</string>
+    <string name="possible_conditions">संभावित स्थितियाँ</string>
+    <string name="recommendations">सिफारिशें</string>
+    <string name="suggested_action">सुझाई गई कार्रवाई</string>
+    <string name="save_to_health_records">स्वास्थ्य रिकॉर्ड में सहेजें</string>
+    <string name="analysis_disclaimer_footer">यह विश्लेषण AI द्वारा बनाया गया है और यह पेशेवर चिकित्सा सलाह का विकल्प नहीं है। निदान और उपचार के लिए योग्य डॉक्टर से परामर्श करें।</string>
+    <string name="match_percent">%1$d%% मिलान</string>
+
+    <string name="medium_urgency">मध्यम तात्कालिकता</string>
+    <string name="urgency_24_48">हम 24-48 घंटे के भीतर डॉक्टर से परामर्श की सलाह देते हैं</string>
+
+    <string name="rec_rest_hydrated">आराम करें और पर्याप्त पानी पिएँ</string>
+    <string name="rec_otc_if_needed">ज़रूरत हो तो OTC बुखार की दवा लें</string>
+    <string name="rec_monitor_2_3">2-3 दिनों तक लक्षणों की निगरानी करें</string>
+    <string name="rec_consult_if_worse">लक्षण बढ़ें तो डॉक्टर से मिलें</string>
+    <string name="starting_video_call">वीडियो कॉल शुरू हो रहा है…</string>
+    <string name="calling_doctor">डॉक्टर को कॉल किया जा रहा है…</string>
+    <string name="opening_dialer">डायलर खोला जा रहा है…</string>
+    <string name="doctor_phone_missing">डॉक्टर का फ़ोन नंबर उपलब्ध नहीं है।</string>
+    <string name="ai_action_based_on_symptoms">आपके लक्षणों के आधार पर, हम %1$s से परामर्श लेने की सलाह देते हैं।</string>
+    <string name="speciality_general_physician">जनरल फिजिशियन</string>
+    <string name="speciality_gastro">गैस्ट्रोएंटेरोलॉजिस्ट</string>
+    <string name="speciality_ent">ईएनटी विशेषज्ञ</string>
+    <string name="speciality_neuro">न्यूरोलॉजिस्ट</string>
+    <string name="ai_saved_locally">लोकली सेव हो गया।</string>
+    <string name="ai_no_saved_result">कोई सेव किया हुआ परिणाम नहीं मिला।</string>
+    <!-- HI -->
+    <string name="request_medicine">दवा का अनुरोध</string><string name="pending_requests_count">%1$d लंबित अनुरोध</string>
+    <string name="quantity_value">मात्रा: %1$d</string>
+    <string name="marked_available">उपलब्ध के रूप में चिन्हित किया गया</string>
+    <string name="in_stock_badge">स्टॉक में</string>
+    <string name="low_stock_badge">कम स्टॉक</string>
+    <string name="out_of_stock_badge">स्टॉक खत्म</string>
+    <string name="no_phone">फोन उपलब्ध नहीं</string>
+    <string name="request_and_call">अनुरोध &amp; कॉल</string>
+    <string name="select_medicine">दवा चुनें</string>
+    <string name="view_all_n">सभी देखें (%1$d)</string>
+    <string name="looking_for_fmt">ढूंढ रहे हैं: %1$s</string>
+
+    <string name="todays_appointments">आज की अपॉइंटमेंट</string>
+    <string name="consultations">परामर्श</string>
+    <string name="total_count_fmt">%1$d कुल</string>
+    <string name="my_patients">मेरे मरीज</string>
+    <string name="search_patients">मरीज खोजें...</string>
+    <string name="all">सभी</string>
+    <string name="active">सक्रिय</string>
+    <string name="recovered">ठीक हुआ</string>
+
+    <string name="total_patients_fmt">%1$d कुल मरीज</string>
+    <string name="total_patients_fmt_3">3 कुल मरीज</string>
+
+    <string name="status_active_pill">● सक्रिय</string>
+    <string name="status_recovered_pill">✓ ठीक हुआ</string>
+
+    <string name="last_visit_today">पिछली विज़िट: आज</string>
+    <string name="last_visit_week_ago">पिछली विज़िट: 1 हफ्ता पहले</string>
+    <string name="last_visit_weeks_ago">पिछली विज़िट: %1$d हफ्ते पहले</string>
+    <string name="last_visit_days_ago">पिछली विज़िट: %1$d दिन पहले</string>
+    <string name="last_visit_unknown">पिछली विज़िट: —</string>
+
+    <string name="no_patients_found">कोई मरीज नहीं मिला</string>
+
+
+    <string name="completed">पूर्ण</string>
+
+    <string name="no_consultations">कोई परामर्श नहीं मिला</string>
+    <string name="done">पूर्ण</string>
+
+
+    <string name="mark_read">पढ़ा हुआ करें</string>
+
+    <string name="unread_chip_fmt">अपठित (%1$d)</string>
+    <string name="unread_count_fmt">%1$d अपठित</string>
+    <string name="minutes_ago_fmt">%1$d मिनट पहले</string>
+    <string name="hours_ago_fmt">%1$d घंटा पहले</string>
+    <string name="yesterday">कल</string>
+    <string name="next_patient">अगला मरीज</string>
+    <string name="start_consultation">परामर्श शुरू करें</string>
+    <string name="quick_actions">त्वरित क्रियाएँ</string>
+    <string name="audio">ऑडियो</string>
+    <string name="video">वीडियो</string>
+
+    <string name="doctor_patients_fmt">%1$d मरीज</string>
+    <string name="doctor_completed_fmt">%1$d पूर्ण</string>
+    <string name="doctor_amount_fmt">₹ %1$d</string>
+    <string name="doctor_rating_fmt">⭐ %1$s रेटिंग</string>
+
+    <string name="starting_in_min_fmt">%1$d मिनट में शुरू</string>
+    <string name="starting_now">अभी शुरू</string>
+    <string name="starting_unknown">जल्द शुरू</string>
+
+    <string name="unknown_gender">अज्ञात</string>
+    <string name="patient_meta_fmt">%1$d वर्ष, %2$s</string>
+    <string name="patient_meta_no_age_fmt">%1$s</string>
+
+    <string name="call_quality_good">अच्छा</string>
+    <string name="showing_all">दिखा रहे हैं: सभी</string>
+    <string name="showing_unread">दिखा रहे हैं: अपठित</string>
+    <string name="notification">सूचना</string>
+    <string name="syncing">सिंक हो रहा है…</string>
+    <string name="last_updated_fmt">अंतिम अपडेट: %1$s</string>
+    <string name="just_now">अभी अभी</string>
+    <string name="seconds_ago">%1$d सेकंड पहले</string>
+    <string name="minute_ago">1 मिनट पहले</string>
+    <string name="minutes_ago">%1$d मिनट पहले</string>
+    <string name="hour_ago">1 घंटे पहले</string>
+    <string name="hours_ago">%1$d घंटे पहले</string>
+    <string name="day_ago">1 दिन पहले</string>
+    <string name="days_ago">%1$d दिन पहले</string>
+    <string name="last_updated_ago_fmt">अंतिम अपडेट: %1$s</string>
+
+    <string name="no_low_stock_title">कोई लो स्टॉक अलर्ट नहीं</string>
+    <string name="no_low_stock_sub">अभी सभी दवाइयाँ पर्याप्त मात्रा में उपलब्ध हैं।</string>
+    <string name="no_recent_requests_title">कोई हालिया अनुरोध नहीं</string>
+    <string name="no_recent_requests_sub">जब कोई मरीज दवा का अनुरोध करेगा, वह यहाँ दिखेगा।</string>
+    <string name="request_fulfilled_toast">अनुरोध पूरा किया गया</string>
+    <string name="request_fulfilled">अनुरोध पूरा हुआ</string>
+    <string name="request_fulfilled_body_fmt">दवा अनुरोध #%1$s को पूरा किया गया है</string>
+    <string name="no_medicine_requests">कोई दवा अनुरोध नहीं</string>
+    <string name="no_medicine_requests_sub">सब कुछ पूरा हो गया है। नए अनुरोध यहाँ दिखाई देंगे।</string>
+    <string name="my_prescriptions">मेरी प्रिस्क्रिप्शन</string>
+    <string name="prescription">प्रिस्क्रिप्शन</string>
+    <string name="create_prescription">प्रिस्क्रिप्शन बनाएं</string>
+    <string name="diagnosis">निदान</string>
+    <string name="add">जोड़ें</string>
+    <string name="ongoing">चल रहा है</string>
+    <string name="finished">समाप्त</string>
+    <string name="cancelled">रद्द</string>
+    <string name="missed">छूट गया</string>
+
+    <string name="consultation_is_live">परामर्श चल रहा है</string>
+    <string name="consultation_finished">परामर्श पूरा हो गया</string>
+    <string name="appointment_was_cancelled">यह अपॉइंटमेंट रद्द कर दिया गया</string>
+    <string name="appointment_was_missed">आपने यह परामर्श मिस कर दिया</string>   <string name="consultation_unavailable">परामर्श उपलब्ध नहीं है</string>
+
+    <string name="prescribed_on_fmt">लिखा गया:  %1$s</string>
+
+    <string name="duration_label">अवधि</string>
+    <string name="duration_fmt">अवधि:  %1$s</string>
+    <string name="no_prescription_found">प्रिस्क्रिप्शन नहीं मिला</string>
+    <string name="no_medicines">कोई दवा नहीं</string>
+    <string name="export_failed">एक्सपोर्ट विफल</string>
+    <string name="share_failed">शेयर विफल</string>
+    <string name="download_saved">सेव हो गया</string>
+
+    <string name="missing_patient_id">मरीज़ ID नहीं मिली</string>
+    <string name="prescription_saved">प्रिस्क्रिप्शन सेव हो गया</string>
+    <string name="failed_to_save_prescription">प्रिस्क्रिप्शन सेव नहीं हो पाया</string>
+    <string name="permissions_required_title">अनुमतियाँ आवश्यक हैं</string>
+    <string name="permissions_required_message">सभी सुविधाओं (कैमरा, माइक्रोफोन, लोकेशन, फोन, मीडिया, नोटिफिकेशन) के लिए कृपया अनुमतियाँ दें। आप इन्हें Settings में सक्षम कर सकते हैं।</string>
+    <string name="open_settings">Settings खोलें</string>
+    <string name="retry">फिर से कोशिश करें</string>
+    <string name="doctor_no_appointments_today">आज के लिए कोई अपॉइंटमेंट निर्धारित नहीं है।</string>
+    <string name="enable_mic_camera_to_join">कॉल में जुड़ने के लिए माइक्रोफ़ोन और कैमरा अनुमति दें।</string>
+    <string name="patient_record_title">रोगी रिकॉर्ड</string>
+    <string name="total_visits_label">कुल विज़िट</string>
+    <string name="last_visit_label">अंतिम विज़िट</string>
+    <string name="medical_history_title">मेडिकल हिस्ट्री</string>
+    <string name="recent_prescriptions_title">हाल के प्रिस्क्रिप्शन</string>
+    <string name="vitals_history_title">वाइटल्स हिस्ट्री</string>
+    <plurals name="items_count_fmt">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <string name="record_vitals_title">वाइटल्स दर्ज करें</string>
+    <string name="add_health_measurements">अपने स्वास्थ्य माप जोड़ें</string>
+    <string name="add_health_measurements_sub">समय के साथ स्वास्थ्य ट्रैक करने के लिए वाइटल्स दर्ज करें</string>
+
+    <string name="blood_pressure">ब्लड प्रेशर</string>
+    <string name="systolic_top_number">सिस्टोलिक (ऊपर वाला)</string>
+    <string name="diastolic_bottom_number">डायस्टोलिक (नीचे वाला)</string>
+    <string name="mmhg_hint">mmHg (जैसे, 120/80)</string>
+
+    <string name="blood_sugar">ब्लड शुगर</string>
+    <string name="mgdl_hint">mg/dL (जैसे, 95)</string>
+    <string name="fasting">फास्टिंग</string>
+    <string name="after_meal">खाने के बाद</string>
+    <string name="random">रैंडम</string>
+
+    <string name="temperature">तापमान</string>
+    <string name="temp_hint_f">°F (जैसे, 98.6)</string>
+
+    <string name="weight">वज़न</string>
+    <string name="weight_hint_kg">kg (जैसे, 70)</string>
+
+    <string name="additional_notes_optional">अतिरिक्त नोट्स (वैकल्पिक)</string>
+    <string name="notes_hint">कोई लक्षण या अवलोकन…</string>
+
+    <string name="save_vitals">वाइटल्स सेव करें</string>
+
+    <string name="vitals_enter_any_value">सेव करने के लिए कम से कम एक मान दर्ज करें।</string>
+    <string name="vitals_bp_both_required">सिस्टोलिक और डायस्टोलिक दोनों दर्ज करें।</string>
+    <string name="vitals_saved_offline">लोकल में सेव हो गया (ऑफलाइन)।</string>
+    <string name="vitals_saved_online">सर्वर पर सेव हो गया।</string>
+    <string name="vitals_will_sync_later">लोकल में सेव। ऑनलाइन होने पर सिंक होगा।</string>
+    <string name="patient_record">रोगी रिकॉर्ड</string>
+    <string name="total_visits">कुल विज़िट</string>
+    <string name="last_visit">पिछली विज़िट</string>
+    <string name="medical_history">चिकित्सा इतिहास</string>
+    <string name="recent_prescriptions">हाल की प्रिस्क्रिप्शन</string>
+    <string name="vitals_history">वाइटल्स इतिहास</string>
+    <string name="no_prescriptions_yet">अभी तक कोई प्रिस्क्रिप्शन नहीं</string>
+    <string name="no_vitals_yet">अभी तक वाइटल्स रिकॉर्ड नहीं हैं</string>
+    <string name="vitals_bp">बीपी</string>
+    <string name="vitals_sugar">शुगर</string>
+    <string name="vitals_temp">तापमान</string>
+    <string name="vitals_weight">वज़न</string>
+    <string name="vitals_no_values">वाइटल्स वैल्यू नहीं</string>
+    <string name="sugar_fasting">फास्टिंग</string>
+    <string name="sugar_after_meal">खाने के बाद</string>
+    <string name="sugar_random">रैंडम</string>
+    <string name="chronic_conditions">पुरानी बीमारियाँ</string>
+    <string name="allergies">एलर्जी</string>
+    <string name="none">कोई नहीं</string>
+    <string name="consultation_summary">परामर्श सारांश</string>
+    <string name="consultation_completed">परामर्श पूरा हुआ</string>
+
+    <string name="doctors_notes">डॉक्टर के नोट्स</string>
+    <string name="prescribed_medicines">निर्धारित दवाइयाँ</string>
+    <string name="view_full_prescription">पूरी पर्ची देखें</string>
+    <string name="follow_up_recommended">फॉलो-अप की सलाह</string>
+    <string name="follow_up_default">अगर 5 दिनों बाद भी लक्षण रहें</string>
+    <string name="download">डाउनलोड</string>
+    <string name="downloaded">डाउनलोड हो गया</string>
+    <string name="share">शेयर</string>
+
+    <string name="duration_minutes_fmt">%d मिनट</string>
+    <string name="duration_minutes_unknown">अवधि अज्ञात</string>
+    <string name="consultation_summary_unavailable">उपलब्ध नहीं</string>
+
+
+
+    <string name="show_more">और दिखाएँ</string>
+    <string name="show_less">कम दिखाएँ</string>
+    <string name="no_prescriptions">कोई प्रिस्क्रिप्शन उपलब्ध नहीं</string>
+
+    <string name="invalid_patient">अमान्य रोगी</string>
+    <string name="failed_to_load">लोड नहीं हो पाया</string>
+    <string name="no_active_appointment">परामर्श शुरू करने के लिए कोई सक्रिय अपॉइंटमेंट नहीं</string>
+    <string name="location_unknown">स्थान उपलब्ध नहीं</string>
+    <string name="years_short">वर्ष</string>
+    <string name="date_unknown">तारीख उपलब्ध नहीं</string>
+
+    <string name="search_or_type_medicine">दवा खोजें या नाम लिखें</string>
+    <string name="dosage">खुराक</string>
+    <string name="frequency">आवृत्ति</string>
+    <string name="duration">अवधि</string>
+    <string name="special_instructions_optional">विशेष निर्देश (वैकल्पिक)</string>
+    <string name="eg_take_after_meals">उदा., भोजन के बाद लें</string>
+    <string name="additional_notes">अतिरिक्त नोट्स</string>
+    <string name="any_additional_instructions">रोगी के लिए कोई अतिरिक्त निर्देश…</string>
+    <string name="followup_recommendation">फॉलो-अप सुझाव</string>
+    <string name="eg_after_5_days">उदा., 5 दिनों बाद यदि लक्षण बने रहें</string>
+    <string name="send_prescription">प्रिस्क्रिप्शन भेजें</string>
+
+    <string name="enter_diagnosis">निदान दर्ज करें</string>
+    <string name="enter_medicine_name">दवा का नाम दर्ज करें</string>
+    <string name="select_dosage_frequency_duration">खुराक, आवृत्ति और अवधि चुनें</string>
+    <string name="add_at_least_one_medicine">कम से कम एक दवा जोड़ें</string>
+    <string name="prescription_sent">प्रिस्क्रिप्शन भेज दिया</string>
+
+
+    <string name="patient_meta_placeholder">उम्र, लिंग • स्थान</string>
+
+    <string name="dosage_1_tablet">1 गोली</string>
+    <string name="dosage_2_tablet">2 गोलियाँ</string>
+    <string name="dosage_5_ml">5 मि.ली.</string>
+    <string name="dosage_10_ml">10 मि.ली.</string>
+
+    <string name="freq_once_daily">दिन में एक बार</string>
+    <string name="freq_twice_daily">दिन में दो बार</string>
+    <string name="freq_thrice_daily">दिन में तीन बार</string>
+
+    <string name="duration_3_days">3 दिन</string>
+    <string name="duration_5_days">5 दिन</string>
+    <string name="duration_7_days">7 दिन</string>
+    <string name="duration_10_days">10 दिन</string>
+    <string name="general_physician">जनरल फिजिशियन</string>
+
+    <string name="search_prescriptions">प्रिस्क्रिप्शन खोजें...</string>
+    <string name="no_prescriptions_found">कोई प्रिस्क्रिप्शन नहीं मिला</string>
+
+    <string name="prescriptions_count_fmt">%1$d प्रिस्क्रिप्शन</string>
+    <string name="prescriptions_count_fmt_0">0 प्रिस्क्रिप्शन</string>
+
+    <string name="medicines_count_fmt">%1$d दवाइयाँ</string>    <string name="patient">मरीज़</string>
+
+    <string name="cond_viral_urti">वायरल श्वसन संक्रमण (सर्दी/फ्लू जैसा)</string>
+    <string name="cond_note_viral_urti">आराम और तरल पदार्थ से अक्सर ठीक होता है। बिगड़ने पर ध्यान दें।</string>
+    <string name="cond_common_cold">सामान्य सर्दी</string>
+    <string name="cond_note_common_cold">अक्सर हल्की होती है। पानी पिएँ और आराम करें।</string>
+    <string name="cond_gastric">पेट की खराबी / गैस्ट्राइटिस</string>
+    <string name="cond_note_gastric">तला-भुना/मसालेदार से बचें; तरल लें। ज्यादा होने पर डॉक्टर से मिलें।</string>
+    <string name="cond_tension_headache">टेंशन-टाइप सिरदर्द</string>
+    <string name="cond_note_tension_headache">आराम, पानी और स्क्रीन स्ट्रेन कम करने से मदद मिल सकती है।</string>
+    <string name="cond_fatigue">सामान्य थकान</string>
+    <string name="cond_note_fatigue">आराम और पानी लें। लगातार रहे तो परामर्श करें।</string>
+    <string name="cond_general">सामान्य लक्षण पैटर्न</string>
+    <string name="cond_note_general">लक्षण मॉनिटर करें और जरूरत हो तो डॉक्टर से मिलें।</string>
+
+    <string name="low_urgency">कम तात्कालिकता</string>
+    <string name="urgency_self_care">अक्सर सेल्फ-केयर पर्याप्त है। सुधार न हो तो परामर्श करें।</string>
+    <string name="high_urgency">अधिक तात्कालिकता</string>
+    <string name="urgency_now">जितनी जल्दी हो सके चिकित्सा सहायता लें।</string>
+
+    <string name="dismiss">हटाएँ</string>
+
+    <string name="unread">अपठित</string>
+    <string name="all_caught_up">सब हो गया</string>
+
+    <string name="no_unread_notifications">आप सब अपडेट हैं! कोई अपठित सूचना नहीं।</string>
+
+    <string name="view_details">विवरण देखें</string>
+    <string name="view_prescription">प्रिस्क्रिप्शन देखें</string>
+    <string name="view">देखें</string>
+    <string name="close">बंद करें</string>
+
+
+    <string name="your_appointments">आपकी अपॉइंटमेंट (आगामी और पिछली)</string>
+    <string name="upcoming">आगामी</string>
+    <string name="past">पिछली</string>
+    <string name="no_appointments">कोई अपॉइंटमेंट नहीं मिली</string>
+
+
+    <string name="status_booked">बुक हो गया</string>
+    <string name="status_confirmed">कन्फर्म</string>
+    <string name="status_completed">पूर्ण</string>
+    <string name="status_cancelled">रद्द</string>
+    <string name="status_rejected">अस्वीकृत</string>
+
+    <string name="booking_code_fmt">कोड: %1$s</string>
+
+    <string name="bookings_meta_sample">GENERAL_PHYSICIAN • AUDIO</string>
+    <string name="bookings_when_sample">सोम, 30 दिस • 10:30 AM</string><string name="confirm_booking_title">बुकिंग की पुष्टि करें</string>
+    <string name="confirm_booking_message">क्या आप वाकई यह अपॉइंटमेंट बुक करना चाहते हैं?</string>
+    <string name="confirm_booking_cta_cancel">रद्द करें</string>
+    <string name="confirm_booking_cta_yes">हाँ, बुक करें</string>
+
+
+    <string name="stock_actions">स्टॉक कार्य</string>
+    <string name="stock_actions_desc">पहले दवाएँ जोड़ें, फिर कभी भी मात्रा अपडेट करें।</string>
+
+    <string name="add_medicine">दवा जोड़ें</string>
+    <string name="medicine_name">दवा का नाम</string>
+    <string name="strength_optional">स्ट्रेंथ (वैकल्पिक) जैसे 500mg</string>
+    <string name="quantity">मात्रा</string>
+    <string name="reorder_level">रीऑर्डर स्तर</string>
+
+
+    <string name="no_medicines_yet">अभी तक कोई दवा नहीं जोड़ी गई</string>
+    <string name="no_medicines_yet_desc">स्टॉक अपडेट शुरू करने के लिए पहली दवा जोड़ें।</string>
+    <string name="update_stock_desc">दवाएँ खोजें और क्विक कंट्रोल से मात्रा बदलें।</string>
+    <string name="open_update_stock">स्टॉक अपडेट खोलें</string>
+
+    <string name="set_quantity">मात्रा सेट करें</string>
+    <string name="enter_quantity">मात्रा दर्ज करें</string>
+    <string name="invalid_quantity">कृपया सही मात्रा दर्ज करें।</string>
+
+    <string name="stock_low_fmt">कम स्टॉक (%1$d)</string>
+    <string name="stock_out_fmt">स्टॉक खत्म (%1$d)</string>
+    <string name="stock_in_fmt">स्टॉक में (%1$d)</string>
+    <string name="search_medicine_name_hint">दवा का नाम खोजें...</string>
+
+    <string name="showing_pharmacies_near">पास की फार्मेसियाँ दिखा रहे हैं</string>
+    <string name="sample_location_ludhiana_village">लुधियाना गांव</string>
+    <string name="recent_searches">हाल की खोजें</string>
+    <string name="popular_medicines">लोकप्रिय दवाएँ</string>
+
+    <string name="med_paracetamol">पैरासिटामोल</string>
+    <string name="med_cetirizine">सेटिरीज़िन</string>
+    <string name="med_vitamin_c">विटामिन C</string>
+    <string name="med_cough_syrup">खांसी की सिरप</string>
+    <string name="med_azithromycin">एज़िथ्रोमाइसिन</string>
+    <string name="med_omeprazole">ओमेप्राज़ोल</string>
+    <string name="mark_all_read">सभी को पढ़ा हुआ करें</string>
+    <string name="no_notifications">अभी कोई सूचना नहीं</string>
+
+    <string name="morning">सुबह</string>
+    <string name="afternoon">दोपहर</string>
+    <string name="evening">शाम</string>
+
+
+    <string name="verified_doctors_available_sample">3 सत्यापित डॉक्टर उपलब्ध हैं</string>
+    <string name="per_consultation">प्रति परामर्श</string>
+    <string name="available_now">अभी उपलब्ध</string>
+    <string name="sample_consultations">2500+ परामर्श</string>
+
+
+    <string name="available_slots">उपलब्ध स्लॉट</string>
+    <string name="education">शिक्षा</string>
+    <string name="works_at">कहाँ कार्यरत</string>
+    <string name="languages">भाषाएँ</string>
+
+    <string name="fee">फीस</string>
+    <string name="today">आज</string>
+    <string name="tomorrow">कल</string>
+
+    <string name="years">वर्ष</string>
+
+
+
+        <!-- Extra strings used in HomeFragment layout -->
+        <string name="our_services">हमारी सेवाएं</string>
+        <string name="emergency_help">आपातकालीन सहायता</string>
+        <string name="emergency_help_sub">तुरंत सहायता के लिए 108 पर कॉल करें</string>
+        <string name="call_now">अभी कॉल करें</string>
+
+
+        <string name="medicine_delivery">दवा डिलीवरी</string>
+        <string name="medical_records">मेडिकल रिकॉर्ड</string>
+
+
+
+
+    <string name="err_district_required">कृपया अपना जिला दर्ज करें।</string>
+
+    <string name="continue_to_dashboard">डैशबोर्ड पर जाएँ</string>
+
+    <string name="reset_success_title">पासवर्ड सफलतापूर्वक रीसेट हो गया!</string>
+    <string name="reset_success_desc">आपका पासवर्ड सफलतापूर्वक रीसेट हो गया है।\nअब आप नए पासवर्ड से साइन इन कर सकते हैं।</string>
+    <string name="reset_success_btn">साइन इन करें</string>
+    <string name="reset_success_icon_cd">सफल</string>
+    <string name="err_email_already_registered">यह ईमेल पहले से रजिस्टर है। कृपया साइन इन करें।</string>
+    <string name="otp_sent_generic">OTP sent. Enter it below.</string>
+    <string name="err_verify_email_first">Please verify your email OTP first.</string>
+    <string name="err_fullname_required">Please enter your full name.</string>
+    <string name="signup_success">Account created successfully. Please sign in.</string>
+    <string name="signup_failed">Could not create account. Please try again.</string>
+    <string name="default_pharmacy_name">शर्मा फार्मेसी</string>
+    <string name="upload_images_title">चित्र अपलोड करें</string>
+    <string name="upload_images_desc">लक्षणों, पिछली पर्चियों या टेस्ट रिपोर्ट्स की फोटो अपने डॉक्टर के साथ साझा करें</string>
+    <string name="examples">उदाहरण:</string>
+    <string name="example_skin_condition">त्वचा की समस्या</string>
+    <string name="example_previous_prescription">पिछली पर्ची</string>
+    <string name="example_test_reports">टेस्ट रिपोर्ट्स</string>
+    <string name="no_images_uploaded">कोई चित्र अपलोड नहीं हुआ</string>
+    <string name="tap_buttons_to_add">फोटो जोड़ने के लिए नीचे दिए गए बटन दबाएं</string>
+
+    <string name="gallery">गैलरी</string>
+    <string name="skip_for_now">अभी छोड़ दें</string>
+
+    <string name="verified_pharmacist">सत्यापित फार्मासिस्ट</string>
+    <string name="sample_patient_name">रमेश कुमार</string>
+    <string name="active_user">सक्रिय उपयोगकर्ता</string>
+    <string name="otp_verify_first">कृपया पहले OTP सत्यापित करें।</string>
+    <string name="err_email_changed_resend_otp">ईमेल बदल गया है। कृपया फिर से OTP भेजें।</string>
+     <string name="account_created_signin">अकाउंट बन गया! कृपया साइन इन करें।</string>
+    <string name="err_user_not_found">इस ईमेल से कोई उपयोगकर्ता नहीं मिला।</string>
+    <string name="err_invalid_credentials">ईमेल या पासवर्ड गलत है।</string>
+    <string name="err_login_missing_token">लॉगिन प्रतिक्रिया में टोकन नहीं मिला।\n(%1$s)</string>
+    <string name="doctor_registration_title">डॉक्टर आवेदन</string>
+    <string name="doctor_registration_subtitle">सत्यापन के लिए विवरण जमा करें</string>
+    <string name="applied_today">आवेदन: आज</string>
+
+    <string name="application_details">आवेदन विवरण</string>
+    <string name="doctor_reg_hint">सभी विवरण भरें और आवश्यक दस्तावेज़ अपलोड करें। एडमिन सत्यापन करके स्वीकृत करेगा।</string>
+
+    <string name="hint_phone">फ़ोन</string>
+
+    <string name="uploaded_documents">अपलोड किए गए दस्तावेज़</string>
+    <string name="upload_docs_hint">स्पष्ट फोटो/PDF अपलोड करें। सभी दस्तावेज़ आवेदन से मेल खाने चाहिए।</string>
+
+    <string name="upload">अपलोड</string>
+    <string name="doc_not_uploaded">अपलोड नहीं किया गया</string>
+
+    <string name="doc_medical_license">मेडिकल लाइसेंस</string>
+    <string name="doc_aadhaar">आधार कार्ड</string>
+    <string name="doc_mbbs">एमबीबीएस प्रमाणपत्र</string>
+
+    <string name="verification_checklist">सत्यापन चेकलिस्ट</string>
+    <string name="check_regno">काउंसिल से रजिस्ट्रेशन नंबर सत्यापित</string>
+    <string name="check_identity">पहचान दस्तावेज़ आवेदन से मेल खाते हैं</string>
+    <string name="check_degree">डिग्री प्रमाणपत्र प्रामाणिक है</string>
+    <!-- res/values-hi/strings.xml -->
+    <string name="no_users_found">कोई उपयोगकर्ता नहीं मिला</string>
+    <string name="no_users_found_hint">डॉक्टर/फार्मासिस्ट विवरण सबमिट करने के बाद यहाँ दिखाई देंगे।</string>
+    <string name="users_count">%1$d उपयोगकर्ता</string>
+
+
+    <string name="please_wait">कृपया थोड़ा इंतज़ार करें।</string>
+    <string name="admin_users_title">एडमिन • उपयोगकर्ता</string><string name="unverified">असत्यापित</string>
+
+    <string name="add_document">दस्तावेज़ जोड़ें</string>
+    <string name="upload_documents">दस्तावेज़ अपलोड करें</string>
+    <string name="tap_to_choose_or_take_photo">फ़ाइल चुनें या फोटो लें</string>
+    <string name="couldnt_load_data">डेटा लोड नहीं हो सका</string>
+    <string name="please_try_again">कृपया फिर से प्रयास करें।</string>
+    <string name="err_max_docs_reached">आप केवल %1$d दस्तावेज़ अपलोड कर सकते हैं।</string>
+    <string name="min_docs_completed">न्यूनतम दस्तावेज़ पूरे हो गए।</string>
+    <string name="punjabi">पंजाबी</string>
+    <string name="punjabi_native">ਪੰਜਾਬੀ</string>
+
+    <string name="telugu">तेलुगु</string>
+    <string name="telugu_native">తెలుగు</string>
+
+
+
+
+    <string name="upload_file">Upload file</string>
+    <string name="take_photo">Take photo</string>
+
+    <string name="documents_0_min_3">दस्तावेज़: %1$d (कम से कम 1)</string>
+
+
+    <string name="remove">Remove</string>
+    <string name="failed">Failed</string>
+    <string name="already_added">Already added</string>
+    <string name="docs_help_types_size">स्वीकृत: PDF/JPG/PNG • अधिकतम 10 MB प्रति फ़ाइल</string>
+
+    <string name="please_upload_min_3_docs">कृपया कम से कम 1 सहायक दस्तावेज़ अपलोड करें।</string>
+    <string name="no_documents_added_yet">अभी कोई दस्तावेज़ नहीं जोड़ा गया है।</string>
+    <string name="not_available">उपलब्ध नहीं</string>
+    <string name="supporting_documents_min_3">सहायक दस्तावेज़ (कम से कम 1)</string>
+    <string name="pharmacist">फार्मासिस्ट</string>
+    <string name="docs_count">%1$d दस्तावेज़</string>
+    <string name="time_just_now">अभी अभी</string>
+    <string name="time_minutes_ago">%1$d मिनट पहले</string>
+    <string name="time_hours_ago">%1$d घंटे पहले</string>
+    <string name="time_days_ago">%1$d दिन पहले</string>
+    <string name="review_application">आवेदन की समीक्षा करें</string>
+    <string name="applied_on">आवेदन किया:   %1$s</string>
+    <string name="approve">स्वीकृत करें</string>
+    <string name="reject">अस्वीकार करें</string>
+    <string name="no_results">कोई परिणाम नहीं</string>
+
+    <string name="license_number">लाइसेंस नंबर</string>
+    <string name="hospital_or_store">अस्पताल / स्टोर</string>
+
+    <string name="tap_to_view_full_document">पूरा दस्तावेज़ देखने के लिए टैप करें</string>
+
+    <string name="check_reg_verified">पंजीकरण नंबर परिषद से सत्यापित</string>
+    <string name="check_identity_match">पहचान दस्तावेज़ आवेदन से मेल खाते हैं</string>
+    <string name="check_degree_authentic">डिग्री प्रमाणपत्र वास्तविक है</string>   <string name="no_users_title">कोई उपयोगकर्ता नहीं मिला</string>
+    <string name="no_users_subtitle">फ़िल्टर बदलें या रिफ्रेश करने के लिए नीचे खींचें।</string>
+    <string name="no_applications_title">समीक्षा के लिए कोई आवेदन नहीं</string>
+    <string name="no_applications_subtitle">जब कोई अपना प्रोफ़ाइल सबमिट करेगा, वह यहाँ दिखेगा।</string>
+    <string name="saved">सहेजा गया</string>
+    <string name="please_upload_min_docs">कृपया कम से कम %1$d दस्तावेज़ अपलोड करें।</string>
+    <string name="documents_count_format">दस्तावेज़: %1$d (न्यूनतम %2$d)</string>
+    <string name="doc_degree_certificate">डिग्री प्रमाणपत्र</string>
+    <string name="document_1">दस्तावेज़ 1</string>
+    <string name="document_2">दस्तावेज़ 2</string>
+    <string name="document_3">दस्तावेज़ 3</string>
+    <string name="reason_optional">कारण (वैकल्पिक)</string>
+    <string name="help_support">सहायता और समर्थन</string>
+    <string name="emergency_title">आपातकाल?</string>
+    <string name="emergency_subtitle">चिकित्सा आपातकाल में, हमारी 24/7 हेल्पलाइन पर कॉल करें</string>
+    <string name="emergency_helpline">आपातकाल\nहेल्पलाइन</string>
+    <string name="emergency_number_block">(  1800-\nXXX-\nXXXX  )</string>
+
+    <string name="contact_support">सपोर्ट से संपर्क करें</string>
+    <string name="call_support">कॉल सपोर्ट</string>
+    <string name="helpline_available_247">24/7 हेल्पलाइन उपलब्ध</string>
+    <string name="chat_with_us">हमसे चैट करें</string>
+    <string name="get_instant_help">तुरंत मदद पाएं</string>
+    <string name="email_support">ईमेल सपोर्ट</string>
+
+
+    <string name="help_resources">सहायता संसाधन</string>
+    <string name="user_guide">यूज़र गाइड</string>
+    <string name="learn_how_to_use_app">ऐप का उपयोग करना सीखें</string>
+    <string name="video_tutorials">वीडियो ट्यूटोरियल</string>
+    <string name="watch_step_by_step_guides">स्टेप-बाय-स्टेप गाइड देखें</string>
+    <string name="faqs">अक्सर पूछे जाने वाले प्रश्न</string>
+    <string name="common_questions_answered">आम सवालों के जवाब</string>
+
+    <string name="common_issues">सामान्य समस्याएँ</string>
+    <string name="issue_book_consultation">मैं परामर्श कैसे बुक करूँ?</string>
+    <string name="issue_upload_documents">दस्तावेज़ कैसे अपलोड करें?</string>
+    <string name="issue_offline">अगर मैं ऑफ़लाइन हूँ तो क्या?</string>
+    <string name="issue_medicine_availability">दवा उपलब्धता कैसे जांचें?</string>
+
+    <string name="open">खोलें</string>
+
+    <string name="call">कॉल</string>
+    <string name="chat">चैट</string>
+    <string name="email">ईमेल</string>
+    <string name="answer_book_consultation">अपॉइंटमेंट्स → डॉक्टर चुनें → समय चुनें → पुष्टि करें।</string>
+    <string name="answer_upload_documents">प्रोफाइल → दस्तावेज़ अपलोड → फाइल जोड़ें और सबमिट करें।</string>
+    <string name="answer_offline">आप ऑफ़लाइन सेव जानकारी देख सकते हैं। इंटरनेट आने पर सिंक होगा।</string>
+    <string name="answer_medicine_availability">फार्मेसी सेक्शन में दवा खोजकर स्टॉक देखें।</string>
+    <string name="emergency_phone_number_dial">18001234567</string>
+    <string name="support_phone_number_dial">18001234567</string>
+
+    <string name="support_whatsapp_number">918000000000</string>
+
+    <string name="user_guide_url"> </string>
+    <string name="video_tutorials_url"> </string>
+    <string name="faqs_url"> </string>
+
+    <string name="number_not_set">नंबर सेट नहीं है</string>
+    <string name="unable_to_open">खोल नहीं सकते</string>
+    <string name="lang_telugu">तेलुगु</string>
+    <string name="lang_punjabi">पंजाबी</string>
+    <string name="invalid_phone">कृपया एक वैध फ़ोन नंबर दर्ज करें</string>
+
+    <string name="confirm_approve">इस आवेदन को स्वीकृत करें?</string>
+    <string name="confirm_reject">इस आवेदन को अस्वीकार करें?</string>
+    <string name="document_not_available">दस्तावेज़ उपलब्ध नहीं है</string>
+    <string name="no_pending_verifications">कोई लंबित सत्यापन नहीं</string>
+    <string name="no_pending_verifications_hint">डॉक्टर/फार्मासिस्ट अपना विवरण सबमिट करने के बाद यहाँ दिखाई देंगे।</string>
+    <string name="try_refresh_hint">ऊपर से खींचकर रिफ्रेश करें या थोड़ी देर बाद फिर देखें।</string>
+
+    <string name="doc_selected_format">चुना गया: %1$s</string>
+    <string name="err_doc_invalid_type">केवल PDF / JPG / PNG मान्य है।</string>
+    <string name="err_doc_too_large">फाइल बहुत बड़ी है। अधिकतम 5 MB।</string>
+    <string name="err_pick_doc">फाइल पढ़ नहीं सके। कृपया फिर से चुनें।</string>
+    <string name="please_login_again">कृपया फिर से लॉगिन करें</string>
+
+
+</resources>

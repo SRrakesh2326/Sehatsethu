@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_refresh"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:duration="400"
+    android:repeatCount="0"
+    android:repeatMode="restart"
+    android:interpolator="@android:interpolator/fast_out_slow_in" />

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Skip -->
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="16sp"
+        android:textColor="#64748B"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Illustration circle -->
+    <FrameLayout
+        android:id="@+id/illustration_container"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/bg_circle_light">
+
+        <!-- White document card -->
+        <FrameLayout
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_rounded">
+
+            <!-- Document icon -->
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_document"
+                app:tint="#3B82F6"/>
+
+            <!-- Call icon (left bottom) -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_red_square"
+                android:padding="10dp"
+                android:src="@drawable/ic_call"
+                app:tint="#FFFFFF" />
+
+            <!-- Cloud icon (right bottom) -->
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_green_square"
+                android:padding="10dp"
+                android:src="@drawable/ic_cloud"
+                app:tint="#FFFFFF"/>
+
+            <!-- Offline icon (top right) -->
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_dark_square"
+                android:padding="10dp"
+                android:src="@drawable/ic_offline"
+                app:tint="#FFFFFF"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/illustration_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Offline Records + Call Now"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Access your health records even without internet. Use Call-Now  when network is weak."
+    android:textAlignment="center"
+    android:lineSpacingExtra="6dp"
+    android:textSize="16sp"
+    android:textColor="#64748B"/>
+
+    <!-- Dots -->
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_dot_inactive"/>
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="8dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_dot_active"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_dot_inactive"/>
+    </LinearLayout>
+
+    <!-- Bottom buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Back"
+            android:textSize="16sp"
+            android:textColor="#0F172A"
+            android:background="@drawable/bg_back_btn"/>
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="1dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="2"
+            android:text="Next"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_continue_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<!-- res/drawable/bg_dashed_dropzone.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/>
+    <corners android:radius="18dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="#D6E2F2"
+        android:dashWidth="10dp"
+        android:dashGap="8dp" />
+</shape>

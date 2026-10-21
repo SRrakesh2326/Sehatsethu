@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Face -->
+    <path
+        android:fillColor="#FACC15"
+        android:pathData="
+            M32,6
+            a20,20 0 1,0 0,40
+            a20,20 0 1,0 0,-40"/>
+
+    <!-- Eyes -->
+    <path android:fillColor="#1F2937"
+        android:pathData="M22,28a2,2 0 1,0 0.1,0z"/>
+    <path android:fillColor="#1F2937"
+        android:pathData="M42,28a2,2 0 1,0 0.1,0z"/>
+
+    <!-- Smile -->
+    <path
+        android:fillColor="#1F2937"
+        android:pathData="M24,36c2.5,3 13.5,3 16,0"/>
+
+    <!-- Coat -->
+    <path
+        android:fillColor="#E5E7EB"
+        android:pathData="
+            M18,46h28v12H18z"/>
+
+    <!-- Shirt -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="
+            M28,46h8v12h-8z"/>
+</vector>

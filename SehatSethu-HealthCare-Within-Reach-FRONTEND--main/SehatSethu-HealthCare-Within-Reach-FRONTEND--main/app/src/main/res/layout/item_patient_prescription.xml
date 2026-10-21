@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:background="@drawable/bg_prescription_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_prescription_card"
+        android:padding="16dp">
+
+        <!-- Left purple tile -->
+        <FrameLayout
+            android:id="@+id/iconTile"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_icon_tile_purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivPill"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_pill"
+                app:tint="@color/purple_500" />
+        </FrameLayout>
+
+        <!-- Chevron -->
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_chevron_right"
+            app:tint="#94A3B8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvPTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iconTile"
+            app:layout_constraintTop_toTopOf="@id/iconTile"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron" />
+
+        <!-- Doctor row (name + verified in ONE row so it aligns always) -->
+        <LinearLayout
+            android:id="@+id/rowDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/iconTile"
+            app:layout_constraintTop_toBottomOf="@id/tvPTitle"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron">
+
+            <TextView
+                android:id="@+id/tvPDoctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#475569"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivVerified"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_verified_green" />
+        </LinearLayout>
+
+        <!-- Specialization -->
+        <TextView
+            android:id="@+id/tvPSpec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/iconTile"
+            app:layout_constraintTop_toBottomOf="@id/rowDoctor"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron" />
+
+        <!-- Bottom meta row (calendar + date + dot + meds) -->
+        <LinearLayout
+            android:id="@+id/rowMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/iconTile"
+            app:layout_constraintTop_toBottomOf="@id/tvPSpec"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/ivCal"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_calendar"
+                app:tint="#94A3B8" />
+
+            <TextView
+                android:id="@+id/tvPDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/vDot"
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_dot_grey" />
+
+            <TextView
+                android:id="@+id/tvPMeds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="@drawable/bg_card_outline">
+
+        <!-- Name (show like: Paracetamol 500mg) -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text=""
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/boxQty"
+            tools:text="Paracetamol 500mg"/>
+
+        <!-- Keep this ID, but hide (image shows combined name+strength on one line) -->
+        <TextView
+            android:id="@+id/tvStrength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="#475569"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/boxQty"
+            tools:text="500 mg"/>
+
+        <!-- Price (purple) -->
+        <TextView
+            android:id="@+id/tvMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:text=""
+            android:textColor="#7C3AED"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/boxQty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="₹25"/>
+
+        <!-- Right status chip (use existing IDs: boxQty + tvQty) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/boxQty"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:minHeight="32dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/bg_chip_status_green"
+            android:backgroundTint="#DCFCE7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tvQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#059669"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_stock_in"
+                android:drawablePadding="8dp"
+                app:drawableTint="#059669"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="In Stock (50)"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Keep these IDs but not used (chip is boxQty like the image) -->
+        <View
+            android:id="@+id/vStatusChip"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_chip_status_green"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/boxQty"
+            app:layout_constraintTop_toBottomOf="@id/boxQty"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/vStatusChip"
+            app:layout_constraintBottom_toBottomOf="@id/vStatusChip"
+            app:layout_constraintStart_toStartOf="@id/vStatusChip"
+            app:layout_constraintEnd_toEndOf="@id/vStatusChip"
+            tools:text="In stock"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvConfirmTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_booking_title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#0F172A" />
+
+    <TextView
+        android:id="@+id/tvConfirmMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/confirm_booking_message"
+        android:textSize="14sp"
+        android:textColor="#334155" />
+
+    <TextView
+        android:id="@+id/tvConfirmDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/confirm_booking_cta_cancel"
+            android:textAllCaps="false"
+            app:backgroundTint="#E2E8F0"
+            android:textColor="#0F172A" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnYesBook"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="@string/confirm_booking_cta_yes"
+            android:textAllCaps="false"
+            app:backgroundTint="#16A34A"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

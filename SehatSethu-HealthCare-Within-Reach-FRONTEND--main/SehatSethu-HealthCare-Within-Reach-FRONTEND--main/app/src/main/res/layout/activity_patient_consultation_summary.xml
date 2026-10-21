@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/back"
+        app:srcCompat="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consultation_summary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"/>
+
+    <View
+        android:id="@+id/vTopDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEF2F6"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/vTopDivider"
+        app:layout_constraintBottom_toTopOf="@id/bottomArea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dp">
+
+            <!-- Banner -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBanner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="#E9FBF2"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp">
+
+                    <ImageView
+                        android:id="@+id/ivCheck"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_check_circle"
+                        app:tint="#059669"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvBannerTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/consultation_completed"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#065F46"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@id/ivCheck"
+                        app:layout_constraintTop_toTopOf="@id/ivCheck"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvBannerSub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_unknown"
+                        android:textSize="13sp"
+                        android:textColor="#059669"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="@id/tvBannerTitle"
+                        app:layout_constraintTop_toBottomOf="@id/tvBannerTitle"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Doctor row -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDoctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="14dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/cardBanner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp">
+
+                    <View
+                        android:id="@+id/vAvatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_avatar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/ic_male"
+                        app:layout_constraintStart_toStartOf="@id/vAvatar"
+                        app:layout_constraintEnd_toEndOf="@id/vAvatar"
+                        app:layout_constraintTop_toTopOf="@id/vAvatar"
+                        app:layout_constraintBottom_toBottomOf="@id/vAvatar"/>
+
+                    <TextView
+                        android:id="@+id/tvDoctorName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dr."
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#0F172A"
+                        android:layout_marginStart="12dp"
+                        app:layout_constraintStart_toEndOf="@id/vAvatar"
+                        app:layout_constraintTop_toTopOf="@id/vAvatar"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvDoctorSpec"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speciality_general_physician"
+                        android:textSize="13sp"
+                        android:textColor="#64748B"
+                        android:layout_marginStart="12dp"
+                        app:layout_constraintStart_toStartOf="@id/tvDoctorName"
+                        app:layout_constraintTop_toBottomOf="@id/tvDoctorName"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Diagnosis card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDiagnosis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="14dp"
+                app:cardBackgroundColor="#EEF6FF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/cardDoctor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:id="@+id/tvDiagTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diagnosis"
+                        android:textStyle="bold"
+                        android:textColor="#1D4ED8"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvDiagnosis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/consultation_summary_unavailable"
+                        android:textColor="#1D4ED8"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvDiagTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Doctor notes -->
+            <TextView
+                android:id="@+id/tvNotesTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/doctors_notes"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#0F172A"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardDiagnosis"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvNotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/consultation_summary_unavailable"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#64748B"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tvNotesTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Prescribed medicines header -->
+            <TextView
+                android:id="@+id/tvMedsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/prescribed_medicines"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#0F172A"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toBottomOf="@id/tvNotes"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvViewFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_full_prescription"
+                android:textColor="#059669"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@id/tvMedsTitle"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMeds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                app:layout_constraintTop_toBottomOf="@id/tvMedsTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Follow up -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFollow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="#FFF7E6"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/rvMeds"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp">
+
+                    <ImageView
+                        android:id="@+id/ivCalendar"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:srcCompat="@drawable/ic_calendar"
+                        app:tint="#B45309"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvFollowTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/follow_up_recommended"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#92400E"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@id/ivCalendar"
+                        app:layout_constraintTop_toTopOf="@id/ivCalendar"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvFollowSub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/follow_up_default"
+                        android:textSize="13sp"
+                        android:textColor="#B45309"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvFollowTitle"
+                        app:layout_constraintStart_toStartOf="@id/tvFollowTitle"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom area -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDownload"
+            app:backgroundTint="@color/ss_hint"
+
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="@string/download"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_back_btn"
+            app:iconGravity="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnShare"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.48"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShare"
+            app:backgroundTint="@color/seha_border_focus"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="@string/share"
+
+            android:textAllCaps="false"
+            android:background="@drawable/bg_back_btn"
+            app:iconGravity="textStart"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toEndOf="@id/btnDownload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.48"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:text="@string/go_to_home"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/ic_home"
+            app:iconGravity="textStart"
+            app:backgroundTint="#059669"
+            app:cornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnDownload"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

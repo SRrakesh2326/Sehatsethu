@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    android:backgroundTint="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/bg_outline_soft_card">
+
+        <!-- Avatar -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAvatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#F1F5F9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/ic_avatar_patient"
+                android:contentDescription="@null"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Ramesh Kumar"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cardAvatar"
+            app:layout_constraintTop_toTopOf="@id/cardAvatar"
+            app:layout_constraintEnd_toStartOf="@id/tvStatus"/>
+
+        <!-- Status pill -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center_vertical"
+            android:text="Upcoming"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#059669"
+            android:background="@drawable/bg_pill_upcoming"
+            app:layout_constraintTop_toTopOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivDot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_dot_green"
+            app:layout_constraintEnd_toStartOf="@id/tvStatus"
+            app:layout_constraintTop_toTopOf="@id/tvStatus"
+            app:layout_constraintBottom_toBottomOf="@id/tvStatus"
+            android:contentDescription="@null"/>
+
+        <!-- Meta -->
+        <TextView
+            android:id="@+id/tvMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="45 yrs, Male"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/cardAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Issue -->
+        <TextView
+            android:id="@+id/tvIssue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:text="Fever, Body pain"
+            android:textColor="#475569"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/cardAvatar"
+            app:layout_constraintTop_toBottomOf="@id/tvMeta"
+            app:layout_constraintEnd_toStartOf="@id/btnAction"/>
+
+        <!-- Action button (video/call) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAction"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#E0ECFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStatus"
+            android:layout_marginTop="18dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_action_blue">
+
+                <ImageView
+                    android:id="@+id/ivAction"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_video_white"
+                    android:contentDescription="@null"/>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bottom row date/time -->
+        <ImageView
+            android:id="@+id/ivCal"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_calendar"
+            android:contentDescription="@null"
+            app:layout_constraintStart_toStartOf="@id/tvIssue"
+            app:layout_constraintTop_toBottomOf="@id/tvIssue"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            android:layout_marginStart="6dp"
+            app:layout_constraintStart_toEndOf="@id/ivCal"
+            app:layout_constraintTop_toTopOf="@id/ivCal"
+            app:layout_constraintBottom_toBottomOf="@id/ivCal"/>
+
+        <ImageView
+            android:id="@+id/ivClock"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_clock_small"
+            android:contentDescription="@null"
+            android:layout_marginStart="18dp"
+            app:layout_constraintStart_toEndOf="@id/tvDate"
+            app:layout_constraintTop_toTopOf="@id/ivCal"
+            app:layout_constraintBottom_toBottomOf="@id/ivCal"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:00 PM"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            android:layout_marginStart="6dp"
+            app:layout_constraintStart_toEndOf="@id/ivClock"
+            app:layout_constraintTop_toTopOf="@id/ivClock"
+            app:layout_constraintBottom_toBottomOf="@id/ivClock"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

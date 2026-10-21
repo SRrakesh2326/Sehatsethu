@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_patient_card"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/vAvatar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/ic_male"
+        app:layout_constraintStart_toStartOf="@id/vAvatar"
+        app:layout_constraintEnd_toEndOf="@id/vAvatar"
+        app:layout_constraintTop_toTopOf="@id/vAvatar"
+        app:layout_constraintBottom_toBottomOf="@id/vAvatar"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ramesh Kumar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/vAvatar"
+        app:layout_constraintTop_toTopOf="@id/vAvatar"
+        app:layout_constraintEnd_toStartOf="@id/tvStatus"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● Active"
+        android:textSize="12sp"
+        android:textColor="#059669"
+        android:background="@drawable/bg_badge_green"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45 yrs, Male"
+        android:textSize="13sp"
+        android:textColor="#64748B"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/vAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvCond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Diabetes follow-up"
+        android:textSize="14sp"
+        android:textColor="#334155"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/vAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvMeta"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last visit: Today"
+        android:textSize="12sp"
+        android:textColor="#64748B"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/vAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvCond"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

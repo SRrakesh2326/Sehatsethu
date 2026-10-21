@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Main 4-point sparkle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2 L13.3,8.7 L20,10 L13.3,11.3 L12,18 L10.7,11.3 L4,10 L10.7,8.7 Z"/>
+
+    <!-- Small sparkle top-right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18.4,4.8 L18.9,7.1 L21.2,7.6 L18.9,8.1 L18.4,10.4 L17.9,8.1 L15.6,7.6 L17.9,7.1 Z"/>
+
+    <!-- Small sparkle bottom-left -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M5.2,14.6 L5.7,16.4 L7.5,16.9 L5.7,17.4 L5.2,19.2 L4.7,17.4 L2.9,16.9 L4.7,16.4 Z"/>
+</vector>

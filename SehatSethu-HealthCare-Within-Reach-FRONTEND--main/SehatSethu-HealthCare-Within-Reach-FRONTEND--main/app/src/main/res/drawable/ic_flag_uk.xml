@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="20dp"
+    android:viewportWidth="28"
+    android:viewportHeight="20">
+
+    <!-- Blue base -->
+    <path android:fillColor="#0A3D91" android:pathData="M0,0h28v20H0z"/>
+
+    <!-- White diagonals -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M0,2.2 L0,0 L3.2,0 L28,17.8 L28,20 L24.8,20 Z"/>
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M28,2.2 L28,0 L24.8,0 L0,17.8 L0,20 L3.2,20 Z"/>
+
+    <!-- Red diagonals -->
+    <path android:fillColor="#D10C1C"
+        android:pathData="M0,1.2 L0,0 L2.0,0 L28,18.8 L28,20 L26.0,20 Z"/>
+    <path android:fillColor="#D10C1C"
+        android:pathData="M28,1.2 L28,0 L26.0,0 L0,18.8 L0,20 L2.0,20 Z"/>
+
+    <!-- White cross -->
+    <path android:fillColor="#FFFFFF" android:pathData="M11.2,0h5.6v20h-5.6z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M0,7.2h28v5.6H0z"/>
+
+    <!-- Red cross -->
+    <path android:fillColor="#D10C1C" android:pathData="M12.3,0h3.4v20h-3.4z"/>
+    <path android:fillColor="#D10C1C" android:pathData="M0,8.3h28v3.4H0z"/>
+</vector>

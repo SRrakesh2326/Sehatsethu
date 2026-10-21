@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="medicine_master_list">
+        <item>Paracetamol</item>
+        <item>Cetirizine</item>
+        <item>Azithromycin</item>
+        <item>Omeprazole</item>
+        <item>Vitamin C</item>
+        <item>Cough Syrup</item>
+    </string-array>
+</resources>

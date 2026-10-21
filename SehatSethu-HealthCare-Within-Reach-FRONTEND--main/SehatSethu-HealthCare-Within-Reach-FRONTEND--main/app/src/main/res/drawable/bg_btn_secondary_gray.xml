@@ -1,0 +1,5 @@
+<!-- res/drawable/bg_btn_secondary_gray.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E2E8F0"/>
+    <corners android:radius="14dp"/>
+</shape>
